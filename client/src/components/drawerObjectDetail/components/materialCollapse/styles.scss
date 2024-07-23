@@ -1,0 +1,39 @@
+.material-collapse-container{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    .ant-collapse-header{
+        padding: 9px 7px !important;
+        align-items: center;
+        .ant-collapse-header-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    .ant-collapse-content{
+        .ant-collapse-content-box{
+            padding: 17px 10px;
+            padding-top: 5px;
+            .material-collapse-content{
+                .material-control-container{
+                    margin-top: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .text-left{
+                        color: #FFFFFF;
+                        text-align: left;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}

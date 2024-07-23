@@ -1,0 +1,80 @@
+.admin-template-animation-collapse-container{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    .ant-collapse-header{
+        padding: 15px 7px !important;
+        align-items: center;
+        .ant-collapse-header-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    .ant-collapse-content{
+        .ant-collapse-content-box{
+            padding: 17px 10px;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            .animation-collapse-content{
+                .add-motion-btn{
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 20px;
+                    border-radius: 5px;
+                    background: rgba(0, 0, 0, 0.40);
+
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-decoration-line: underline;
+                    &.disabled{
+                        pointer-events: none;
+                        opacity: 0.5;
+                        user-select: none;
+                    }
+                }
+                .motion-info{
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    padding: 15px 15px;
+                    border-radius: 5px;
+                    background: rgba(0, 0, 0, 0.40);
+                    img{
+                        max-width: 35px;
+                    }
+                    .motion-name-info{
+                        display: flex;
+                        flex: auto;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                        .name{
+                            color: #FFF;
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                        .change{
+                            cursor: pointer;
+                            color: #00E5FF;
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.select-wall-carousel{
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    width: 600px;
+    max-width: 55%;
+    padding: 11px 20px;
+    background: var(--select-wall-background);
+    z-index: 2;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    .wall-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        padding: 0 10px;
+        // user-select: none;
+        &.has-border-right{
+            border-right: var(--border-2-light);
+        }
+        .edit-icon{
+            opacity: 0;
+            transition: all 0.3s linear;
+            height: 16.8px;
+        }
+        &:hover{
+            .edit-icon{
+                opacity: 1;
+                height: 16.8px;
+            }
+        }
+    }
+    .text-wall{
+        font-family: 'Inter';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--normal-text-color);
+        flex: auto;
+        text-align: left;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        // padding-bottom: 8px;
+        &.active{
+            font-weight: 700;
+            border-bottom: none;
+            color: var(--normal-text-color);
+        }
+        &:hover{
+            font-weight: 700;
+            border-bottom: none;
+            color: var(--normal-text-color);
+        }
+    }
+}

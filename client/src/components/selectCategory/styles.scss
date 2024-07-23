@@ -1,0 +1,55 @@
+.modal-add-category{
+    .ant-modal-content{
+        background: var(--retailer-modal-upload-background);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+
+        .modal-add-category-title{
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: var(--normal-text-color);
+        }
+
+        .btn-save{
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: var(--normal-text-color);
+    
+            display: flex;
+            gap: 17px;
+            align-items: center;
+            z-index: 1;
+            position: relative;
+    
+            border-radius: 5px;
+            border: 1px solid var(--light-border-color);
+            background: rgba(255, 255, 255, 0.10);
+    
+            padding: 12.9px 22px;
+    
+            img{
+                filter: var(--svg-filter-invert);
+                width: 18.756px;
+                height: 20.434px;
+            }
+    
+            &:disabled{
+                cursor: not-allowed;
+            }
+        }
+    }
+}

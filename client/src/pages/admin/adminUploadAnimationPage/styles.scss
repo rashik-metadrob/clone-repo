@@ -1,0 +1,102 @@
+.admin-upload-animation-page-container{
+    .admin-container-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        .left-side__template {
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+
+            .title {
+                display: inline-flex;
+                padding: 5.333px 10.667px;
+                justify-content: center;
+                align-items: center;
+                gap: 5.333px;
+                flex-shrink: 0;
+                color: #FFFFFF;
+
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+            }
+
+            .btn-back{
+                color: #FFF;
+                text-align: center;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26.667px;
+        
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+
+        .right-side__template {
+            display: flex;
+
+            .upload-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px 32px;
+                border-radius: 5px;
+                background: rgba(255, 255, 255, 0.10);
+                color: #FFF;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.667px;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.156);
+                }
+
+                &.disabled{
+                    opacity: 0.5;
+                    pointer-events: none;
+                    user-select: none;
+                }
+            }
+        }
+    }
+    .uploads-list{
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        .upload-no{
+            color: #FFF;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .upload-container{
+            
+        }
+    }
+    .add-upload{
+        border-top: solid 1px #FFF;
+        position: relative;
+        .add-upload-image{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background: #101010;
+            cursor: pointer;
+        }
+    }
+}

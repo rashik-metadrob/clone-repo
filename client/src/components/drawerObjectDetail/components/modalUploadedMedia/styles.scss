@@ -1,0 +1,145 @@
+.modal-uploaded-media{
+    .ant-modal-content{
+        background-color: rgba(0, 0, 0, 0.20);
+        padding: 0;
+        backdrop-filter: blur(4px);
+        .modal-uploaded-media-content{
+            .modal-title-container{
+                padding: 22px 23px 25px 23px;
+                background-color: rgba(0, 0, 0, 0.20);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .title-container{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .close-container{
+                    padding: 2px 7px;
+                    border-radius: 3px;
+                    background: rgba(0, 0, 0, 0.50);
+                    height: fit-content;
+                    cursor: pointer;
+                    .text-close{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+                .input-search{
+                    background: rgba(0, 0, 0, 0.30);
+                    height: 40px;
+                    border-radius: 8px;
+                    border: none;
+                    padding: 4px 8px;
+                    .ant-input{
+                        padding-left: 9px;
+                        padding-right: 18px;
+                        background: transparent;
+
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        &::placeholder{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: normal;
+                            color: #A5A5A5;
+                        }
+                    }
+                }
+                .select-container{
+                    width: 200px;
+                    .select-type{
+                        height: 40px;
+                        border: none;
+                        .ant-select-selector{
+                            height: 40px !important;
+                            border: none !important;
+                            background: rgba(0, 0, 0, 0.3) !important;
+                            border-radius: 8px;
+                            .ant-select-selection-search{
+                                .ant-select-selection-search-input{
+                                    height: 100%;
+                                    color: #FFF;
+                                    font-family: "Inter";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                            .ant-select-selection-placeholder{
+                                color: #FFF !important;
+                                font-family: "Inter";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+                                position: relative;
+                                top: -2px;
+                            }
+                            .ant-select-selection-item{
+                                color: #FFF;
+                                font-family: 'Inter';
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .media-list-container{
+                // padding: 29px;
+                // display: flex;
+                // gap: 24px;
+                // flex-wrap: wrap;
+                padding: 24px;
+                display: grid;
+                justify-content: flex-start;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+                gap: 16px;
+                .upload-item{
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                    img{
+                        height: 170px;
+                    }
+                    .upload-name{
+                        margin-top: 7px;
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}

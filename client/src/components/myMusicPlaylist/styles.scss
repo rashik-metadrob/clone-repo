@@ -1,0 +1,46 @@
+.my-music-playlist-wrapper{
+    height: inherit;
+    overflow-y: auto;
+    padding-right: 52px;
+    padding-bottom: 24px;
+    .login-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .login-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .buttons-container{
+            display: flex;
+            :is(.btn-signup, .btn-login){
+                color: #000;
+                font-family: "Inter";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                border-radius: 3px;
+                background: #FFF;
+                width: 80px;
+                height: 25px;
+            }
+            :is(.btn-signup){
+                background: transparent;
+                color: rgba($color: #FFF, $alpha: 0.6);
+            }
+        }
+    }
+    .music-list-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}

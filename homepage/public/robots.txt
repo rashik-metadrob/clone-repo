@@ -1,0 +1,7 @@
+User-agent: *
+allow:/
+
+allow: sitemap.xml
+allow: sitemap.html
+
+Sitemap: https://www.metadrob.com/sitemap.xml

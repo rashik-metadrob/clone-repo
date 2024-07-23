@@ -1,0 +1,35 @@
+.qa-content{
+    border: var(--card-table-border);
+    .qa-question-container{
+        background: rgba($color: #2E323E, $alpha: 0.26);
+        max-height: 400px;
+        overflow-y: auto;
+        .qa-question-item{
+            padding: 16px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: var(--normal-text-color);
+            text-align: left;
+            cursor: pointer;
+            &.active{
+                background: var(--card-normal-background) ;
+            }
+            &:hover{
+                background: var(--card-normal-background) ;
+            }
+        }
+    }
+    .qa-answer-container{
+        padding: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #CCCCCC;
+        text-align: justify;
+    }
+}

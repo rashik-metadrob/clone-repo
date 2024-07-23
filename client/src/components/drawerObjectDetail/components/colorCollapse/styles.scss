@@ -1,0 +1,29 @@
+.color-collapse-container{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    .ant-collapse-header{
+        padding: 9px 7px !important;
+        align-items: center;
+        .ant-collapse-header-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    .ant-collapse-content{
+        .ant-collapse-content-box{
+            padding: 17px 10px;
+            padding-top: 5px;
+            .color-collapse-content{
+                .color-container{
+                    background: rgba(0, 0, 0, 0.40);
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

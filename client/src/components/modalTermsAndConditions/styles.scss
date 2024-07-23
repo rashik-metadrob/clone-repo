@@ -1,0 +1,64 @@
+.modal-terms-and-conditions{
+    .ant-modal-content{
+        background: var(--retailer-modal-upload-background);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 32px 32px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        backdrop-filter: blur(10px);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .modal-terms-and-conditions-content{
+            .title{
+                font-family: Inter;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 48px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--normal-text-color);
+            }
+            .content{
+                max-height: 400px;
+                overflow-y: auto;
+                .content-container{
+                    h3{
+                        font-family: Inter;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 34px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: var(--normal-text-color);
+                    }
+                    p{
+                        margin-top: 12px;
+                        font-family: Inter;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: justify;
+                        color: var(--normal-text-color);
+                    }
+                }
+            }
+            .btn-agree{
+                font-family: Inter;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #0D0E12;
+                background: #16F6FE;
+                border-radius: 9px;
+                padding: 12.5px 86.325px;
+            }
+        }
+    }
+}

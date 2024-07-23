@@ -1,0 +1,70 @@
+.shopify-first-login-container{
+    .header-container{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 46px;
+        padding-bottom: 24px;
+        border-bottom: solid 1px #FFF;
+        .header-container-tabs{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 60px;
+            border-radius: 10px;
+            border: solid 1px #FFFFFF;
+            padding: 12px 32px;
+            .header-item{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: Inter;
+                color: rgba($color: #FFF, $alpha: 0.5);
+                cursor: pointer;
+                transition: all 0.3s linear;
+                white-space: nowrap;
+                &.active{
+                    color: rgba($color: #FFF, $alpha: 1);
+                    border-bottom: solid 2px #00F6FF;
+                }
+            }
+        }
+        .header-container-tabs-project{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 60px;
+            border-radius: 10px;
+            border: solid 1px #FFFFFF;
+            padding: 13px 32px 13px 32px;
+            .header-item{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: Inter;
+                color: rgba($color: #FFF, $alpha: 0.1);
+                cursor: pointer;
+                transition: all 0.3s linear;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                &.active{
+                    color: rgba($color: #FFF, $alpha: 0.5);
+                }
+            }
+        }
+    }
+    .tab-content{
+        padding: 24px 0px;
+    }
+}
+
+.modal-app-block-instruction{
+    .ant-modal-content{
+        background: transparent;
+        .title{
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Inter;
+            color: #FFF;
+            text-align: center;
+        }
+    }
+}

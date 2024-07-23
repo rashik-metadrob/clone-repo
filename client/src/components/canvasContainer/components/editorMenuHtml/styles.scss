@@ -1,0 +1,165 @@
+.editor-menu-canvas-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transform: translateY(-100%) !important;
+    .editor-name{
+        width: 243px;
+        padding: 5px 9px;
+        border-radius: 5px;
+        background: rgba(16, 16, 16, 0.60);
+
+        color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .icon-container{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 5px;
+        background: rgba(16, 16, 16, 0.30);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        transition: all 0.3 linear;
+        &.icon-start{
+            border-radius: 5px 5px 0 0 !important;
+        }
+        &.icon-end{
+            border-radius: 0 0 5px 5px !important;
+        }
+        &.item-middle{
+            border-radius: 0 !important;
+        }
+        .icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+        }
+        .description{
+            display: none;
+        }
+        &:hover{
+            width: fit-content;
+            .description{
+                display: block;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: description-show 0.3s linear;
+                animation-iteration-count: 1;
+                width: 100px;
+            }
+            .icon-lock{
+                svg{
+                    rect{
+                        fill: #101010;
+                        fill-opacity: 0.8;
+                    }
+                    path{
+                        fill: #FFF;
+                    }
+                }
+            }
+        }
+        &.disabled{
+            pointer-events: none;
+            opacity: 0.7;
+        }
+    }
+}
+.editor-delete-mask{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: rgba($color: #000000, $alpha: 0.3);
+    backdrop-filter: blur(4px);
+    pointer-events: auto;
+    .editor-delete-wrapper{
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+        .editor-delete-container{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(100%);
+            opacity: 0;
+
+            background: #000;
+            border-radius: 10px;
+            z-index: 1;
+            padding: 8px 8px;
+            padding-right: 16px;
+            
+            max-width: 42%;
+            width: max-content;
+            min-width: 320px;
+            transition: all 0.3s;
+            animation: delete-confirm-show 0.2s linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+            &::after{
+                content: "";
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                background: linear-gradient(90deg, #00F6FF 2%, #AB00FF 98.2%);
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                z-index: -3;
+                border-radius: 10px;
+            }
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -2;
+
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@keyframes description-show {
+    0%{
+        width: 0px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes delete-confirm-show {
+    0%{
+        bottom: 0;
+        transform: translateX(-50%) translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        bottom: 20%;
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 1;
+    }
+}

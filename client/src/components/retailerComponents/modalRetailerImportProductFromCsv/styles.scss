@@ -1,0 +1,133 @@
+.modal-import-product-from-csv{
+    .ant-modal-header{
+        background: transparent;
+        .ant-modal-title{
+            color: var(--normal-text-color);
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .ant-modal-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        background: var(--theme-back-ground);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .modal-import-product-from-csv-container{
+            .content-header{
+                .title{
+                    color: var(--normal-text-color);
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .import-csv-steps{
+                    .ant-steps-item{
+                        &.ant-steps-item-finish{
+                            .ant-steps-item-container{
+                                .ant-steps-item-icon{
+                                    border: none;
+                                    .ant-steps-icon{
+                                        font-family: "Inter";
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                        color: #000000;
+                                    }
+                                }
+                            } 
+                        }
+                        &.ant-steps-item-process{
+                            .ant-steps-item-container{
+                                .ant-steps-item-icon{
+                                    background-color: #00F6FF;
+                                    background: #00F6FF;
+                                    border: none;
+                                    .ant-steps-icon{
+                                        font-family: "Inter";
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .ant-steps-item-container{
+                            .ant-steps-item-icon{
+                                .ant-steps-icon{
+                                    font-family: "Inter";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    color: var(--normal-text-color);
+                                }
+                            }
+                            .ant-steps-item-content{
+                                .ant-steps-item-title{
+                                    color: var(--normal-text-color);
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-back{
+                height: 40px;
+                padding: 6.67px 35px;
+                border-radius: 5px;
+                display: flex;
+                gap: 8px;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                border: 1px solid var(--light-border-color);
+                background: rgba(255, 255, 255, 0.10);
+
+                span{
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26.667px;
+                    color: var(--normal-text-color);
+                }
+        
+                &:disabled{
+                    cursor: not-allowed;
+                }
+            }
+            .btn-continue{
+                height: 40px;
+                padding: 6.67px 35px;
+                border-radius: 5px;
+                background: var(--retailer-button-background-light);
+                display: flex;
+                gap: 8px;
+                flex-wrap: nowrap;
+                align-items: center;
+                span{
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26.667px;
+                }
+                &:disabled{
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

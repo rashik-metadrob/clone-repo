@@ -1,0 +1,73 @@
+.modal-retailer-remind{
+    .ant-modal-content{
+        background: rgb(2, 2, 14);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 24px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        background: rgba(0, 0, 0, 0.60);
+        backdrop-filter: blur(4px);
+        .modal-title-container{
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            .close-container{
+                padding: 2px 7px;
+                border-radius: 3px;
+                background: rgba(0, 0, 0, 0.50);
+                height: fit-content;
+                cursor: pointer;
+                border: solid 1px #FFFFFF;
+                .text-close{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .title{
+            color: #FFF;
+            text-align: center;
+            font-family: "Inter";
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+        }
+        .content{
+            color: #FFF;
+            text-align: center;
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .footer-btn-container{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 24px;
+            .btn-cancel,.btn-upgrade{
+                padding: 8px 32px;
+                border-radius: 8px;
+                border: solid 1px #FFFFFF;
+
+                color: #FFF;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+            }
+            .btn-upgrade{
+                background: #FFFFFF;
+                color: #000000;
+            }
+        }
+    }
+}

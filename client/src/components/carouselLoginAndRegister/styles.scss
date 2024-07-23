@@ -1,0 +1,108 @@
+.carousel-login-and-register-wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .carousel-item{
+        clip-path: path('M 4000 0 H 87.5694 C 75.5866 0 65.8726 9.714 65.8726 21.6968 C 65.8726 33.6795 56.1587 43.3935 44.1759 43.3935 H 32.9363 C 14.7461 43.3935 0 58.1396 0 76.3298 V 854.354 C 0 873.212 15.2875 888.5 34.1457 888.5 H 896.854 C 915.712 888.5 4000 873.212 4000 854.354 Z');
+        // background-image: url("../../assets/images/login/carousel-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 21px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+
+        overflow: hidden;
+        opacity: 0.1;
+        transition: 3s;
+        .carousel-item-card{
+            >div {
+                padding: 25px 17px 13px 17px;
+            }
+            border-radius: 23px;
+            background: #0000007a;
+            max-width: 262px;
+            position: absolute;
+            right: -15px;
+            top: -15px;
+            border: solid 15px var(--theme-back-ground);
+            z-index: 2;
+            position: absolute;
+            &::after{
+                content: "";
+                width: 21px;
+                height: 21px;
+                background: var(--theme-back-ground);
+                position: absolute;
+                left: -13px;
+                top: 0;
+                transform: translateX(-100%);
+                z-index: 1;
+                clip-path: polygon(100% 100%, 98% 91%, 96% 81%, 94% 69%, 90% 57%, 84% 48%, 79% 40%, 74% 33%, 66% 26%, 58% 20%, 50% 14%, 42% 10%, 32% 6%, 23% 4%, 16% 2%, 10% 1%, 2% 1%, 0% 0%, 100% 0%);
+            }
+            &::before{
+                content: "";
+                width: 21px;
+                height: 21px;
+                background: var(--theme-back-ground);
+                position: absolute;
+                right: 0px;
+                bottom: -13px;
+                transform: translateY(100%);
+                z-index: 1;
+                clip-path: polygon(100% 100%, 98% 91%, 96% 81%, 94% 69%, 90% 57%, 84% 48%, 79% 40%, 74% 33%, 66% 26%, 58% 20%, 50% 14%, 42% 10%, 32% 6%, 23% 4%, 16% 2%, 10% 1%, 2% 1%, 0% 0%, 100% 0%);
+            }
+            .carousel-item-card-title{
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 25px;
+                letter-spacing: 1px;
+                color: #FFF;
+            }
+            .carousel-item-card-sub-title{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.8px;
+            }
+        }
+        &.active{
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+    .carousel-control-dots{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        z-index: 3;
+        .control{
+            width: 60px;
+            height: 5px;
+            transition: opacity 1s ease-in;
+            opacity: .3;
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+            background: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            &.active{
+                opacity: 1;
+            }
+        }
+    }
+}

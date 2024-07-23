@@ -1,0 +1,56 @@
+.image-uploader{
+    height: 100%;
+    .ant-upload.ant-upload-select{
+        width: 100% !important;
+        height: 100% !important;
+
+        background: var(--control-background)  !important;
+        border: none !important;
+        border-radius: 8px !important;
+
+        .upload-button{
+            padding: 18px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .text-upload{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 14px;
+                color: var(--normal-text-color);
+            }
+            .text-add-3d-model{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                color: var(--normal-text-color);
+            }
+            img{
+                filter: var(--svg-filter-invert);
+            }
+        }
+    }
+    .preview-upload-image{
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        .file-name{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--normal-text-color);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

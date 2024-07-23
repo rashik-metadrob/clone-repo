@@ -1,0 +1,52 @@
+.payment-handle-form{
+    .cart-total-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 15px;
+        color: var(--normal-text-color);
+    }
+    .btn-checkout{
+        padding: 16px 32px;
+        border-radius: 8px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--normal-text-color);
+        position: relative;
+        z-index: 1;
+        background: var(--theme-back-ground);
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        width: 100%;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #00F6FF 2%, #AB00FF 98.2%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -3;
+            border-radius: 8px;
+        }
+        &::before{
+            content: "";
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            background: var(--theme-back-ground);
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            z-index: -2;
+            
+            border-radius: 8px;
+        }
+    }
+}

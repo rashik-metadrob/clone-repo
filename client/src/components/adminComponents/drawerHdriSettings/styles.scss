@@ -1,0 +1,105 @@
+.drawer-hdri-settings{
+    background: transparent !important;
+    .ant-drawer-body{
+        padding: 0;
+        .drawer-hdri-settings-container{
+            height: 100%;
+            .drawer-title-container{
+                padding: 17px 24px;
+                background: rgba(0, 0, 0, 0.30);
+                backdrop-filter: blur(12.5px);
+                display: flex;
+                justify-content: space-between;
+                .title{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24.2px;
+                    text-align: left;
+                }
+                .close-container{
+                    padding: 2px 7px;
+                    border-radius: 3px;
+                    background: rgba(0, 0, 0, 0.50);
+                    cursor: pointer;
+                    .text-close{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            .drawer-content-wrap{
+                background: rgba(0, 0, 0, 0.20);
+                backdrop-filter: blur(12.5px);
+                height: calc(100% - 58px);
+                overflow-y: auto;
+
+                /* width */
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+                
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    background: #000;
+                    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+                    border-radius: 30px;
+                }
+                
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: #FFF; 
+                    border-radius: 10px;
+                }
+                
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #FFF; 
+                }
+                .drawer-content-container{
+                    padding: 20px 15px;
+                    .hdri-setting{
+                        background: #0000004D;
+                        padding: 18px 24px;
+                        border-radius: 5px;
+                        .text-left{
+                            color: #FFFFFF;
+                            font-family: Inter;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.94px;
+                            text-align: left;
+                        }
+                        .btn-upload-hdri{
+                            padding: 8px 24px;
+                            background-color: #FFF;
+                            border-radius: 6px;
+                            transition: all 0.3s linear;
+                            &:hover{
+                                background-color: #F7F7F7;
+                            }
+                        }
+                        .btn-upload-new-hdri{
+                            background: #00000080;
+                            border-radius: 6px;
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 15px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            color: #FFF;
+                            padding: 6px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

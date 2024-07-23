@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_332" data-name="Rectangle 332" width="66.077" height="70.972" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Edit_ICon" data-name="Edit ICon" transform="translate(0.406 0.19)">
+    <g id="Group_244" data-name="Group 244" transform="translate(7 5)">
+      <g id="Group_243" data-name="Group 243" clip-path="url(#clip-path)">
+        <path id="Path_248" data-name="Path 248" d="M17.218,57.523,51.88,22.86,62.758,33.747,28.1,68.41,17.218,57.523" transform="translate(-11.034 -14.65)" fill="#fff"/>
+        <path id="Path_249" data-name="Path 249" d="M135.232,15.6,123.9,4.192a39.675,39.675,0,0,1,3.271-3.033,5.445,5.445,0,0,1,6.681-.025,28.011,28.011,0,0,1,4.426,4.4,5.52,5.52,0,0,1-.027,6.833,42.628,42.628,0,0,1-3.016,3.233" transform="translate(-79.399 0)" fill="#fff"/>
+        <path id="Path_250" data-name="Path 250" d="M0,146.189l3.261-11.8,8.55,8.5L0,146.189" transform="translate(0 -86.121)" fill="#fff"/>
+        <path id="Path_251" data-name="Path 251" d="M3.553,188.492H66.025l-.039.024a2.611,2.611,0,0,1,.308.052,1.606,1.606,0,0,1,.9,2.462,1.4,1.4,0,0,1-1.144.671c-.657.022-1.314,0-1.971,0H22.7l-18.959,0a1.624,1.624,0,0,1-.247-.011,1.593,1.593,0,0,1-1.295-1.8,1.532,1.532,0,0,1,.5-.954,1.4,1.4,0,0,1,1.016-.4l-.164-.047" transform="translate(-1.402 -120.795)" fill="#fff"/>
+        <path id="Path_252" data-name="Path 252" d="M7.07,197.581c.071-.005.142-.016.212-.016H68.9a1.684,1.684,0,0,1,.17.016h-62" transform="translate(-4.531 -126.609)" fill="#fff"/>
+      </g>
+    </g>
+    <rect id="Rectangle_334" data-name="Rectangle 334" width="80" height="80" transform="translate(-0.406 -0.19)" fill="none"/>
+  </g>
+</svg>

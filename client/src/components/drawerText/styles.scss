@@ -1,0 +1,93 @@
+.drawer-text-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // overflow: hidden;
+    .drawer-title-container{
+        padding: 17.5px 17px;
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(12.5px);
+        .title-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .close-container{
+            padding: 2px 7px;
+            border-radius: 3px;
+            background: rgba(0, 0, 0, 0.50);
+            height: fit-content;
+            cursor: pointer;
+            .text-close{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    .text-list{
+        flex: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .text-item{
+            cursor: pointer;
+            height: 150px;
+            background: rgba(0, 0, 0, 0.20);
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+            img{
+                height: 100%;
+                width: auto;
+                object-fit: contain;
+                transition: transform 0.3s;
+            }
+        }
+    }
+    .add-container{
+        .btn-add{
+            cursor: pointer;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.20);    
+            padding: 18px 20px;
+            text-align: center;
+            color: #FFF;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .text-font-combination{
+            color: #FFF;
+            font-family: 'Inter';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: left;
+        }
+    }
+}

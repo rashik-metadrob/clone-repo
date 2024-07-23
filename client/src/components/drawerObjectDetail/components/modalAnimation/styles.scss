@@ -1,0 +1,115 @@
+.modal-animation{
+    .ant-modal-content{
+        background-color: rgba(0, 0, 0, 0.20);
+        padding: 0;
+        .modal-animation-content{
+            .modal-title-container{
+                padding: 22px 23px 25px 23px;
+                background-color: rgba(0, 0, 0, 0.20);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .title-container{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .close-container{
+                    padding: 2px 7px;
+                    border-radius: 3px;
+                    background: rgba(0, 0, 0, 0.50);
+                    height: fit-content;
+                    cursor: pointer;
+                    .text-close{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+                .select-container{
+                    width: 350px;
+                    .select-type{
+                        height: 40px;
+                        border: none;
+                        .ant-select-selector{
+                            height: 40px !important;
+                            border: none !important;
+                            background: rgba(0, 0, 0, 0.3) !important;
+                            border-radius: 8px;
+                            .ant-select-selection-search{
+                                .ant-select-selection-search-input{
+                                    height: 100%;
+                                    color: #FFF;
+                                    font-family: "Inter";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                            .ant-select-selection-placeholder{
+                                color: #FFF !important;
+                                font-family: "Inter";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+                                position: relative;
+                                top: -2px;
+                            }
+                            .ant-select-selection-item{
+                                color: #FFF;
+                                font-family: 'Inter';
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .animation-list{
+                flex: auto;
+                overflow-y: auto;
+                overflow-x: hidden;
+                .animation-item{
+                    cursor: pointer;
+                    height: 220px;
+                    background: rgba(0, 0, 0, 0.20);
+                    border-radius: 5px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                    img{
+                        height: 80px;
+                        width: 80px;
+                        object-fit: contain;
+                        transition: transform 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}

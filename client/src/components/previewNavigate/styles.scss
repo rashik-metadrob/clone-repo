@@ -1,0 +1,198 @@
+.preview-navigate-container{
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    z-index: 5;
+    overflow: hidden;
+    height: 184px;
+    transition: all 0.5s linear;
+    &.show{
+        top: 80px;
+        transform: translateY(0);
+    }
+    &.hide{
+        top: -20px;
+        transform: translateY(-100%);
+    }
+    .scroll-right-button{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    .scroll-left-button{
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .scroll-container{
+        padding: 12px 15px;
+        background: rgba(0, 0, 0, 0.30);
+        backdrop-filter: blur(7px);
+        overflow-x: auto;
+        height: 100%;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .wall-list-container{
+        display: flex;
+        gap: 10px;
+        width: max-content;
+        .wall-item{
+            width: 250px;
+            height: 160px;
+            border-radius: 8px;
+            border: solid 1px #FFF;
+            position: relative;
+            cursor: pointer;
+            .wall-image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                user-select: none;
+            }
+            .name{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                width: 100%;
+                text-align: left;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .btn-jump{
+                padding: 3px 16px;
+                border-radius: 5px;
+                border: 1px solid #FFF;
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.modal-mobile-wall-navigate{
+    max-width: 100vw !important;
+    height: 100vh;
+    max-height: 100vh !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    .ant-modal-content{
+        background: #111111;
+        border-radius: 0;
+        height: 100%;
+        .ant-modal-body{
+            height: 100%;
+        }
+    }
+    .modal-mobile-wall-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .modal-mobile-wall-title-container{
+            padding: 8px 17px;
+            backdrop-filter: blur(12.5px);
+            border-bottom: solid 1px #464646;
+            .title-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .title{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.36px;
+                text-align: left;
+    
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+            .close-container{
+                padding: 2px 7px;
+                border-radius: 3px;
+                height: fit-content;
+                cursor: pointer;
+                .text-close{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14.52px;
+                    text-align: left;
+                }
+            }
+        }
+        &.portrait{
+            .wall-list-container{
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+        &.landscape{
+            .wall-list-container{
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+                width: max-content;
+            }
+        }
+        .modal-mobile-wall-title-content{
+            flex: auto;
+            overflow: auto;
+            padding-top: 16px;
+            .wall-item{
+                width: 250px;
+                height: 160px;
+                border-radius: 8px;
+                border: solid 1px #FFF;
+                position: relative;
+                cursor: pointer;
+                .wall-image{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    user-select: none;
+                }
+                .name{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 100%;
+                    text-align: left;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .btn-jump{
+                    padding: 3px 16px;
+                    border-radius: 5px;
+                    border: 1px solid #FFF;
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

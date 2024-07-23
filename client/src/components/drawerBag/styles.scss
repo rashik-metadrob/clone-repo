@@ -1,0 +1,180 @@
+.drawer-bag{
+    border-radius: 20px 0px 0px 20px;
+    background: rgba(0, 0, 0, 0.40) !important;
+    backdrop-filter: blur(15px);
+    .ant-drawer-body{
+        padding: 67px 25px;
+       .drawer-bag-content{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            min-height: 100%;
+            .drawer-bag-header{
+                display: grid;
+                grid-template-columns: 1fr 20px;
+                gap: 20px;
+                align-items: center;
+                padding-bottom: 15px;
+                border-bottom: solid 1px #757575;
+                .tab-content{
+                    width: 100%;
+                    overflow-x: auto;
+                    scroll-behavior: smooth;
+                    &::-webkit-scrollbar {
+                        display: none;
+                        height: 4px;
+                    }
+                }
+                .title{
+                    color: rgba(255, 255, 255, 0.40);
+                    font-family: "Inter";
+                    // font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    &.selected{
+                        color: #FFF;
+                    }
+                }
+            }
+            .content{
+                flex: auto;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                overflow-y: auto;
+                gap: 20px;
+                .cart-item{
+                    padding: 12px 11px;
+                    border-radius: 8px;
+                    background: rgba(0, 0, 0, 0.30);
+                    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.08);
+                    width: 100%;
+                    display: flex;
+                    gap: 16px;
+                    .item-image{
+                        // width: 150px;
+                        // height: 137px;
+                        object-fit: contain;
+                    }
+                    .items-content{
+                        flex: auto;
+                        .name{
+                            color: #FFF;
+                            font-family: "Inter";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        .description{
+                            color: #9B9B9B;
+                            font-family: "Inter";
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: -0.015px;
+                        }
+                        .price{
+                            color: #FFF;
+                            text-align: right;
+                            font-family: "Inter";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 20px; /* 125% */
+                        }
+                        .btn-quantity{
+                            width: 24px;
+                            height: 24px;
+                            background: #D9D9D9;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            color: #5F5F5F;
+                            font-size: 24px;
+                            line-height: 100%;
+                            font-weight: 600;
+                        }
+                        .quantity{
+                            color: #FFF;
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 20px; /* 142.857% */
+                        }
+                    }
+                }
+            }
+            .drawer-bag-footer{
+                padding-top: 22px;
+                border-top: solid 1px #757575;
+                display: flex;
+                // gap: 35px;
+                align-items: center;
+                justify-content: space-between;
+                // flex-wrap: wrap;
+                .button-checkout{
+                    border-radius: 5px;
+                    background: rgba(255, 255, 255, 0.20);
+
+                    color: #FFF;
+                    text-align: center;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    white-space: nowrap;
+                    &:disabled{
+                        opacity: 0.5;
+                        pointer-events: none;
+                    }
+                }
+                .address{
+                    color: #FFF;
+                    font-family: "Inter";
+                    // font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 111.5%; /* 15.61px */
+                    letter-spacing: -0.15px;
+                }
+                .btn-change{
+                    padding: 0 16px;
+                    color: #FF6500;
+                    font-family: "Inter";
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; /* 200% */
+                    border-radius: 3px;
+                    border: 1px solid #FFF;
+                }
+            }
+       }
+    }
+}
+.menu-cart-overlay{
+    .ant-dropdown-menu{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        .ant-dropdown-menu-item{
+            padding: 13px 15px;
+            border-bottom: solid 1px rgba($color: #9B9B9B, $alpha: 0.1);
+            width: 170px;
+            font-weight: 600;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.role-and-permissions-tabs{
+    .ant-tabs-nav{
+        margin-right: 52px;
+        &::before{
+            border: solid 1px #FFF;
+        }
+        .ant-tabs-nav-wrap{
+            .ant-tabs-nav-list{
+                .ant-tabs-tab{
+                    justify-content: center;
+                    &+.ant-tabs-tab{
+                        margin-left: 48px;
+                    }
+                    .ant-tabs-tab-btn{
+                        color: rgba(255, 255, 255, 0.50);;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    &.ant-tabs-tab-active{
+                        .ant-tabs-tab-btn{
+                            color: #FFF;
+                        }
+                    }
+                }
+                .ant-tabs-ink-bar{
+                    display: none;
+                }
+            }
+        }
+        .ant-tabs-nav-operations{
+            display: none;
+        }
+    }
+    .ant-tabs-content-holder{
+        color: #000000;
+        min-height: 70px;
+        .ant-tabs-content{
+            height: 100%;
+            .ant-tabs-tabpane{
+                height: 100%;
+            }
+        }
+    }
+}

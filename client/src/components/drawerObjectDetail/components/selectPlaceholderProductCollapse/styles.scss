@@ -1,0 +1,61 @@
+.select-product-collapse-container{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    .ant-collapse-header{
+        padding: 9px 7px !important;
+        align-items: center;
+        .ant-collapse-header-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    .ant-collapse-content{
+        .ant-collapse-content-box{
+            padding: 17px 10px;
+            padding-top: 5px;
+            .select-product-collapse-content{
+                .select-placeholder-product{
+                    text-align: left;
+                    border-radius: 6px;
+                    background: #FFFFFF;
+                
+                    .ant-select-selector {
+                        border-radius: 6px;
+                        color: #424242 !important;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        background: none !important;
+                        align-items: center;
+                        display: flex;
+                        border: none !important;
+                        height: 40px !important;
+                    }
+                
+                    .ant-select-selection-item {
+                        color: #424242 !important;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        align-items: center;
+                        display: flex;
+                    }
+                
+                    .ant-select-selection-placeholder{
+                        color: #424242 !important;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.edit-product-container{
+    .btn-back{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        color: var(--normal-text-color);
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .text-add-product{
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26.667px;
+        color: var(--normal-text-color);
+
+        text-align: left;
+        width: 0;
+        flex-grow: 1;
+    }
+    .add-product-form{
+        border: var(--border-2-light);
+        padding: 30px 15px;
+        border-radius: 8px;
+        .group-input{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .cart-type-content-container{
+            border-top: var(--border-2-light);
+            padding: 24px 0 0 0;
+            .text-shopify-connected{
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                color: var(--normal-text-color);
+            }
+            .text-import-product{
+                font-family: Inter;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: #7D7D7D;
+            }
+            .btn-connect{
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: var(--normal-text-color);
+
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                border-radius: 5px;
+                border: 1px solid var(--light-border-color);
+                background: rgba(255, 255, 255, 0.10);
+                padding: 4px 12px;
+            }
+        }
+    }
+    .btn-save{
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: var(--normal-text-color);
+
+        display: flex;
+        gap: 17px;
+        align-items: center;
+        z-index: 1;
+        position: relative;
+
+        border-radius: 5px;
+        border: 1px solid var(--light-border-color);
+        background: rgba(255, 255, 255, 0.10);
+
+        padding: 12.9px 22px;
+
+        img{
+            filter: var(--svg-filter-invert);
+            width: 18.756px;
+            height: 20.434px;
+        }
+
+        &:disabled{
+            cursor: not-allowed;
+        }
+    }
+}

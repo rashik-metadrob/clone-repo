@@ -1,0 +1,44 @@
+.shopify-first-login-footer{
+    padding: 0;
+    background: #707070;
+    .shopify-first-login-footer-container{
+        padding: clamp(12px,2vh,16px) 37px clamp(12px,2vh,16px) 37px;
+        // padding: 12px 37px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        .group-links{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .link-item{
+                cursor: pointer;
+                padding: 5px 11px;
+                border-radius: 10.667px;
+                color: rgba($color: #FFFFFF, $alpha: 0.8);
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+        .plane-name{
+            color: #000;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            padding: 4px 10px;
+            border-radius: 12px;
+            background-image: url("../../../assets/images/layout/plan-bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+    }
+}

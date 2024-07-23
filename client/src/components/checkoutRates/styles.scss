@@ -1,0 +1,226 @@
+.checkout-rates-wrapper{
+    padding: 9px 12px;
+    text-align: left;
+    .checkout-rates-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 27px;
+        border-bottom: solid 1px #757575;
+        .text-checkout{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .shipping-address-container{
+        .title-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .text-add{
+                color: #FF6500;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+    .address-list{
+        // padding: 26px;
+        max-height: 250px;
+        overflow-y: auto;
+        .ant-radio-group{
+            .ant-space{
+                gap: 16px !important;
+                .ant-radio-wrapper{
+                    display: flex;
+                    align-items: start;
+                    .ant-radio{
+                        align-self: flex-start !important;
+                        .ant-radio-inner{
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                    .ant-radio-checked{
+                        .ant-radio-inner{
+                            border-color: #FFFFFF;
+                            border-width: 2px;
+                            background-color: #FF6500;
+                            &::after{
+                                display: none;
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+        .address-container{
+            // padding-inline-start: 47px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .address-name{
+                display: flex;
+                gap: 14px;
+                align-items: center;
+                flex-wrap: wrap;
+                .text{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+                .circle{
+                    width: 4px;
+                    height: 4px;
+                    background-color: #FF6500;
+                    border-radius: 50%;
+                }
+            }
+            .address-detail{
+                .line-1, .line-2{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.15px;
+                }
+            }
+        }
+    }
+    .billing-address-container{
+        .checkbox-container{
+            padding-left: 29px;
+            padding-right: 29px;
+            .ant-checkbox-wrapper{
+                .ant-checkbox-inner{
+                    width: 19px;
+                    height: 19px;
+                }
+                .ant-checkbox-checked{
+                    .ant-checkbox-inner{
+                        border-color: #FFFFFF;
+                        border-width: 2px;
+                        background-color: #FF6500;
+                        &::after{
+                            display: none;
+                        }
+                    }   
+                }
+                .text{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.15px;
+                    padding-inline-start: 20px;
+                }
+                
+            }
+        }
+    }
+    .rates-container{
+        border-bottom: solid 1px #757575;
+        .rates-list{
+            // padding: 24px 17px;btn-save
+            display: flex;
+            flex-wrap: wrap;
+            // gap: 22px;
+            .text-error{
+                color: #FF6500;
+                text-align: justify;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
+            .animation-rotate{
+                animation: spin 0.5s linear;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+    .order-info-container{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        border-bottom: solid 1px #757575;
+        .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                color: #9B9B9B;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+            }
+            .value{
+                color: #FFF;
+                text-align: right;
+                font-family: "Inter";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn-save{
+            // padding: 15px 44px 11px 40px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.20);
+            border: none;
+            outline: none;
+            color: #FFF;
+            text-align: center;
+            font-family: "Inter";
+            // font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:disabled{
+                opacity: 0.5;
+                pointer-events: none;
+            }
+        }
+        .text-amount{
+            color: #FF6500;
+            text-align: right;
+            font-family: "Inter";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+}

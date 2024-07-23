@@ -1,0 +1,52 @@
+{
+    "global": {
+        "welcome_to_dashboard": "डैशबोर्ड में आपका स्वागत है",
+        "board": "तख़्ता",
+        "gross_income": "सकल आय",
+        "no_of_stores": "No of Stores",
+        "storage": "भंडारण",
+        "manage_storage": "संग्रहण प्रबंधित करें",
+        "free_space": "मुक्त स्थान",
+        "Videos": "वीडियो",
+        "Audio": "ऑडियो",
+        "Images": "इमेजिस",
+        "3D": "3D",
+        "new_users": "नए उपयोगकर्ता",
+        "login_activity": "लॉगिन गतिविधि",
+        "time_spent_on_exploring_tore": "स्टोर की खोज में समय व्यतीत हुआ",
+        "product_of_the_month": "महीने का उत्पाद",
+        "heatmap": "गर्मी के नक्शे",
+        "last_5_orders": "पिछले 5 आदेश",
+        "show_all": "सब दिखाएं",
+        "time_remaining": "ट्रायल बाकी है",
+        "online": "ऑनलाइन",
+        "store": "इकट्ठा करना",
+        "welcome_to_your": "आपका स्वागत है",
+        "user_capacity": "भण्डार क्षमता",
+        "view": "देखना",
+        "select_a_template": "एक टेम्पलेट चुनें",
+        "search": "खोज"
+    },
+    "sidebar": {
+        "home": "घर",
+        "orders": "आदेश",
+        "upload": "डालना",
+        "customers": "ग्राहकों",
+        "invite": "आमंत्रित करना",
+        "analytics": "एनालिटिक्स",
+        "marketing": "विपणन",
+        "discounts": "छूट",
+        "plugins": "प्लग-इन",
+        "room": "कमरा",
+        "support": "सहायता",
+        "your_store": "आपकी दुकान",
+        "tutorial": "ट्यूटोरियल",
+        "learn_how_to_use_metadrob_dashboard_showroom_builder": "मेटाड्रोब डैशबोर्ड शोरूम बिल्डर का उपयोग करना सीखें",
+        "logout": "लॉग आउट"
+    },
+    "store_page": {
+        "templates": "टेम्पलेट्स",
+        "published": "प्रकाशित",
+        "draft": "मसौदा"
+    }
+}

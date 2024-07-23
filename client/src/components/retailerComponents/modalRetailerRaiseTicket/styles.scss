@@ -1,0 +1,72 @@
+.modal-retailer-raise-ticket{
+    .ant-modal-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 19px 58px;
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        background: rgba(0, 0, 0, 0.40);
+        backdrop-filter: blur(10px);
+        .modal-retailer-raise-ticket-content{
+            .title{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+            }
+            .description{
+                color: #FFF;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .issue-content{
+                .issue-content-input{
+                    border-radius: 5px;
+                    background: rgba(0, 0, 0, 0.30);
+                    padding: 10px 12px;
+                    color: #FFFFFF;
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    border: none;
+                    outline: none;
+                    &::placeholder{
+                        color: #757575;
+                        font-family: "Inter";
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            .btn-submit{
+                width: 400px;
+                max-width: 100%;
+                padding-top: 15px;
+                padding-bottom: 18px;
+                color: #FFF;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 84.023%;
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.20);
+            }
+            .upload-attachment-container{
+                
+            }
+        }
+    }
+}

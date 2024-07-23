@@ -1,0 +1,110 @@
+.object-list-toggle-container{
+    display: flex;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: 4;
+    cursor: pointer;
+    .object-list-toggle-button{
+        display: flex;
+        flex-wrap: nowrap;
+        .name-container{
+            padding: 10px 12px 10px 20px;
+            background: #0B0B0B99;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            span{
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #FFF;
+                white-space: nowrap;
+            }
+        }
+        .arrow{
+            background: #000000;
+            border-radius: 0px 5px 5px 0px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+}
+.sidebar-editor-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 0;
+
+    transition: z-index 0.5s;
+    transition-delay: 2s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+
+    padding: 24px;
+    max-width: 128px;
+    overflow-x: hidden;
+    .menu-list-container{
+        flex: auto;
+        overflow-y: auto;
+        overflow-x: visible;
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        position: relative;
+        // justify-content: center;
+
+        --length: 7;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .menu-item{
+        &.disabled{
+            opacity: 0.5;
+        }
+    }
+    .menu-item, .logout-button{
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+
+        transform: translateX(calc(-100% - 35px));
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0.750, -0.015, 0.565, 1.055);
+        transition-property: opacity, transform;
+        transition-delay: calc(0.055s * (var(--length) - (var(--index) + 1)));
+        overflow: visible;
+        &.selected, &:hover{
+            border: solid 2px #FFF;
+        }
+    }
+    .logout-button{
+        width: 40px;
+        height: 40px;
+    }
+    &.show{
+        z-index: 3;
+        transition-delay: 0s;
+        .menu-item, .logout-button{
+            transition-delay: calc(0.055s * var(--index));
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}

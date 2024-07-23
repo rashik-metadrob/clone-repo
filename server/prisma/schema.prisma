@@ -1,0 +1,368 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  name                        String?
+  socialId                    String?
+  gender                      String              @default("male")
+  phone                       String?             @default("")
+  address                     String?             @default("")
+  personalInfo                Json?
+  socialType                  String?
+  email                       String?
+  password                    String
+  role                        String              @default("retailers")
+  avatar                      String?
+  socialAvatar                String?
+  isEmailVerified             Boolean             @default(false)
+  isDeleted                   Boolean             @default(false)
+  isOnboarding                Boolean             @default(false)
+  shopifyAccessToken          String?
+  shopifyStoreName            String?
+  shopifyCartId               String?
+  isCompleteEnterProfile      Boolean             @default(false)
+  shopifyShop                 String?
+  shopifyShopEmail            String?
+  isShopifyShopActive         Boolean             @default(false)
+  companyName                 String?
+  industry                    String?
+  productType                 String?
+  source                      Int                 @default(1)
+  appSource                   Int                 @default(1)
+  triedPlanIds                String[]            
+  tokens                      Token[]
+  userSubscriptions           UserSubscription[]
+  assets                      Asset[]
+  userAudios                  UserAudio[]
+  trackings                   Tracking[]
+  texts                       Text[]
+  products                    Product[]
+  orders                      Order[]
+  notifications               Notification[]
+  addresses                   Address[]
+      
+  @@map("users")
+}
+
+model Token {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  token                       String
+  type                        String
+  expires                     DateTime
+  blacklisted                 Boolean             @default(false)
+  user                        String              @db.ObjectId
+  userData                    User                @relation(fields: [user], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@map("tokens")
+}
+
+model UserSubscription {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  userId                      String              @db.ObjectId
+  key                         String
+  value                       Json                @default("{}") @db.Json
+  paymentStatus               Int                 @default(0)
+  assignedBy                  String              @default("System")
+  active                      Boolean             @default(false)
+  user                        User                @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@map("usersubscriptions")
+}
+
+model UserConfig {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  userId                      String              @db.ObjectId
+  key                         String
+  value                       Json                @default("{}") @db.Json
+
+  @@map("userconfigs")
+}
+
+model Asset {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  name                        String
+  attribute                   Json?               @default("{}") @db.Json
+  thumnail                    String?
+  tags                        String[]            @default([])
+  filePath                    String
+  isDeleted                   Boolean             @default(false)
+  size                        Int?                @default(0)
+  type                        Int                 @default(6)
+  createdBy                   String?             @db.ObjectId
+  user                        User?               @relation(fields: [createdBy], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  userAudios                  UserAudio[]
+
+  @@map("assets")
+}
+
+model UserAudio {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  userId                      String              @db.ObjectId
+  asset                       String              @db.ObjectId
+  user                        User                @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  assetData                   Asset               @relation(fields: [asset], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@map("useraudios")
+}
+
+
+model Tracking {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  trackingContainerId         String              @db.ObjectId
+  trackings                   Json[]              @default([])
+  containerCreatedBy          String?             @db.ObjectId
+  type                        String              @default("store")
+  user                        User?               @relation(fields: [containerCreatedBy], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@map("trackings")
+}
+
+model Text  {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  image                       String
+  name                        String?             @default("")
+  type                        Int                 @default(2)
+  isDeleted                   Boolean             @default(false)
+  texts                       Json[]              @default([])
+  createdBy                   String              @db.ObjectId
+  user                        User                @relation(fields: [createdBy], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@map("texts")
+}
+
+model ShopifySession {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  shop                        String
+  host                        String
+  code                        String
+  accessToken                 String?             @default("")
+  isRegisteredWebhooks        Boolean?            @default(false)
+
+  @@map("shopifysessions")
+}
+
+model ProductCategory {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  name                        String
+  isDeleted                   Boolean?            @default(false)
+  isDefaultCategory           Boolean?            @default(false)
+  type                        Int?                @default(1)
+  source                      String?             @default("Upload")
+  createdBy                   String              @db.ObjectId
+
+  @@map("productcategories")  
+}
+
+model Product {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  name                        String
+  image                       String
+  gallery                     Json[]              @default([])
+  objectUrl                   String?             @default("")
+  isCompressing               Boolean?            @default(false)
+  sku                         String?             @default("")
+  description                 String?             @default("")
+  specification               String?             @default("")
+  price                       Float?              @default(0)
+  isDeleted                   Boolean?            @default(false)
+  discount                    Float?              @default(0)
+  displayCurrency             String?             @default("USD")
+  categoryId                  String?             @db.ObjectId
+  type                        Int?                @default(0)
+  cartType                    Int?                @default(1)
+  webLink                     String?             @default("")
+  availableAnimation          Int?                @default(3)
+  plans                       String[]            @default([])
+  includedCategoriesIds       String[]            @default([])
+  contentType                 Int?                @default(1)
+  block                       String              @default("3D")
+  tags                        String[]            @default([])
+  dimensions                  Json?               @default("{\"length\": 20, \"width\": 20, \"height\": 20, \"unit\": \"inch\"}") @db.Json
+  actualWeight                Float?              @default(10)
+  shopifyVariantMerchandiseId String?             @default("")
+  shopifyProductId            String?             @default("")
+  source                      String?             @default("Upload")
+  useThirdPartyCheckout       Boolean?            @default(false)
+  attributes                  Json?
+  placeholderType             Int?                @default(1)
+  size                        Int?                @default(0)
+  createdBy                   String              @db.ObjectId
+  user                        User                @relation(fields: [createdBy], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@map("products")
+}
+
+model PricingPlan {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  isFree                      Boolean?            @default(false)
+  isDrobA                     Boolean?            @default(false)
+  isDefaultForShopify         Boolean?            @default(false)
+  name                        String
+  description                 String?             @default("")
+  display                     String?             @default("none")
+  isRecommended               Boolean?            @default(false)
+  pricing                     Json
+  features                    Json[]
+  includedInfomation          String[]
+  isDeleted                   Boolean?            @default(false)
+
+  @@map("pricingplans")
+}
+
+model Placeholder {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  image                       String
+  name                        String              @default("")
+  isDeleted                   Boolean?            @default(false)
+  placeholderType             Int?                @default(1)
+  dimensions                  Json?               @default("{\"length\": 20, \"width\": 20, \"height\": 20, \"unit\": \"inch\"}") @db.Json
+  createdBy                   String              @db.ObjectId
+
+  @@map("placeholders")
+}
+
+model Order {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  billingAddress              Json
+  shippingAddress             Json
+  delivery                    Json
+  items                       Json[]
+  rateSetting                 Json
+  cartAmount                  Float
+  deliveryAmount              Float
+  totalAmount                 Float
+  paymentGate                 String              @default("STRIPE")
+  paymentStatus               Int
+  shipmentStatus              Int
+  stripeIntentSecret          String?
+  paypalOrderId               String?
+  isDeleted                   Boolean?            @default(false)
+  easyshipShipmentId          String?
+  userId                      String              @db.ObjectId
+  user                        User                @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@map("orders")
+}
+
+model Notification {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  subject                     String?
+  content                     String?
+  isDeleted                   Boolean?            @default(false)
+  isViewed                    Boolean?            @default(false)
+  type                        Int
+  to                          String              @db.ObjectId
+  user                        User                @relation(fields: [to], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  
+  @@map("notifications")
+}
+
+model Hdri {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  name                        String
+  thumnail                    String?
+  filePath                    String?
+  size                        Int?                @default(0)
+  isDeleted                   Boolean?            @default(false)
+  createdBy                   String              @db.ObjectId
+
+  @@map("hdris")
+}
+
+model Config {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  type                        String
+  content                     Json
+  createdBy                   String              @db.ObjectId
+
+  @@map("configs")
+}
+
+model AvatarModel {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  name                        String
+  filePath                    String
+  thumnail                    String
+  roleFor                     String?             @default("customer")
+  gender                      String?             @default("male")
+  createdBy                   String              @db.ObjectId
+
+  @@map("avatarmodels")
+}
+
+model Address {
+  id                          String              @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+  type                        Int?                @default(0)
+  line1                       String
+  line2                       String
+  state                       String
+  city                        String
+  postalCode                  String
+  countryAlpha2               String
+  companyName                 String
+  contactName                 String
+  contactPhone                String
+  contactEmail                String
+  alias                       String
+  createdBy                   String              @db.ObjectId
+  isDeleted                   Boolean?            @default(false)
+  user                        User                @relation(fields: [createdBy], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@map("addresses")
+}
+
+model Project {
+
+}
+
+model RoleAndPermission {
+  
+}

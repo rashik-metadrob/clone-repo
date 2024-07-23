@@ -1,0 +1,194 @@
+.map-csv-container{
+    .map-csv-item{
+        background: var(--retailer-card-filter-background);
+        border-radius: 8px;
+        padding: 12px;
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+        .csv-field-table-info{
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            tr{
+                border-collapse: collapse;
+            }
+            thead{
+                height: 38.8px;
+                tr{
+                    th{
+                        padding: 8px 24px;
+                        border: 1px solid var(--normal-text-color);
+                        border-collapse: collapse;
+                        height: 38.8px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    th{
+                        padding: 8px 24px;
+                        padding: 8px 24px;
+                        border: 1px solid var(--normal-text-color);
+                        border-collapse: collapse;
+                    }
+                    td{
+                        padding: 8px 24px;
+                        padding: 8px 24px;
+                        border: 1px solid var(--normal-text-color);
+                        border-collapse: collapse;
+                    }
+                }
+            }
+            .header-index{
+                color: var(--normal-text-color);
+                width: 50px;
+                padding: 8px;
+            }
+            .header-field-name{
+                color: var(--normal-text-color);
+                width: 50%;
+                text-align: left;
+                border-right: none;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 36px;
+                position: relative;
+                background: var(--import-csv-field-color);
+                &::after{
+                    content: "";
+                    width: 40px;
+                    height: 40px;
+                    background: var(--retailer-card-filter-background);
+                    border: solid 1px var(--normal-text-color);
+                    border-top-width: 0;
+                    border-left-width: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transform: rotate(-45deg) translateX(-6px) translateY(-6px);
+                    background: var(--import-csv-field-color);
+                }
+                &::before{
+                    content: "";
+                    width: 20px;
+                    height: 40px;
+                    background: var(--retailer-card-filter-background);
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            .header-field-select-map-field{
+                border-left: none;
+            }
+            .header-field-content{
+                font-family: "Inter";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: var(--normal-text-color);
+            }
+            .header-field-no-content{
+                font-family: "Inter";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: var(--normal-text-color);
+                font-style: italic;
+            }
+            .header-field-select-map-field{
+                padding: 2px 0;
+                .select-map-field{
+                    text-align: left;
+                    background: transparent;
+
+                    .ant-select-selector {
+                        border-radius: 6px;
+                        color: var(--normal-text-color) !important;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        background: none !important;
+                        align-items: center;
+                        display: flex;
+                        border: none !important;
+                        height: 36px !important;
+                        box-shadow: none !important;
+                    }
+
+                    .ant-select-selection-item {
+                        color: var(--normal-text-color) !important;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        align-items: center;
+                        display: flex;
+                    }
+
+                    .ant-select-selection-placeholder{
+                        color: var(--normal-text-color);
+                        opacity: 0.7;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .csv-field-map-info{
+            padding: 8px 0;
+            .csv-field-map-item{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: 30px 1fr;
+                align-items: center;
+                align-content: center;
+                .item-icon{
+                    width: 20px;
+                    height: 20px;
+                }
+                .content-bold{
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: var(--normal-text-color);
+                }
+                .content-description{
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: var(--normal-text-color);
+                    opacity: 0.7;
+                }
+            }
+            .btn-confirm{
+                padding: 8px 18px;
+                border-radius: 5px;
+                background: var(--retailer-button-background-light);
+                display: flex;
+                gap: 8px;
+                flex-wrap: nowrap;
+                align-items: center;
+                span{
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

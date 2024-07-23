@@ -1,0 +1,217 @@
+.products-table{
+    .ant-table{
+        border-radius: 0;
+        
+        background: transparent;
+        .ant-table-container{
+            .ant-table-content{
+                width: 100%;
+                overflow-x: auto;
+                table{
+                    .ant-table-thead{
+                        .ant-table-cell{
+                            background: var(--card-normal-background) ;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #8E8E8E;
+                            border-bottom: none;
+                            padding-bottom: 5px;
+                            border-radius: 0;
+                            &::before{
+                                display: none;
+                            }
+                            &:first-child{
+                                padding-left: 12px;
+                            }
+                            &:last-child{
+                                padding-right: 4px;
+                            }
+                        }
+                    }
+                    .ant-table-tbody{
+                        .ant-table-row-selected{
+                            .ant-table-cell{
+                                background: var(--card-normal-background) !important;
+                            }
+                        }
+                        .ant-table-cell{
+                            padding: 14px;
+                            border-bottom: none;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: var(--normal-text-color);
+                            &.ant-table-cell-row-hover{
+                                background: var(--card-normal-background) ;
+                                // cursor: pointer;
+                            }
+                            &:first-child{
+                                padding-left: 12px;
+                            }
+                            &:last-child{
+                                padding-right: 4px;
+                            }
+                        }
+                        .btn-action{
+                            width: 24px;
+                            height: 24px;
+                            background: var(--card-normal-background) ;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 4px;
+                            img{
+                                filter: var(--svg-filter-invert);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ant-table-title{
+            background: var(--card-normal-background) ;
+            padding: 7px 14px;
+            .products-table-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 24px;
+                .group-filter-left{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                    align-items: center;
+                    .group-page-size{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: var(--normal-text-color);
+                    }
+                }
+                .filter-select{
+                    height: 27px;
+                    border: none;
+                    .ant-select-selector{
+                        height: 27px;
+                        border: none;
+                        background: var(--antd-form-select-background);
+                        border-radius: 4px;
+                        .ant-select-selection-search{
+                            .ant-select-selection-search-input{
+                                height: 100%;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: var(--normal-text-color) !important;
+                            }
+                        }
+                        .ant-select-selection-placeholder{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: var(--normal-text-color) !important;
+
+                            position: relative;
+                            top: -2px;
+                        }
+                        .ant-select-selection-item{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: var(--normal-text-color);
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .product-search-input{
+                    height: 27px;
+                    padding-left: 0;
+                    background: transparent;
+                    border: none;
+                    width: auto;
+                    .ant-input-prefix{
+                        padding: 0 12px;
+                    }
+                    .ant-input{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: var(--normal-text-color);
+                        background: transparent;
+                        &::placeholder{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #8E8E8E;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ant-pagination{
+        padding-left: 14px;
+        padding-right: 14px;
+        .ant-pagination-item, .ant-pagination-prev, .ant-pagination-next{
+            a{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                color: var(--normal-text-color);
+            }
+            &.ant-pagination-item-active{
+                font-weight: 600;
+                background-color: var(--antd-pagination-background);
+                border-color: transparent;
+            }
+        }
+        .ant-pagination-item-ellipsis{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            color: var(--normal-text-color) !important;
+        }
+    }
+    .ant-table-empty{
+        .ant-table-placeholder{
+            background: var(--card-normal-background)  !important;
+            height: 300px;
+            .empty-container{
+                margin: 32px;
+                font-size: 14px;
+            }
+            &:hover{
+                .ant-table-cell{
+                    background: var(--card-normal-background)  !important;
+                }
+            }
+        }
+    }
+    .ant-spin-dot{
+        width: 200px;
+        height: 200px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

@@ -1,0 +1,38 @@
+.discount-container{
+    .discount-container-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        .discount-container-tittle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            color: var(--normal-text-color);
+        }
+        .discount-category-info{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #8E8E8E;
+            cursor: pointer;
+            &.active{
+                color: var(--normal-text-color);
+            }
+        }
+        .text-add-new{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: var(--normal-text-color);
+            cursor: pointer;
+        }
+    }
+}

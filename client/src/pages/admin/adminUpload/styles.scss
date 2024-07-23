@@ -1,0 +1,21 @@
+.special-container{
+    &.disabled{
+        .text-special-category{
+            color: var(--normal-text-color-disabled);
+        }
+        .shared-checkbox{
+            span{
+                color: var(--normal-text-color-disabled);
+            }
+        }
+    }
+    .text-special-category{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--normal-text-color);
+        text-align: left;
+    }
+}

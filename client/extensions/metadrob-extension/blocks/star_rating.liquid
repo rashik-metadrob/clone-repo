@@ -1,0 +1,55 @@
+{% if block.settings.publishUrl != "" %}
+  <iframe 
+    width="{{ block.settings.frameWidth }}%" 
+    height="{{ block.settings.frameHeight }}px" 
+    src="{{ block.settings.publishUrl }}" 
+    title="{{ block.settings.frameTitle }}" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen
+  ></iframe>
+{% else %}
+  <span>
+    Please enter your publish store url
+  </span>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Metadrob",
+  "target": "section",
+  "settings": [
+    { 
+      "type": "text", 
+      "id": "frameTitle", 
+      "label": "Title", 
+      "default": "Metadrob App" 
+    },
+    { 
+      "type": "textarea", 
+      "id": "publishUrl", 
+      "label": "Your publish store url" 
+    },
+    { 
+      "type": "range", 
+      "id": "frameWidth", 
+      "label": "Frame width",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100
+    },
+    { 
+      "type": "range", 
+      "id": "frameHeight", 
+      "label": "Frame height", 
+      "min": 350,
+      "max": 700,
+      "step": 5,
+      "unit": "px",
+      "default": 500
+    }
+  ]
+}
+{% endschema %}

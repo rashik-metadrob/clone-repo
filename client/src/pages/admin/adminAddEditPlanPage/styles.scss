@@ -1,0 +1,183 @@
+.pricing-plan-form-container{
+    .plan-form-group{
+        &.highlight{
+            background: rgba(217, 217, 217, 0.10);
+        }
+        .plan-form-label{
+            padding: 16px;
+            color: #FFF;
+            text-align: left;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26.667px;
+            border-right: solid 1px #707070;
+            .plan-form-label-description{
+                color: #818181;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.667px;
+            }
+        }
+        .plan-form-control{
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .plan-group-form-input{
+                .plan-form-input-text{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+            .plan-form-input{
+                width: 200px;
+                background: transparent;
+                border: none;
+                border-bottom: solid 1px #FFF;
+                border-radius: 0;
+
+                color: #FFF;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                &::placeholder{
+                    color: #707070;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                .ant-input-number-input{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    &::placeholder{
+                        color: #707070;
+                        font-family: Inter;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+            }
+            .group-pricing-container{
+                .pricing-container{
+                    display: flex;
+                    gap: 8px;
+                    align-items: end;
+                    .text-price{
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+            }
+            .filter-select {
+                min-width: 200px;
+                text-align: left;
+                border-radius: 0;
+
+                .ant-select-selector {
+                    border-radius: 2px;
+                    color: #FFFFFF !important;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    background: none;
+                    align-items: center;
+                    display: flex;
+
+                    border: none;
+                    border-bottom: solid 1px #FFF;
+                }
+
+                .ant-select-selection-item {
+                    color: #FFFFFF !important;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+        }
+    }
+    .btn-save{
+        width: 204px;
+        height: 47px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+        border: solid 1px #FFF;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.156);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-plan-form-container{
+        .plan-form-group{
+            .plan-form-label{
+                padding: 8px;
+                border-right: none;
+            }
+            .plan-form-control{
+                padding: 8px;
+                justify-content: start;
+                .plan-form-input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.filter-select-popup{
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.80);
+    .ant-select-item{
+        background-color: transparent !important;
+        .ant-select-item-option-content{
+            color: #FFF;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.drawer-checkout{
+    border-radius: 20px 0px 0px 20px;
+    background: rgba(0, 0, 0, 0.40) !important;
+    backdrop-filter: blur(15px);
+    .ant-drawer-body{
+        padding: 67px 25px;
+       .drawer-checkout-content{
+            display: flex;
+            flex-direction: column;
+            .drawer-checkout-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 15px;
+                border-bottom: solid 1px #757575;
+                .title{
+                    color: rgba(255, 255, 255, 0.40);
+                    font-family: "Inter";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    cursor: pointer;
+                    &.selected{
+                        color: #FFF;
+                    }
+                }
+                .btn-back{
+                    color: #FFF;
+                    svg{
+                        width: 16px;
+                        height: 26px;
+                    }
+                }
+            }
+            .content{
+                flex: auto;
+                #payment-form{
+                    .order-info-container{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 19px;
+                        margin-top: 18px;
+                        padding-top: 12px;
+                        border-top: solid 1px #757575;
+                        border-bottom: solid 1px #757575;
+                        .item{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .title{
+                                color: #9B9B9B;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 20px;
+                            }
+                            .value{
+                                color: #FFF;
+                                text-align: right;
+                                font-family: "Inter";
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                    .footer-container{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .btn-save{
+                            // padding: 15px 44px 11px 40px;
+                            border-radius: 5px;
+                            background: rgba(255, 255, 255, 0.20);
+                            border: none;
+                            outline: none;
+                            color: #FFF;
+                            text-align: center;
+                            font-family: "Inter";
+                            // font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                        .text-amount{
+                            color: #FF6500;
+                            text-align: right;
+                            font-family: "Inter";
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                
+            }
+       }
+    }
+}

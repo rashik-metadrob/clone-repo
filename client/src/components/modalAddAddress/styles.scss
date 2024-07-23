@@ -1,0 +1,141 @@
+.modal-add-address{
+    .ant-modal-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .ant-modal-body{
+            .add-address-modal-content{
+                .ant-form{
+                    .ant-form-item{
+                        margin-bottom: 6px;
+                        .ant-form-item-label{
+                            label{
+                                color: #FFF;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                        }
+                        .ant-form-item-control{
+                            background: transparent;
+                            .form-description{
+                                color: #FFF;
+                                font-family: "Inter";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 150%;
+                                letter-spacing: -0.15px;
+                            }
+                            .ant-form-item-control-input{
+                                background: transparent;
+                            }
+                            .ant-form-item-control-input-content{
+                                background: transparent;
+                                .ant-input-affix-wrapper{
+                                    padding: 0;
+                                    border: none;
+                                    background: transparent;
+                                    box-shadow: none;
+                                    .ant-input-suffix{
+                                        background: transparent;
+                                    }
+                                }
+                                .ant-input{
+                                    height: 40px;
+                                    color: #FFF;
+                                    font-family: Inter;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 26.667px;
+                                    text-align: left;
+                                    color: #FFF;
+                                    background: #060606;
+                                    border: none;
+                                    outline: none;
+                                    border-radius: 5px;
+                                    padding: 4px 11px;
+                                    &::placeholder{
+                                        color: rgba(255, 255, 255, 0.50);
+                                        font-family: Inter;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: 26.667px;
+                                        text-align: left;
+                                    }
+                                    .ant-input-number-input-wrap{
+                                        height: 100%;
+                                    }
+                                    .ant-input-number-input{
+                                        color: #FFF;
+                                        font-family: Inter;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: 26.667px;
+                                        text-align: left;
+                                        height: 100%;
+                                    }
+                                    &:focus{
+                                        border: solid 1px #FFF;
+                                        border-radius: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .label-title{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .text-title{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+
+                    text-align: center;
+                }
+                .btn-save{
+                    font-family: "Inter";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    color: #FFF;
+
+                    gap: 8px;
+                    align-items: center;
+                    z-index: 1;
+
+                    border-radius: 5px;
+                    border: 1px solid #FFFFFF;
+                    background: rgba(255, 255, 255, 0.10);
+
+                    padding: 4px 50px;
+                }
+            }
+        }
+        
+    }
+}

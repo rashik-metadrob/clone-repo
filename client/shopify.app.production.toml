@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "b35a78d1fc4a08b40575add71f1d1eef"
+name = "Metadrob: Create Virtual Store"
+handle = "metadrob-app"
+application_url = "https://api.metadrob.com/shopify/auth"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [ "https://api.metadrob.com/shopify/auth/callback" ]
+
+[webhooks]
+api_version = "2023-10"
+
+  [webhooks.privacy_compliance]
+  customer_deletion_url = "https://www.drobverse.com:8081/v1/webhooks/customers-redact"
+  customer_data_request_url = "https://www.drobverse.com:8081/v1/webhooks/data-request"
+  shop_deletion_url = "https://www.drobverse.com:8081/v1/webhooks/shop-redact"
+
+[pos]
+embedded = false

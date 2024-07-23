@@ -1,0 +1,16 @@
+.modal-text-editor{
+    .ant-modal-content{
+        background: rgb(2, 2, 14);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        background: rgba(0, 0, 0, 0.60);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+    }
+}

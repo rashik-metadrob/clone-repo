@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadrob</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        * {
+            font-family: inter;
+        }
+
+        .body {
+            color: #ffffff;
+            background-color: rgb(247, 247, 247);
+            font-size: 14px;
+
+
+        }
+
+        .Mfooter {
+            padding: 12px !important;
+            color: #ffffff;
+        }
+
+        .Nfooter {
+
+            max-width: 600px;
+            margin: auto;
+
+        }
+
+        .top-section {
+            color: #ffffff;
+            max-width: 600px;
+            margin: auto;
+            overflow-x: hidden;
+        }
+
+        .border_primary {
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #16F6FE, #990FFC) 1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .MHlogo {
+            width: 183px;
+            padding-top: 14px;
+            height: 30.1px;
+        }
+
+        .Mlogo {
+            width: 183px;
+            height: 30.15px;
+            text-align: center;
+            right: 50%;
+            left: 50%;
+        }
+
+        .footer {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .Micon {
+            height: 30px;
+            margin-right: 8px;
+        }
+
+        .icons .Mlogo:last-child {
+            margin-right: 0;
+        }
+
+        .subscribe {
+            color: #16F5FE;
+        }
+
+        .links {
+
+            color: #ffffff !important;
+            font-size: 12px;
+
+        }
+
+        .foot {
+            font-size: 10px;
+            font-weight: 200;
+            text-align: center;
+            line-height: 12px;
+            margin: 2px 0px;
+        }
+
+        .video {
+            /* background-image:url("{{templateAssetUrl}}/assects\Mail (1).avif"); */
+            background-image: url({{templateAssetUrl}}/assects/mail.avif);
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 16px;
+
+        }
+
+        @media screen and (max-width: 570px) {
+            .footer {
+                display: block;
+            }
+
+            .Micon {
+                padding: 16px 0px;
+                height: 24px !important;
+                margin-right: 4px;
+            }
+
+            .video {
+                height: 400px;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+    <section style="background-color: ffffff;">
+        <div class="top-section border_primary" style="background-color: #0B0B0B;">
+            <div class="video" style="padding: 16px 16px; ">
+                <div class="container">
+                    <img src="{{templateAssetUrl}}/assects/logo.png" class="MHlogo" alt="Responsive image">
+                </div>
+            </div>
+
+
+            <div style="padding: 0px 16px; text-align-last: center;">
+               
+
+                <div style="width:100%;min-width:320px;font-family:Helvetica,Arial;font-weight:bold;font-size:24px;">
+                    <div style="margin:0 auto;width:100%;max-width:598px;text-align:center;">
+
+                        <div style="font-size:0;">
+
+                            <div
+                                style="display:inline-block;width:70%;vertical-align:top;color:#f7f7f7;text-align:center;font-family:Arial,sans-serif;">
+                                <div style="font-size:42px;font-weight:bold;padding-bottom:12px;padding-top:25px;font-family:Arial,sans-serif;">
+                                    Welcome to Metadrob!
+                                </div>
+                                <hr style="width:80%;border:1px solid #2f6577">
+                                <div style="font-size:24px;font-weight:normal;padding-top:12px;padding-bottom:6px;font-family:Arial,sans-serif;">
+                                    You have successfully registered for your virtual store on Metadrob.
+                                </div>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="100%" style="padding:32px;text-align:center" align="center">
+                                                <table width="220px" cellspacing="0" cellpadding="0"
+                                                    style="display:inline-block">
+                                                    <tbody>
+                                                        <tr>
+                                                            <!-- <td style="position: relative;">
+                                                                <div style="position: absolute; bottom: 0;">
+                                                                    <img src="{{templateAssetUrl}}/assects/animation.gif" style="z-index: 1;" alt="">
+                                                                </div>
+                                                            </td> -->
+                                                            <td align="center" ; width="220px" ; height="42"
+                                                                bgcolor="#28b777"
+                                                                style="background:linear-gradient(to right, #16F6FE, #990FFC) ;border-radius:28px;color:#ffffff;display:block">
+                                                                <a href="{{dashboardUrl}}"
+                                                                    style="color:#ffffff;font-size:14px;font-family:Arial,sans-serif;text-decoration:none;line-height:42px;width:100%;display:inline-block"
+                                                                    target="_blank">Go to your dashboard</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Nfooter">
+
+        <div style="background-color: #3d3d3d;" class="Mfooter">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td align="left" style="width: 100%; text-align: left;">
+                            <div>
+                                <img src="{{templateAssetUrl}}/assects/logo.png" class="Mlogo" alt="Responsive image">
+                            </div> 
+                        </td>
+                        <td>
+                            <div class="icons">
+                                <img src="{{templateAssetUrl}}/assects/youtube.png" class="Micon" alt="Responsive image" style="height: 30px; width: 30px;">
+                                <img src="{{templateAssetUrl}}/assects/twitter.png" class="Micon" alt="Responsive image" style="height: 30px; width: 30px;">
+                                <img src="{{templateAssetUrl}}/assects/facebook.png" class="Micon" alt="Responsive image" style="height: 30px; width: 30px;">
+                                <img src="{{templateAssetUrl}}/assects/instagram.png" class="Micon" alt="Responsive image" style="height: 30px; width: 30px;">
+                                <img src="{{templateAssetUrl}}/assects/likedlin.png" class="Micon" alt="Responsive image" style="height: 30px; width: 30px;">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr style="margin: 16px 0px;">
+            <div style="font-family:Arial,sans-serif;">
+                <p class="foot">Metadrob, 3rd Floor, Katewa bhawan, M.I. Road, 302001 Jaipur, Rajasthan.</p>
+                <p class="foot">You are receiving this email because you are opted into Marketing Activities from
+                    Metadrob.</p>
+                <p class="foot">You can <a class="subscribe">update your preferences</a> or <a
+                        class="subscribe">unsubscribe</a>.</p>
+            </div>
+            <hr style="margin: 16px 0px ;">
+            <div class="links" style="text-align: center;font-family:Arial,sans-serif;">
+                <p><a class="link" style="color: #FFFFFF;">Terms & Conditions</a> |
+                    <a class="link" style="color: #FFFFFF;">Privacy Policy</a> |
+                    <a class="link" style="color: #FFFFFF;">METADROB COPYRIGHT © 2024</a>
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

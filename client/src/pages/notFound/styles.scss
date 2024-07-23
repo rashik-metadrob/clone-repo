@@ -1,0 +1,44 @@
+.not-found-page{
+    height: 100%;
+    .not-found-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            max-width: 400px;
+        }
+        .text-404{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 150px;
+            line-height: 120%;
+            color: var(--normal-text-color);
+        }
+        .not-found-text{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 41px;
+            line-height: 50px;
+            color: var(--normal-text-color);
+        }
+        .sorry-text{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            color: var(--normal-text-color);
+        }
+        .please-text{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: var(--normal-text-color);
+        }
+    }
+}

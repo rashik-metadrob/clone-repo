@@ -1,0 +1,92 @@
+.drawer-sound-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // overflow: hidden;
+    .drawer-title-container{
+        padding: 17.5px 17px;
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(12.5px);
+        .title-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .close-container{
+            padding: 2px 7px;
+            border-radius: 3px;
+            background: rgba(0, 0, 0, 0.50);
+            height: fit-content;
+            cursor: pointer;
+            .text-close{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    .sound-list{
+        flex: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .sound-item{
+            cursor: pointer;
+            height: 150px;
+            background: rgba(0, 0, 0, 0.20);
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                }
+                .sound-name{
+                    opacity: 1;
+                }
+            }
+            img{
+                height: 80px;
+                width: 80px;
+                object-fit: contain;
+                transition: transform 0.3s;
+            }
+            .sound-name{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                max-width: calc(100% - 30px);
+                text-align: left;
+
+                position: absolute;
+                z-index: 1;
+                bottom: 4px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+        }
+    }
+}

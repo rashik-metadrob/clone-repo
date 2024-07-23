@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Blank",
+        "image": "/images/templates/image.png",
+        "isLock": false,
+        "isBlank": true
+    },
+    {
+        "name": "Blank #2",
+        "image": "/images/templates/image.png",
+        "isLock": false
+    },
+    {
+        "name": "Cosmetic Store #1",
+        "image": "/images/templates/image.png",
+        "isLock": false
+    },
+    {
+        "name": "Cosmetic Store #2",
+        "image": "/images/templates/image.png",
+        "isLock": false
+    },
+    {
+        "name": "Cosmetic Store #3",
+        "image": "/images/templates/image.png",
+        "isLock": false
+    },
+    {
+        "name": "Template #21",
+        "image": "/images/templates/image.png",
+        "isLock": false
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    },
+    {
+        "name": "Template #22",
+        "image": "/images/templates/lock.png",
+        "isLock": true
+    }
+]

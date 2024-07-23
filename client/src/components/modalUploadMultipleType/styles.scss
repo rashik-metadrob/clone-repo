@@ -1,0 +1,68 @@
+.modal-add-multiple-type{
+    .ant-modal-content{
+        background: var(--retailer-modal-upload-background);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .modal-add-multiple-type-content{
+            .upload-list-tabs{
+                .ant-tabs-nav{
+                    &::before{
+                        border: none;
+                    }
+                    .ant-tabs-nav-wrap{
+                        .ant-tabs-nav-list{
+                            .ant-tabs-tab{
+                                justify-content: center;
+                                &+.ant-tabs-tab{
+                                    margin-left: 48px;
+                                }
+                                .ant-tabs-tab-btn{
+                                    color: rgba(255, 255, 255, 0.50);;
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                                &.ant-tabs-tab-active{
+                                    .ant-tabs-tab-btn{
+                                        color: var(--normal-text-color);
+                                        border-bottom: solid 2px #00F6FF;
+                                    }
+                                }
+                            }
+                            .ant-tabs-ink-bar{
+                                display: none;
+                            }
+                        }
+                    }
+                    .ant-tabs-nav-operations{
+                        display: none;
+                    }
+                }
+                .ant-tabs-content-holder{
+                    color: #000000;
+                    min-height: 70px;
+                }
+                .ant-tabs-tabpane{
+                    .no-data-text{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}

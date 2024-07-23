@@ -1,0 +1,295 @@
+.modal-user-info{
+    .ant-modal-content{
+        background-color: #101010;
+        padding: 0;
+        .modal-user-info-content{
+            .modal-title-container{
+                padding: 22px 23px 25px 23px;
+                background-color: rgba(0, 0, 0, 0.20);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .close-container{
+                    padding: 2px 7px;
+                    border-radius: 3px;
+                    background: rgba(0, 0, 0, 0.50);
+                    height: fit-content;
+                    cursor: pointer;
+                    .text-close{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            .profile-info-card{
+                border-radius: 3px;
+                // background: #060606;
+        
+                position: relative;
+                z-index: 1;
+                &::after{
+                    content: "";
+                    width: calc(100% + 6px);
+                    height: calc(100% + 6px);
+                    background: linear-gradient(89.85deg, #C69030 12.08%, #FEF9D3 29.03%, #C0892C 46.99%, #BF882C 64.94%, #F9F1B2 83.89%, #FFC700 99.85%, #C18B31 99.85%);
+                    position: absolute;
+                    top: -3px;
+                    left: -3px;
+                    z-index: -3;
+                    border-radius: 3px;
+                }
+                &::before{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: #060606;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -2;
+        
+                    border-radius: 3px;
+                }
+                .profile-top-content{
+                    padding: 24px 24px 16px 24px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-bottom: solid 1px #FFFFFF;
+                    .profile-name{
+                        font-family: Inter;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 29px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #FFFFFF;
+                    }
+                    .plane-name{
+                        color: #000;
+                        font-family: Inter;
+                        font-size: 10px;
+                        font-weight: 500;
+                        line-height: 12px;
+                        letter-spacing: 0em;
+                        text-align: left;
+            
+                        padding: 6px 17px;
+                        border-radius: 12px;
+                        background-image: url("../../../assets/images/layout/plan-bg.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        cursor: pointer;
+                    }
+                    .text-upgrade{
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #00F6FF;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    .avatar-container{
+                        position: relative;
+                        &:hover{
+                            .text-change{
+                                display: flex;
+                            }
+                        }
+                        .text-change{
+                            display: none;
+            
+                            font-family: Inter;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            color: #FFFFFF;
+            
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            cursor: pointer;
+            
+                            justify-content: center;
+                            align-items: center;
+            
+                            background-color: rgba($color: #FFF, $alpha: 0.2);
+                            backdrop-filter: blur(4px);
+                        }
+                    }
+                }
+                .profile-bottom-content{
+                    padding: 24px;
+                    .content-item{
+                        display: grid;
+                        grid-template-columns: 20px 1fr;
+                        gap: 8px;
+                        .content-icon{
+                        }
+                        .content-text{
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            .question-card{
+                padding: 16px 24px;
+                border-radius: 5px;
+                background: #060606;
+                box-shadow: 0px 4px 24.700000762939453px 0px #FFFFFF0D;
+                .title{
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #FFFFFF;
+                }
+                .sub-title{
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #BBBBBB;
+                }
+                .preview-answer-text{
+                    padding: 20px 24px;
+                    border-radius: 10px;
+                    background: #1F1F1F;
+                    width: 100%;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #FFFFFF;
+                }
+                .answer-group{
+                    display: block !important;
+                    .radio-container{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 12px;
+                        .ant-radio-wrapper{
+                            padding: 20px 24px;
+                            border-radius: 10px;
+                            background: #1F1F1F;
+                            width: 100%;
+                            .ant-radio.ant-wave-target{
+                                .ant-radio-inner{
+                                    background: #0D0C0C;
+                                    border: none;
+                                }
+                            }
+                            .ant-radio-checked{
+                                .ant-radio-inner{
+                                    background: #FFFFFF !important;
+                                    &::after{
+                                        background-color: #FFFFFF !important;
+                                    }
+                                    
+                                }
+                            }
+                            span{
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 19px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+                .question-card-input-label{
+                    color: #FFFFFF !important;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                .question-card-input{
+                    text-align: left;
+                    border-radius: 10px;
+                    background: #1F1F1F;
+                    height: 60px;
+                    width: 100%;
+                    border: none;
+        
+                    color: #FFFFFF !important;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                }
+            }
+            .profile-card{
+                padding: 24px 24px;
+                border-radius: 5px;
+                background: #1C1C1C;
+                .text-name{
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: #FFFFFF;
+                }
+                .avatar-container{
+                    position: relative;
+                    &:hover{
+                        .text-change{
+                            display: flex;
+                        }
+                    }
+                    .text-change{
+                        display: none;
+        
+                        font-family: Inter;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        color: #FFFFFF;
+        
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                        cursor: pointer;
+        
+                        justify-content: center;
+                        align-items: center;
+        
+                        background-color: rgba($color: #FFF, $alpha: 0.2);
+                        backdrop-filter: blur(4px);
+                    }
+                }
+            }
+        }
+    }
+}

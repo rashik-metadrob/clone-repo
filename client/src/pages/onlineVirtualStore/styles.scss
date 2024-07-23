@@ -1,0 +1,77 @@
+.store-container{
+    .project-list-container{
+        border-radius: 4px;
+        // padding: 28px;
+        box-shadow: var(--project-list-container-box-shadow);
+        .project-list-tabs{
+            height: 100%;
+            background: #353535;
+            border-radius: 4px;
+            .ant-tabs-nav{
+                margin-bottom: 0;
+                padding: 4px 0px;
+                border-radius: 4px 4px 0 0;
+                background: #353535;
+                &::before{
+                    border-bottom: none;
+                }
+                .ant-tabs-nav-wrap{
+                    .ant-tabs-nav-list{
+                        .ant-tabs-tab{
+                            justify-content: center;
+                            &:first-child{
+                                padding-left: 24px;
+                            }
+                            &:not(:has(+.ant-tabs-tab)){
+                                padding-right: 24px;
+                            }
+                            &+.ant-tabs-tab{
+                                margin-left: 58px;
+                            }
+                            .ant-tabs-tab-btn{
+                                font-family: Inter;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 26.667px;
+                                color: var(--retailer-header-search-placeholder-color);
+                            }
+                            &.ant-tabs-tab-active{
+                                .ant-tabs-tab-btn{
+                                    color: var(--project-list-tabs-active-color);
+                                }
+                            }
+                        }
+                        .ant-tabs-ink-bar{
+                            display: none;
+                        }
+                    }
+                }
+                .ant-tabs-nav-operations{
+                    display: none;
+                }
+            }
+            .ant-tabs-content-holder{
+                background: var(--project-list-container-bg);
+                color: #000000;
+                min-height: 70px;
+                height: auto;
+                overflow-y: auto;
+                padding-top: 24px;
+            }
+            .ant-tabs-tabpane{
+                .no-data-text{
+                    font-family: Inter;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26.667px;
+                    color: var(--normal-text-color);
+                }
+                .project-list{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

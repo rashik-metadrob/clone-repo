@@ -1,0 +1,23 @@
+.neonblue {
+  color: #00FFFF; /* Adjust the RGB values to achieve the desired neon effect */
+}
+
+.myBox {
+    display: block;
+    height: 130px;
+    width: 445px;
+    border: solid 1px #CCC;
+    border-bottom: none;
+    position: relative;
+}
+.myBox:after {
+    content:"";
+    background: -webkit-linear-gradient(left, #00f6ff, #ab00ff);
+    display: block;
+    height:10px;
+    width: 445px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px; /* Add this line to make the borders rounded */
+
+}

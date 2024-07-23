@@ -1,0 +1,203 @@
+.wallet-card{
+    border-radius: 12px;
+    background: var(--card-normal-background) ;
+    height: 100%;
+    .wallet-card-header{
+        background: #2E323E;
+        padding: 6px 14px;
+        border-radius: 12px 12px 0 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        .avatar-container{
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            border: 2px solid #00F6FF;
+            display: block;
+        }
+        .select-mainnet{
+            width: 0;
+            flex-grow: 1;
+            height: 27px;
+            &:hover .ant-select-selector{
+                border-color:#FFFFFF !important;
+            }
+            .ant-select-selector{
+                height: 27px;
+                border: 1px solid #FFFFFF;
+                background: #2E323E;
+                border-radius: 13px;
+                .ant-select-selection-search{
+                    .ant-select-selection-search-input{
+                        height: 100%;
+
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: var(--normal-text-color);
+                    }
+                }
+                .ant-select-selection-item{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #FFFFFF;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .mainnet-item{
+                        display: flex;
+                        gap: 8px;
+                        .mainnet-status{
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background: #43FFB2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wallet-card-account{
+        padding: 12px 21px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: var(--antd-tab-border-bottom);
+        .account-info{
+            width: 0;
+            flex-grow: 1;
+            .account-name{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: var(--normal-text-color);
+            }
+            .account-address{
+                display: flex;
+                justify-content: center;
+                .address-container{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: var(--normal-text-color);
+
+                    width: 100px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+        img{
+            filter: var(--svg-filter-invert);
+        }
+    }
+    .wallet-card-content{
+        padding: 6px 0;
+        .text-total-coin{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            color: var(--normal-text-color);
+        }
+        .text-total-budget{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: var(--normal-text-color);
+        }
+        .wallet-tabs{
+            .ant-tabs-nav{
+                &::before{
+                    border-bottom: var(--antd-tab-border-bottom);
+                }
+                .ant-tabs-nav-wrap{
+                    .ant-tabs-nav-list{
+                        flex: 100%;
+                        width: 100%;
+                        .ant-tabs-tab{
+                            flex: 100%;
+                            width: auto;
+                            justify-content: center;
+                            &+.ant-tabs-tab{
+                                margin: 0;
+                            }
+                            .ant-tabs-tab-btn{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: var(--normal-text-color);
+                            }
+                            &.ant-tabs-tab-active{
+                                .ant-tabs-tab-btn{
+                                    color: #00F6FF;
+                                }
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 5px;
+                                    background: #00F6FF;
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                        .ant-tabs-ink-bar{
+                            height: 5px;
+                            background: #00F6FF;
+                            visibility: hidden;
+                            display: none;
+                        }
+                    }
+                }
+                .ant-tabs-nav-operations{
+                    display: none;
+                }
+            }
+            .ant-tabs-content-holder{
+                color: var(--normal-text-color);
+                min-height: 70px;
+                border-bottom: var(--antd-tab-border-bottom);
+            }
+        }
+        .btn-login-metamask{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: var(--normal-text-color);
+
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding: 4px 16px;
+            border-radius: 4px;
+
+            background: var(--metamask-button-background);
+            img{
+                width: 28px;
+            }
+        }
+    }
+    .wallet-card-footer{
+        height: 81px;
+    }
+}

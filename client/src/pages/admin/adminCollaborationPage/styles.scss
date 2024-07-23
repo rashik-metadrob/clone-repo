@@ -1,0 +1,33 @@
+.admin-collaboration-page-container{
+    .admin-users-container-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        .left-side__template {
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            column-gap: 80px;
+            row-gap: 12px;
+            flex-wrap: wrap;
+
+            .title {
+                display: inline-flex;
+                padding: 5.333px 10.667px;
+                justify-content: center;
+                align-items: center;
+                gap: 5.333px;
+                flex-shrink: 0;
+                color: #FFFFFF;
+
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.admin-api-page-container{
+    .admin-page-content-container{
+        padding: 28px 24px 42px 24px;
+        border-radius: 5px;
+        background: #060606;
+        .title{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26.667px;
+            text-align: left;
+        }
+        .filter-container {
+            display: flex;
+            align-items: center;
+
+            .filter-select {
+                min-width: 120px;
+                text-align: left;
+                border-radius: 0;
+
+                .ant-select-selector {
+                    border-radius: 2px;
+                    color: #FFFFFF !important;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    background: none;
+                    align-items: center;
+                    display: flex;
+                }
+
+                .ant-select-selection-item {
+                    color: #FFFFFF !important;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+            
+        }
+        .trending-api-card{
+            padding: 28px 12px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.10);
+            box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.08);
+            &:hover{
+                background: rgba(255, 255, 255, 0.20);
+                cursor: pointer;
+            }
+        }
+        .normal-api-card{
+            padding-right: 36px;
+            border-right: solid 1px #FFF;
+            &:hover{
+                background: rgba(255, 255, 255, 0.10);
+                cursor: pointer;
+            }
+        }
+        :is(.trending-api-card, .normal-api-card){
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            .content{
+                flex: auto;
+                .title{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .normal-text{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.018px;
+                }
+                .dot{
+                    width: 4px;
+                    height: 4px;
+                    background: #16F6FE;
+                    border-radius: 50%;
+                }
+                .text-description{
+                    color: #B2B2B2;
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.018px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

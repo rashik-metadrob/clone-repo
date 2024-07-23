@@ -1,0 +1,59 @@
+.modal-paypal-for-pricing-plan{
+    .ant-modal-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 12px 12px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        background: rgba(0, 0, 0, 0.60);
+        backdrop-filter: blur(4px);
+        .modal-title-container{
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            .close-container{
+                padding: 2px 7px;
+                border-radius: 3px;
+                background: rgba(0, 0, 0, 0.50);
+                height: fit-content;
+                cursor: pointer;
+                border: solid 1px #FFFFFF;
+                .text-close{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .modal-content{
+            .title{
+                font-family: Montserrat;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 26.57px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+            .total{
+                font-family: Montserrat;
+                font-size: 12.41px;
+                font-weight: 500;
+                line-height: 15.13px;
+                color: #e2e2e2;
+                .total-price{
+                    padding-left: 24px;
+                    font-family: Montserrat;
+                    font-size: 14.18px;
+                    font-weight: 700;
+                    line-height: 17.29px;
+                    text-align: left;
+                    color: #f1f1f1;
+                }
+            }
+        }
+    }
+}

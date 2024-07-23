@@ -1,0 +1,275 @@
+// :root{
+//     --theme-back-ground: #FF0000;
+// }
+html:has(.light-theme){
+    --theme-back-ground: #FFFFFF;
+    --card-normal-background: #F3F3F3;
+
+    --card-plugin-background: #F3F3F3;
+    --card-plugin-text-description: #8E8E8E;
+
+    --card-table-background: #F3F3F3;
+    --card-table-border: none;
+
+    --card-total-trans-background: #F5F5F5;
+    --svg-filter-invert: invert(1);
+    --normal-text-color: #0F1226;
+    --normal-text-dark-color: #FFFFFF;
+    --normal-text-color-disabled: #7f7f7f;
+    --card-title-color:  #0F1226;
+
+    --border-2: 2px solid #1B1E28;
+    --border-dashboard-retailer-sidebar: 1px solid #A6A6A6;
+    --online-button-background: #8E8E8E;
+    --online-button-showroom-gradient: linear-gradient(to right, #00F6FF 2%, #AB00FF 48.2%, #000000 50%);
+
+    --tutorial-button-background: #F3F3F3;
+    --tutorial-button-collapse-background: #F3F3F3;
+
+    --metamask-button-background: #CFCFCF;
+    --antd-tab-border-bottom: 1px solid #0F1226;
+
+    --antd-selector-background: #F3F3F3;
+
+    --antd-form-select-background: #F3F3F3;
+
+    --antd-pagination-background: #F3F3F3;
+
+    --project-list-container-box-shadow: 0px 0px 20px #A2A2A299;
+
+    --theme-checkbox-background: #CFCFCF;
+
+    --border-2-light: 2px solid #8E8E8E;
+
+    --project-header-container-background: #F3F3F3;
+
+    --button-dark-background: #0F1226;
+    --button-dark-text-color: #FFFFFF;
+
+    --select-wall-background: rgba(219, 219, 219, 0.91);
+
+    --struction-board-background:  rgba(0, 0, 0, 0.3);
+
+    --project-sidebar-background: #F3F3F3;
+    --btn-trial-background: #DFDFDF;
+
+    --drawer-library-background: #FFFFFF;
+
+    --drawer-library-search-background:  #F3F3F3;
+
+    --dark-blue-text: #0f4597;
+
+    --dark-text-description: #646464;
+
+    --light-border-color: #000000;
+
+    --control-background: #F3F3F3;
+
+    --modal__l-side-bg: #E0E0E0;
+    --modal__r-side-bg: #FFF;
+    --modal__title-color: #000;
+    --modal__divide-color: #000;
+    --modal__add-cart-bg: #D2D2D2;
+    --modal__buy-now-bg: #FF6500;
+    --modal__virtual-bg: #ACACAC;
+    --modal__review-bg: #000000;
+    --modal__review-color: #FFFFFF;
+    --modal__carousel-img-bg: #e8e8e8;
+
+    --retailer-header-background: #F3F3F3;
+    --retailer-header-search-background: #CFCFCF;
+    --retailer-header-search-placeholder-color: #ACACAC;
+
+    --retailer-filter-input-background: #CFCFCF;
+    --retailer-filter-input-placeholder-color-background: #ACACAC;
+    --retailer-filter-page-size-background: #CFCFCF;
+    --retailer-icon-path-stroke-color: #000;
+    --retailer-filter-select-popup-background: #ACACAC;
+    --retailer-template-table-thead-cell-background: #F3F3F3;
+    --retailer-template-table-thead-color: #8E8E8E;
+    --retailer-template-table-body-cell-background: transparent;
+    --retailer-template-table-body-cell-hover-background: #F3F3F3;
+    --retailer-template-table-button-background: #CFCFCF;
+    --retailer-template-table-row-border: 1px solid #CFCFCF;
+    --retailer-template-table-with-sort-thead-cell-background: #F3F3F3;
+    --retailer-template-table-with-sort-border: 2px solid #F3F3F3;
+    --retailer-card-filter-background: #F3F3F3;
+    --retailer-button-border-light: 1px solid #0F1226;
+    --retailer-button-background-light: #CFCFCF;
+
+    --retailer-input-background: #F3F3F3;
+    --retailer-card-background: #e8e8e8;
+    --retailer-statistic-card-background: #F3F3F3;
+    --retailer-shared-table-in-card-thead-border: solid 1px #8E8E8E;
+    --retailer-statistic-card-shadow-color: rgba(223, 224, 233, 0.05);
+    --retailer-home-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 247px, transparent 20%);
+    --retailer-select-store-background: #CFCFCF;
+
+    --retailer-qa-active-background: #1E1E1E;
+    --retailer-qa-active-color: #FFF;
+    --retailer-qa-border: solid 1px #8E8E8E;
+    --retailer-qa-none-active-background: #e8e8e8;
+    --retailer-sidebar-menu-active-background: #0000ff;
+    --retailer-modal-background: rgba(255, 255, 255, 0.80);
+    --retailer-modal-linear-background: rgba(255, 255, 255, 1);
+    --retailer-modal-upload-background: rgba(255, 255, 255, 0.80);
+
+    --login-form-title-text-color: #1A1A1A;
+    --login-form-button-text-color: #FFF;
+
+    --project-list-container-bg: #E9E9E9;
+    --project-list-tabs-active-color: #FFF;
+
+    --dashboard-retailer-sidebar-container-background: #E0E0E0;
+
+    --light-background: #000000;
+
+    --profile-card-background: #e8e8e8;
+
+    --profile-radio-content-background: #CFCFCF;
+    --profile-radio-nocheck-background: #C1C1C1;
+
+    --droba-add-product-background: #E9E9E9;
+
+    --droba-dashboard-wrapper-background: rgba(0,0,0,0.3);
+    --import-csv-field-color: #c7c7c7;
+}
+
+html:has(.dark-theme){
+    --theme-back-ground: #101010;
+    --card-normal-background: #1B1E28;
+
+    --card-plugin-background: #050614;
+    --card-plugin-text-description: #8E8E8E;
+
+    --card-table-background: transparent;
+    --card-table-border: 1.3px solid #292C36;
+
+    --card-total-trans-background: #02020E;
+    --svg-filter-invert: invert(0);
+    --normal-text-color: #FFFFFF;
+    --normal-text-dark-color: #000000;
+    --normal-text-color-disabled: #7f7f7f;
+    --card-title-color: #EFEFEF;
+
+    --border-2: 2px solid #1B1E28;
+    --border-dashboard-retailer-sidebar: 1px solid #FFFFFF;
+
+    --online-button-background: #1B1E28;
+    --online-button-showroom-gradient: linear-gradient(to right, #00F6FF 2%, #AB00FF 48.2%, #FFFFFF 50%);
+
+    --tutorial-button-background: transparent;
+    --tutorial-button-collapse-background: #383841;
+
+    --metamask-button-background: #20243B;
+
+    --antd-tab-border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+    --antd-selector-background: #1B1E28;
+
+    --antd-form-select-background: #151823;
+
+    --antd-pagination-background: #1B1E28;
+
+    --project-list-container-box-shadow: none;
+
+    --theme-checkbox-background: #272121;
+
+    --border-2-light: 2px solid #FFFFFF;
+
+    --project-header-container-background: #0F1226;
+
+    --button-dark-background: #20243B;
+    --button-dark-text-color: #FFFFFF;
+
+    --select-wall-background: rgba(0, 0, 0, 0.91);
+
+    --struction-board-background:  rgba(0, 0, 0, 0.8);
+
+    --project-sidebar-background: #0F1226;
+    --btn-trial-background: #0F1226;
+
+    --drawer-library-background: #24283E;
+
+    --drawer-library-search-background:  #3C454D;
+
+    --dark-blue-text: #00F6FF;
+
+    --dark-text-description: #D0D0D0;
+
+    --light-border-color: #FFFFFF;
+
+    --control-background: rgba(0, 0, 0, 0.40);
+
+    --modal__l-side-bg: rgba(94, 94, 94, 0.30);
+    --modal__r-side-bg: #000;
+    --modal__title-color: #FFFFFF;
+    --modal__divide-color: #757575;
+    --modal__add-cart-bg: #000;
+    --modal__buy-now-bg: #FF6500;
+    --modal__virtual-bg: #000000;
+    --modal__review-bg: #FFFFFF;
+    --modal__review-color: #000000;
+    --modal__carousel-img-bg: #edebeb;
+
+    --retailer-header-background: #0C0C0C;
+    --retailer-header-search-background: rgba(255, 255, 255, 0.10);
+    --retailer-header-search-placeholder-color: rgba(255, 255, 255, 0.40);
+
+    --retailer-filter-input-background: #101010;
+    --retailer-filter-input-placeholder-color-background: rgba(255, 255, 255, 0.40);
+    --retailer-filter-page-size-background: #1F1F1F;
+    --retailer-icon-path-stroke-color: #FFF;
+    --retailer-filter-select-popup-background: rgba(0, 0, 0, 0.80);
+    --retailer-template-table-thead-cell-background: transparent;
+    --retailer-template-table-thead-color: rgba(255, 255, 255, 0.40);
+    --retailer-template-table-body-cell-background: #1B1E28;
+    --retailer-template-table-body-cell-hover-background: #1B1E28;
+    --retailer-template-table-button-background: #1B1E28;
+    --retailer-template-table-row-border: 1px solid #EAEAEA;
+    --retailer-template-table-with-sort-thead-cell-background: #060606;
+    --retailer-template-table-with-sort-border: 2px solid #1B1E28;
+    --retailer-card-filter-background: #1C1C1C;
+    --retailer-button-border-light: 1px solid #FFF;
+    --retailer-button-background-light: #FFF;
+
+    --retailer-input-background: #060606;
+    --retailer-card-background: #1C1C1C;
+    --retailer-statistic-card-background: #060606;
+    --retailer-shared-table-in-card-thead-border: solid 1px rgba(255, 255, 255, 0.40);
+    --retailer-statistic-card-shadow-color: rgba(17, 38, 146, 0.05);
+    --retailer-home-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.10) 247px, transparent 20%);
+
+    --retailer-select-store-background: rgba(0, 0, 0, 0.50);
+
+    --retailer-qa-none-active-background:rgba($color: #060606, $alpha: 0.26);
+    --retailer-qa-active-background: #1E1E1E;
+    --retailer-qa-active-color: #FFF;
+    --retailer-qa-border: solid 1px #2E323E;
+    --retailer-sidebar-menu-active-background: #16F6FE;
+
+    --retailer-modal-background: rgba(0, 0, 0, 0.80);
+    --retailer-modal-linear-background: rgba(0, 0, 0, 1);
+    --retailer-modal-upload-background: rgba(0, 0, 0, 0.60);
+
+    --login-form-title-text-color: #FFFFFF;
+    --login-form-button-text-color: #FFF;
+
+    --project-list-container-bg: #1E1E1E;
+    --project-list-tabs-active-color: #FFF;
+
+    --dashboard-retailer-sidebar-container-background: #060606;
+
+    --light-background: #FFFFFF;
+
+    --profile-card-background: #060606;
+
+    --profile-radio-content-background: #1F1F1F;
+    --profile-radio-nocheck-background: #0D0C0C;
+
+    --droba-add-product-background: #2D2D2D;
+
+    --droba-dashboard-wrapper-background: rgba(0,0,0,0.3);
+
+    --import-csv-field-color: #363636;
+}

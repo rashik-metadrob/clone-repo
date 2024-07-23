@@ -1,0 +1,21 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "4f76874f9ed991467b12fe547f06ccee"
+name = "App test"
+handle = "app-test-488"
+application_url = "https://bunny-merry-hopefully.ngrok-free.app/shopify/auth"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://bunny-merry-hopefully.ngrok-free.app/shopify/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false

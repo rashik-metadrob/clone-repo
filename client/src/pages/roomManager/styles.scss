@@ -1,0 +1,119 @@
+.rooms-manager-container{
+    img{
+        filter: var(--svg-filter-invert);
+    }
+    .text-invite-sales{
+        color: var(--normal-text-color);
+        font-family: 'Inter';
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .rooms-container{
+        border: solid 2px #1B1E28;
+        padding: 19px 15px;
+        border-radius: 9px;
+        .text-choose-room{
+            color: var(--normal-text-color);
+            font-family: "Inter";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+            text-align: left;
+        }
+        .list-rooms{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            row-gap: 22px;
+            column-gap: 56px;
+            .room-item{
+                display: flex;
+                align-items: center;
+                gap: 36px;
+                .room-name{
+                    color: var(--normal-text-color);
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-align: left;
+                    cursor: pointer;
+                    width: 90px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                .room-online-info{
+                    color: var(--dark-blue-text);
+                    font-family: "Inter";
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .text-view{
+                    color: var(--dark-blue-text);
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    .text-generate-link{
+        color: var(--normal-text-color);
+        font-family: 'Inter';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .text-generate-link-info{
+        color: var(--dark-blue-text);
+        font-family: 'Inter';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+    }
+    .text-link-created{
+        color: var(--normal-text-color);
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: left;
+    }
+    .sale-link{
+        color: var(--dark-blue-text);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .link-copied{
+        color: var(--normal-text-color);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .text-instruction{
+        color: var(--normal-text-color);
+        font-family: 'Inter';
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: left;
+    }
+    .text-instruction-des{
+        color: #787878;
+        font-family: 'Inter';
+        font-size: 12px;
+        font-weight: 300;
+        line-height: normal;
+        text-align: left;
+    }
+}

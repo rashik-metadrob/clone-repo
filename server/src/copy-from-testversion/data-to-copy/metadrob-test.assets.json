@@ -1,0 +1,600 @@
+[{
+  "_id": {
+    "$oid": "658e5e63a7de6f87bc492566"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Test",
+  "thumnail": "thumnails/1703829088930-file.png",
+  "filePath": "textures/1703829090499-file.png",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-29T05:51:31.465Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T05:51:31.465Z"
+  },
+  "__v": 0,
+  "type": 0
+},
+{
+  "_id": {
+    "$oid": "658e5f45a7de6f87bc4925b1"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "New carpet",
+  "thumnail": "thumnails/1703829314473-file.png",
+  "filePath": "textures/1703829316482-file.png",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-29T05:55:17.568Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T05:55:17.568Z"
+  },
+  "__v": 0,
+  "type": 0
+},
+{
+  "_id": {
+    "$oid": "6596460f2225901f721e3603"
+  },
+  "isDeleted": false,
+  "size": 1578760,
+  "type": 1,
+  "name": "All Hanging Glass pot",
+  "thumnail": "thumnails/1704347148395-file.png",
+  "filePath": "galleries/1704347150305-file.glb",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-04T05:45:51.477Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-04T05:45:51.477Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659656402225901f721e37f5"
+  },
+  "isDeleted": false,
+  "size": 22493,
+  "type": 1,
+  "name": "sdfdsf",
+  "thumnail": "thumnails/1704351294909-file.jpg",
+  "filePath": "galleries/1704351295607-file.jpg",
+  "createdBy": {
+    "$oid": "64d46aa77edc541c9b4cfd56"
+  },
+  "createdAt": {
+    "$date": "2024-01-04T06:54:56.099Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-04T06:54:56.099Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a10e6d663d3d8dce8fe135"
+  },
+  "isDeleted": false,
+  "size": 37431,
+  "type": 1,
+  "name": "AAA",
+  "thumnail": "thumnails/1705053804636-file.png",
+  "filePath": "galleries/1705053805299-file.png",
+  "createdBy": {
+    "$oid": "646dd2b388e5711036584895"
+  },
+  "createdAt": {
+    "$date": "2024-01-12T10:03:25.794Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-12T10:03:25.794Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a642654ce7cfe978f40859"
+  },
+  "isDeleted": false,
+  "size": 78924,
+  "type": 1,
+  "name": "asd",
+  "thumnail": "thumnails/1705394788784-file.jpg",
+  "filePath": "galleries/1705394789201-file.glb",
+  "createdBy": {
+    "$oid": "6505859d5d23fc11b37c435d"
+  },
+  "createdAt": {
+    "$date": "2024-01-16T08:46:29.856Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T08:46:29.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a67e564ce7cfe978f412b8"
+  },
+  "isDeleted": false,
+  "size": 1556401,
+  "type": 1,
+  "name": "deathFlower",
+  "thumnail": "thumnails/1705410131456-file.png",
+  "filePath": "galleries/1705410133465-file.png",
+  "createdBy": {
+    "$oid": "6486b4fb3872e8cfc4fad7a7"
+  },
+  "createdAt": {
+    "$date": "2024-01-16T13:02:14.308Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T13:02:14.308Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a67e984ce7cfe978f412d7"
+  },
+  "isDeleted": false,
+  "size": 1556401,
+  "type": 1,
+  "name": "Shoe",
+  "thumnail": "thumnails/1705410198390-file.png",
+  "filePath": "galleries/1705410200306-file.png",
+  "createdBy": {
+    "$oid": "6486b4fb3872e8cfc4fad7a7"
+  },
+  "createdAt": {
+    "$date": "2024-01-16T13:03:20.835Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T13:03:20.835Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a6806a4ce7cfe978f4131d"
+  },
+  "isDeleted": false,
+  "size": 2566456,
+  "type": 1,
+  "name": "flowerDe",
+  "thumnail": "thumnails/1705410663449-file.png",
+  "filePath": "galleries/1705410665551-file.glb",
+  "createdBy": {
+    "$oid": "6486b4fb3872e8cfc4fad7a7"
+  },
+  "createdAt": {
+    "$date": "2024-01-16T13:11:06.415Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T13:11:06.415Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a758054ce7cfe978f413c4"
+  },
+  "isDeleted": false,
+  "size": 132,
+  "type": 1,
+  "name": "Heel",
+  "thumnail": "thumnails/1705465859234-file.png",
+  "filePath": "galleries/1705465860786-file.glb",
+  "createdBy": {
+    "$oid": "648fffb0a1dbdf90c0ba8586"
+  },
+  "createdAt": {
+    "$date": "2024-01-17T04:31:01.123Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T04:31:01.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a758d74ce7cfe978f41443"
+  },
+  "isDeleted": false,
+  "size": 5353840,
+  "type": 1,
+  "name": "asda",
+  "thumnail": "thumnails/1705466069162-file.png",
+  "filePath": "galleries/1705466070924-file.glb",
+  "createdBy": {
+    "$oid": "648fffb0a1dbdf90c0ba8586"
+  },
+  "createdAt": {
+    "$date": "2024-01-17T04:34:31.847Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T04:34:31.847Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a8bf542ee32b409a10ab39"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "type": 0,
+  "name": "New",
+  "thumnail": "thumnails/1705557842850-file.jpg",
+  "filePath": "textures/1705557843830-file.jpg",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-18T06:04:04.491Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T06:04:04.491Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bb9b438b8b7a052851ce9b"
+  },
+  "isDeleted": false,
+  "size": 260504,
+  "type": 1,
+  "name": "Marshmellow",
+  "thumnail": "thumnails/1706793793108-file.png",
+  "filePath": "galleries/1706793795262-file.glb",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-02-01T13:23:15.636Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T13:23:15.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bb9bcf8b8b7a052851cec3"
+  },
+  "isDeleted": false,
+  "size": 1222876,
+  "type": 1,
+  "name": "Zigzag",
+  "thumnail": "thumnails/1706793932994-file.png",
+  "filePath": "galleries/1706793934376-file.png",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-02-01T13:25:35.662Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T13:25:35.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bb9bfa8b8b7a052851ced4"
+  },
+  "isDeleted": false,
+  "size": 1222876,
+  "type": 1,
+  "name": "ziggy",
+  "thumnail": "thumnails/1706793976795-file.png",
+  "filePath": "galleries/1706793978118-file.png",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-02-01T13:26:18.621Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T13:26:18.621Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bc9bbb8b8b7a052851d1f0"
+  },
+  "isDeleted": false,
+  "size": 36118,
+  "type": 1,
+  "name": "2d stone grass",
+  "thumnail": "thumnails/1706859450890-file.png",
+  "filePath": "galleries/1706859451259-file.png",
+  "createdBy": {
+    "$oid": "648fffb0a1dbdf90c0ba8586"
+  },
+  "createdAt": {
+    "$date": "2024-02-02T07:37:31.598Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T07:37:31.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bc9c4f8b8b7a052851d227"
+  },
+  "isDeleted": false,
+  "size": 2850828,
+  "type": 1,
+  "name": "asdasd",
+  "thumnail": "thumnails/1706859597344-file.png",
+  "filePath": "galleries/1706859598675-file.glb",
+  "createdBy": {
+    "$oid": "648fffb0a1dbdf90c0ba8586"
+  },
+  "createdAt": {
+    "$date": "2024-02-02T07:39:59.388Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T07:39:59.388Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cc62a34f27ee032bf49c8a"
+  },
+  "isDeleted": false,
+  "size": 1556401,
+  "type": 1,
+  "name": "Red shoes",
+  "thumnail": "thumnails/1707893408975-file.png",
+  "filePath": "galleries/1707893410592-file.png",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-02-14T06:50:11.260Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-14T06:50:11.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65eab541a228ea43615d1b5e"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 5636937,
+  "type": 6,
+  "name": "BG",
+  "thumnail": "1709880640569-file.png",
+  "filePath": "1709880638821-file.mp4",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-03-08T06:50:41.145Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-08T06:50:41.145Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ec2bbdf8940968868cecfd"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 1779101,
+  "type": 1,
+  "name": "blue sgoe",
+  "thumnail": "thumnails/1709976507346-file.png",
+  "filePath": "galleries/1709976509089-file.png",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-03-09T09:28:29.642Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-09T09:28:29.642Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ec2be3f8940968868ced00"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 1412682,
+  "type": 1,
+  "name": "Formal shoe",
+  "thumnail": "thumnails/1709976545411-file.png",
+  "filePath": "galleries/1709976546880-file.png",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-03-09T09:29:07.633Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-09T09:29:07.633Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65eeb67bf8940968868cf72d"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 9260610,
+  "type": 6,
+  "name": "Instax",
+  "thumnail": "1710143098889-file.jpg",
+  "filePath": "1710143096754-file.mp4",
+  "createdBy": {
+    "$oid": "6505859d5d23fc11b37c435d"
+  },
+  "createdAt": {
+    "$date": "2024-03-11T07:44:59.305Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-11T07:44:59.305Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65eec216f8940968868cf809"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 166122,
+  "type": 6,
+  "name": "Instamix",
+  "thumnail": "1710146069808-file.png",
+  "filePath": "1710146068938-file.png",
+  "createdBy": {
+    "$oid": "6505859d5d23fc11b37c435d"
+  },
+  "createdAt": {
+    "$date": "2024-03-11T08:34:30.506Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-11T08:34:30.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fd6562c7ecaf807a634aea"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 136259,
+  "type": 1,
+  "name": "Screenshot",
+  "thumnail": "thumnails/1711105376394-file.jpg",
+  "filePath": "galleries/1711105377449-file.jpg",
+  "createdBy": {
+    "$oid": "6486b4fb3872e8cfc4fad7a7"
+  },
+  "createdAt": {
+    "$date": "2024-03-22T11:02:58.301Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T11:02:58.301Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6603da7e30206c0c7381a263"
+  },
+  "tags": [
+    "GrayLabellogo"
+  ],
+  "isDeleted": false,
+  "size": 3778,
+  "type": 6,
+  "name": "Gray Label logo",
+  "thumnail": "1711528574346-file.png",
+  "filePath": "1711528573980-file.png",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-03-27T08:36:14.919Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-27T08:36:14.919Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66056612bfa97a7603cbc4f2"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 11090535,
+  "type": 6,
+  "name": "Welcome Video",
+  "thumnail": "1711629842034-file.png",
+  "filePath": "1711629839707-file.mov",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-03-28T12:44:02.632Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-28T12:44:02.632Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66056702bfa97a7603cbc525"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 11090535,
+  "type": 6,
+  "name": "Welcome_Video",
+  "thumnail": "1711630081642-file.png",
+  "filePath": "1711630079149-file.mov",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-03-28T12:48:02.099Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-28T12:48:02.099Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66059de18b41588323c0eba0"
+  },
+  "tags": [],
+  "isDeleted": false,
+  "size": 19894494,
+  "type": 6,
+  "name": "Product Media",
+  "thumnail": "1711644120748-file.mp4",
+  "filePath": "1711644120748-file.mp4",
+  "createdBy": {
+    "$oid": "64e8378d0d42e56a1761c5ce"
+  },
+  "createdAt": {
+    "$date": "2024-03-28T16:42:09.683Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-28T16:42:09.683Z"
+  },
+  "__v": 0
+}]

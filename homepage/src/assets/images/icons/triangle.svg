@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230.825" height="215.327" viewBox="0 0 230.825 215.327">
+  <defs>
+    <linearGradient id="myLinearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16F6FE" />
+      <stop offset="100%" style="stop-color:#9904FC" />
+    </linearGradient>
+  </defs>
+  <path id="Exclusion_1" data-name="Exclusion 1" d="M188,163H0L94,0l94,163h0ZM94,21,17,154H171Z" transform="translate(0 61.207) rotate(-19)" fill="url(#myLinearGradient)"/>
+</svg>

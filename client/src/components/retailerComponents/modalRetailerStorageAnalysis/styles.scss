@@ -1,0 +1,11 @@
+.modal-retailer-storage-analysis{
+    .ant-modal-content{
+        background: var(--theme-back-ground);
+        padding: 30px;
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+    }
+}

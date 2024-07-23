@@ -1,0 +1,110 @@
+.menu-preview-personal-overlay{
+    .menu-preview-personal-content{
+        margin-bottom: 10px;
+        padding: 20px 24px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(4px);
+        width: 268px;
+        max-width: 100%;
+        overflow-y: auto;
+        max-height: calc(100vh - 82px);
+        .avatar-container{
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            .name-container{
+                flex: auto;
+                .name{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px; /* 137.5% */
+                }
+                .email{
+                    color: #d8d8d8;
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; /* 166.667% */
+                    word-break: break-all;
+                }
+            }
+        }
+        .menu-container{
+            border-radius: 9px;
+            border: 1px solid #D7D7D7;
+            display: flex;
+            flex-direction: column;
+            .menu-item{
+                padding: 13px 8px;
+                display: flex;
+                justify-content: space-between;
+                gap: 8px;
+                cursor: pointer;
+                transition: all 0.2s linear;
+                background: rgba(0, 0, 0, 0);
+                &:hover{
+                    background: rgba(0, 0, 0, 0.20);
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid #D7D7D7;
+                }
+                .title-container{
+                    .title{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    .title-description{
+                        color: #d8d8d8;
+                        font-family: "Inter";
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;    
+                    }
+                    .text-logout{
+                        color: #d8d8d8;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottom-right-container{
+    position: absolute;
+    bottom: 16px;
+    right: 35px;
+    z-index: 3;
+
+    display: flex;
+    justify-content: end;
+    max-width: calc(100% - 212.5px);
+    width: auto;
+    align-items: center;
+    gap: 22px;
+    user-select: none;
+    &:has(.preview-chat-input){
+        width: 400px;
+    }
+    .btn{
+        // width: clamp(32px,8vh,50px);
+        // height: clamp(32px,8vh,50px);
+        border-radius: 50%;
+        background: #FFFFFF;
+        cursor: pointer;
+    }
+}

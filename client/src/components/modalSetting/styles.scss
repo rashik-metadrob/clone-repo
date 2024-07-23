@@ -1,0 +1,74 @@
+.modal-setting{
+    .ant-modal-content{
+        background: rgb(2, 2, 14);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 49px 54px;
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        background: rgba(0, 0, 0, 0.40);
+        backdrop-filter: blur(10px);
+        .modal-setting-content{
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+            .setting-item{
+                display: grid;
+                grid-template-columns: 1fr 120px;
+                align-items: center;
+                .title{
+                    color: #C0C0C0;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            .select-setting{
+                height: 25px;
+                border: none;
+                .ant-select-selector{
+                    height: 25px !important;
+                    border: none !important;
+                    background: transparent !important;
+                    border-radius: 8px;
+                    .ant-select-selection-search{
+                        .ant-select-selection-search-input{
+                            height: 100%;
+                            color: #FFF !important;
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                    .ant-select-selection-placeholder{
+                        color: #FFF !important;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+            
+                        position: relative;
+                        top: -2px;
+                    }
+                    .ant-select-selection-item{
+                        color: #FFF !important;
+                        font-family: 'Inter';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+            
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

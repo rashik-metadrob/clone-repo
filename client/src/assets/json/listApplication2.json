@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Application06",
+        "value": 0,
+        "total": 1400,
+        "color": "#1FEBCD"
+    },
+    {
+        "name": "Application07",
+        "value": 0,
+        "total": 1400,
+        "color": "#FEE622"
+    },
+    {
+        "name": "Application01",
+        "value": 0,
+        "total": 1400,
+        "color": "#1FEBCD"
+    },
+    {
+        "name": "Application03",
+        "value": 0,
+        "total": 1400,
+        "color": "#FE6528"
+    },
+    {
+        "name": "Application05",
+        "value": 0,
+        "total": 1400,
+        "color": "#FEE622"
+    }
+]

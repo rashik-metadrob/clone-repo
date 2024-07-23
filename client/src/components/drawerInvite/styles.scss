@@ -1,0 +1,103 @@
+.drawer-invite{
+    border-radius: 20px 0px 0px 20px;
+    background: rgba(0, 0, 0, 0.40) !important;
+    backdrop-filter: blur(15px);
+    .ant-drawer-body{
+        padding: 72px 28px;
+       .drawer-invite-content{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            min-height: 100%;
+            .content{
+                flex: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .title{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                .input-container{
+                    width: 100%;
+                    .input-email{
+                        height: 50px;
+                        border-radius: 5px;
+                        border: 1px solid #BFBFBF;
+                        background: transparent;
+
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        &::placeholder{
+                            color: #ECECEC;
+                            font-family: "Inter";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .text-seperate{
+                    width: 100%; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .line{
+                        flex: auto;
+                        border-bottom: solid 1px #FFF;
+                    }
+                    span { 
+                        background: transparent; 
+                        padding: 0 10px; 
+
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }
+                .btn-send-link{
+                    padding: 14px 16px 12px 16px;
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+                    background: #FFF;
+                    border-radius: 8px;
+                    transition: all 0.2s linear;
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.3);
+                    }
+                    span{
+                        color: #000;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+                .divider{
+                    border-bottom: solid 1px #FFFFFF;
+                    width: 100%;
+                }
+                .group-icon-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 31px;
+                }
+            }
+       }
+    }
+}

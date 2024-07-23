@@ -1,0 +1,60 @@
+.chart-container{
+    padding: 16px;
+    background: var(--card-normal-background) ;
+    border-radius: 12px;
+    .chart-container-top{
+        min-height: 90px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 8px;
+        .text-num-info{
+            // flex: 100%;
+            // width: auto;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: var(--normal-text-color);
+            text-align: left;
+            .text-hrs{
+                font-size: 24px;
+                color: var(--normal-text-color);
+            }
+        }
+        .canvas-chart-container{
+            flex: 100%;
+            width: 0;
+            flex-grow: 1;
+            height: 90px;
+        }
+    }
+    .chart-container-bottom{
+        .text-chart-tittle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--card-title-color) ;
+            text-align: left;
+        }
+        .text-last-month{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #8E8E8E;
+        }
+        .text-percent{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #00F6FF;
+        }
+    }
+}

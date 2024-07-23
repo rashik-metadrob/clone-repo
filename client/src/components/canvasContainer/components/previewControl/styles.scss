@@ -1,0 +1,267 @@
+.menu-preview-overlay{
+    border-radius: 10px;
+    .ant-dropdown-menu{
+        background: rgba(0, 0, 0, 0.40);
+        backdrop-filter: blur(15px);
+        padding: 13px 0px !important;
+    }
+    .ant-dropdown-menu-item{
+        padding: 0 !important;
+    }
+    .menu-preview-items{
+        width: 200px;
+        max-width: 100%;
+        padding: clamp(5px,2vh,11px) 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: clamp(5px,2vh,10px);
+        color: #FFF;
+        font-family: "Inter";
+        font-size: clamp(8px,3vh,16px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.3s linear;
+        &:hover{
+            background: rgba(0, 0, 0, 0.40);
+        }
+    }
+}
+.input-search-publish-product{
+    padding: 5px 12px;
+    height: 40px;
+    border-radius: 11px;
+    background: #00000080;
+    border: none;
+    &:not(.mobile) {
+        max-width: 400px;
+    }
+    &.mobile{
+        height: 38px;
+        border-radius: 19px;
+        transform-origin: right !important;
+        .ant-input{
+            transition: none;
+            font-size: clamp(8px,5vh,14px);
+            &::placeholder{
+                font-size: clamp(8px,5vh,14px);
+            }
+            width: 0%;
+        }
+        &.show-full-input{
+            .ant-input{
+                width: 100%;
+            }
+            .ant-input-suffix{
+                margin-inline-start: 0;
+            }
+        }
+        &:not(.show-full-input){
+            padding: 7px;
+            width: 38px !important;
+        }
+        .ant-input-suffix{
+            margin-inline-start: 0;
+            img{
+                height: 24px;
+            }
+        }
+        &.portrait{
+            width: 60vw;
+        }
+        &.landscape{
+            width: 30vw;
+        }
+    }
+    &:focus-within{
+        background: #00000080;
+    }
+    &:hover{
+        background: #00000080;
+    }
+    .ant-input{
+        color: #FFF !important;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.94px;
+        text-align: left;
+
+        background: transparent;
+
+        &::placeholder{
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.94px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.60);
+        }
+    }
+}
+
+.search-publish-product-result-overlay{
+    &.mobile{
+        &.landscape{
+            .search-publish-product-result-container{
+                padding: clamp(4px, 1vh, 8px) 16px !important;
+                .item{
+                    padding: clamp(4px, 1vh, 8px) 8px;
+                }
+            }
+        }
+    }
+    .search-publish-product-result-container{
+        background: rgba(0, 0, 0, 0.40);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        padding: 8px 16px !important;
+        max-height: 200px;
+        overflow-y: auto;
+        .item{
+            padding: 8px 8px;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.94px;
+            text-align: left;
+            color: #FFFFFF;
+            cursor: pointer;
+            &:hover{
+                background: #222222;
+            }
+            &.active{
+                background: #222222;
+            }
+        }
+    }
+}
+
+.navigate-and-run-container{
+    z-index: 3;
+    position: absolute;
+    bottom: 160px;
+    &.mobile{
+        &.portrait{
+            left: 25px;
+        }
+        &.landscape{
+            left: 75px;
+        }
+    }
+    .setting {
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgba($color: #000000, $alpha: 0.3);
+        padding: clamp(5px,2vh,12px);
+    
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        &.keep-running {
+            background: rgba(0, 0, 0, 0.15)
+        }
+    }
+}
+
+.top-preview-control-wrapper{
+    position: absolute;
+    top: 21px;
+    left: 35px;
+    width: calc(100vw - 70px);
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    .top-preview-control-item{
+        flex: 100%;
+    }
+    .btn-navigate{
+        // position: absolute;
+        // top: 21px;
+        // left: 35px;
+        // z-index: 3;
+    
+        width: fit-content;
+        padding: 10px 22px;
+        border-radius: 12px;
+        cursor: pointer;
+        background: rgba($color: #000000, $alpha: 0.5);
+        display: flex;
+        align-items: center;
+        gap: 17.5px;
+    
+        color: #FFF;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .logo-container{
+        // position: absolute;
+        // top: 21px;
+        // z-index: 3;
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: fit-content;
+        }
+        &.center{
+            align-items: center;
+        }
+        &.left{
+            align-items: left;
+        }
+    }
+    .invite-container{
+        // position: absolute;
+        // top: 21px;
+        // right: 35px;
+        // z-index: 5;
+        display: flex;
+        gap: 28.5px;
+        user-select: none;
+        &.mobile{
+            align-items: flex-end;
+            &.portrait{
+                max-width: 60vw;
+                min-width: 60vw;
+                flex-direction: column;
+            }
+            &.landscape{
+                flex-direction: row-reverse;
+            }
+        }
+        &.desktop{
+            flex-direction: row-reverse;
+            align-items: center !important;
+        }
+        .btn-invite{
+            padding: 13.5px 30px;
+            border-radius: 12px;
+            cursor: pointer;
+            background: rgba($color: #000000, $alpha: 0.5);
+            display: flex;
+            align-items: center;
+            gap: 17.5px;
+            color: #FFF;
+            font-family: 'Inter';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

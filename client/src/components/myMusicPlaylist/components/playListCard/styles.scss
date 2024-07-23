@@ -1,0 +1,78 @@
+.playlist-card{
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.40);
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    .playlist-card-info{
+        display: flex;
+        gap: 20px;
+    }
+    .playlist-info{
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .image-container{
+        width: 160px;
+        height: 103px;
+        overflow: hidden;
+        img{
+            width: 160px;
+            height: 103px;
+            object-fit: contain;
+            transition: all 0.3s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+    }
+    .title{
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .text-playlist{
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .description{
+        color: rgba($color: #FFF, $alpha: 0.6);
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        flex: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .list-song-table{
+        padding: 0 12px 12px 12px;
+    }
+    .play-button{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+    }
+}

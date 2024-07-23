@@ -1,0 +1,49 @@
+.meta-tags{
+    .ReactTags__tagInput{
+        box-sizing: border-box;
+        .ReactTags__tagInputField{
+            width: 100%;
+            padding: 4px 11px;
+            height: 50px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: var(--normal-text-color);
+            background: var(--control-background) ;
+            border: none;
+            outline: none;
+            &::placeholder{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: var(--normal-text-color);
+            }
+        }
+    }
+    .ReactTags__selected{
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        &:has(.tag-wrapper.ReactTags__tag){
+            margin-bottom: 12px;
+        }
+        .tag-wrapper.ReactTags__tag{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: var(--normal-text-color);
+            background: var(--control-background) ;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+}

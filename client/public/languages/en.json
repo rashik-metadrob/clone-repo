@@ -1,0 +1,52 @@
+{
+    "global": {
+        "welcome_to_dashboard": "Welcome to Dashboard",
+        "board": "Board",
+        "gross_income": "Gross Income",
+        "no_of_stores": "No of Stores",
+        "storage": "Storage",
+        "manage_storage": "Manage Storage",
+        "free_space": "Free Space",
+        "Videos": "Videos",
+        "Audio": "Audio",
+        "Images": "Images",
+        "3D": "3D",
+        "new_users": "New users",
+        "login_activity": "Login Activity",
+        "time_spent_on_exploring_tore": "Time spent on exploring store",
+        "product_of_the_month": "Product of the month",
+        "heatmap": "Heatmap",
+        "last_5_orders": "Last 5 Orders",
+        "show_all": "Show All",
+        "time_remaining": "Trial Remaining",
+        "online": "Online",
+        "store": "Store",
+        "welcome_to_your": "Welcome To Your",
+        "user_capacity": "Store Capacity",
+        "view": "View",
+        "select_a_template": "Select a Template",
+        "search": "Search"
+    },
+    "sidebar": {
+        "home": "Home",
+        "orders": "Orders",
+        "upload": "Upload",
+        "customers": "Customers",
+        "invite": "Invite",
+        "analytics": "Analytics",
+        "marketing": "Marketing",
+        "discounts": "Discounts",
+        "plugins": "Plugins",
+        "room": "Room",
+        "support": "Support",
+        "your_store": "Your Store",
+        "tutorial": "Tutorial",
+        "learn_how_to_use_metadrob_dashboard_showroom_builder": "Learn How to use Metadrob Dashboard Showroom Builder",
+        "logout": "Logout"
+    },
+    "store_page": {
+        "templates": "Templates",
+        "published": "Published",
+        "draft": "Draft"
+    }
+}

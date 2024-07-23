@@ -1,0 +1,60 @@
+.first-login-container{
+    .first-login-tabs-container{
+        border-radius: 29px;
+        border: 3px solid #FFF;
+        background: #0D0C0C;
+        filter: blur(0.4px);
+        .first-login-tabs{
+            height: 100%;
+            .ant-tabs-content-holder{
+                overflow-y: auto;
+            }
+            .ant-tabs-nav{
+                &::before{
+                    display: none;
+                }
+                .ant-tabs-nav-wrap{
+                    justify-content: center;
+                }
+                .ant-tabs-tab:not(:first-child){
+                    margin: 0 0 0 90px;
+                }
+                .ant-tabs-tab{
+                    padding: 16px 0;
+                    .ant-tabs-tab-btn{
+                        color: rgba(255, 255, 255, 0.50);
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    &.ant-tabs-tab-active{
+                        .ant-tabs-tab-btn{
+                            color: #FFF;
+                        }
+                    }
+                }
+                .ant-tabs-ink-bar{
+                    height: 2px;
+                    background-color: #00F6FF;
+                    border-radius: 30px;
+                    bottom: 11px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+    .first-login-container{
+        .first-login-tabs-container{
+            .first-login-tabs{
+                .ant-tabs-nav{
+                    .ant-tabs-nav-wrap{
+                        justify-content: start;
+                    }
+                }
+            }
+        }
+    }
+}

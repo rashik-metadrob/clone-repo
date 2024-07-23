@@ -1,0 +1,97 @@
+{
+  "THEMES" : {
+      "displayText" : "Themes",
+      "description" : "Build an online store with METADROB’s no-code virtual store creation tool.",
+      "value" : false
+  },
+  "NUM_OF_STORES_DRAFT" : {
+      "displayText" : "Number of Stores Draft",
+      "value" : 5
+  },
+  "NUM_OF_PRODUCTS" : {
+      "displayText" : "Number of Products",
+      "value" : 5
+  },
+  "STAFF_ACCOUNTS" : {
+      "displayText" : "Staff Accounts",
+      "description" : "Build an online store with METADROB’s no-code virtual store creation tool.",
+      "value" : 2
+  },
+  "3D_PRODUCT_LIBRARY_ACCESS" : {
+      "displayText" : "3D Product Library Access",
+      "description" : "Build an online store with METADROB’s no-code virtual store creation tool.",
+      "value" : "General"
+  },
+  "UPLOAD_LIMIT_OBJECTS" : {
+      "displayText" : "Upload Limit of Objects",
+      "value" : "Only 2D"
+  },
+  "MULTIPLAYER" : {
+      "displayText" : "Multiplayer",
+      "value" : false
+  },
+  "PER_PERSION_IN_ROOM" : {
+      "displayText" : "Per person in Room",
+      "value" : false
+  },
+  "NUM_OF_ROOMS_LOBBY_CHANNELS" : {
+      "displayText" : "Numbers of rooms/lobby/channels",
+      "value" : false
+  },
+  "WAITING_ROOM" : {
+      "displayText" : "Waiting room",
+      "value" : false
+  },
+  "CUSTOM_ROOM_CREATION_PER_MONTH" : {
+      "displayText" : "Custom room creation (per month)",
+      "value" : false
+  },
+  "ANALYTICS" : {
+      "displayText" : "Analytics",
+      "value" : "Basic"
+  },
+  "WHITE_LABELLING" : {
+      "displayText" : "White labelling",
+      "value" : false
+  },
+  "PLUGIN" : {
+      "displayText" : "Plugin",
+      "value" : false
+  },
+  "ABANDON_CARD_RECOVERY" : {
+      "displayText" : "Abandon Card Recovery",
+      "value" : false
+  },
+  "STAFF_TRAINING" : {
+      "displayText" : "Staff training",
+      "value" : false
+  },
+  "SUPPORT_24-7" : {
+      "displayText" : "24/7 support",
+      "value" : false
+  },
+  "NUM_OF_STORE_CAN_PUBLISH" : {
+      "displayText" : "Number of store can Publish",
+      "value" : 1
+  },
+  "DEDICATED_SUPPORT_STAFF" : {
+      "displayText" : "Dedicated Support Staff",
+      "value" : false
+  },
+  "PRODUCT_INTEGRATION_AND_STORE_CREATION" : {
+      "displayText" : "Product Integration and store creation",
+      "value" : false
+  },
+  "LOYALTY_POINTS_FOR_MONTHLY_BASIC" : {
+      "displayText" : "Loyalty points/rewards for monthly basis",
+      "value" : false
+  },
+  "REFERRAL_BONUS" : {
+      "displayText" : "Referral bonus/points",
+      "value" : false
+  },
+  "BUY_MORE_ROOM" : {
+      "displayText" : "Buy more rooms",
+      "value" : false
+  }
+}

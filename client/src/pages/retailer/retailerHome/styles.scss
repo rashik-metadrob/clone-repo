@@ -1,0 +1,14 @@
+.retailer-home-page-container{
+    height: 100%;
+    // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.10) 247px, transparent 20%);
+    background-image: var(--retailer-home-background);
+    .text-welcome{
+        color: var(--normal-text-color);
+        font-family: "Inter";
+        // font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        // line-height: 48px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,38 @@
+.admin-footer{
+    padding: 0;
+    background: #0C0C0C;
+    .admin-footer-container{
+        // padding: 36px 37px 25px 37px;
+        padding: 12px 37px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        .text-copyright{
+            color: rgba(255, 255, 255, 0.40);
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            user-select: none;
+        }
+        .group-links{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .link-item{
+                cursor: pointer;
+                padding: 5px 11px;
+                border-radius: 10.667px;
+                color: rgba(255, 255, 255, 0.40);
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+}

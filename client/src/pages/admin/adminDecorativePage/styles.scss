@@ -1,0 +1,121 @@
+.admin-decorative-page-container{
+    .admin-container-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        .left-side__template {
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+
+            .title {
+                display: inline-flex;
+                padding: 5.333px 10.667px;
+                justify-content: center;
+                align-items: center;
+                gap: 5.333px;
+                flex-shrink: 0;
+                color: #FFFFFF;
+
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                margin-right: 80px;
+            }
+
+            .filter-container {
+                display: flex;
+                align-items: center;
+
+                .filter-title {
+                    margin-right: 20px;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .filter-select {
+                    min-width: 120px;
+                    text-align: left;
+                    border-radius: 0;
+
+                    .ant-select-selector {
+                        border-radius: 2px;
+                        color: #FFFFFF !important;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        background: none;
+                        align-items: center;
+                        display: flex;
+                    }
+
+                    .ant-select-selection-item {
+                        color: #FFFFFF !important;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        align-items: center;
+                        display: flex;
+                    }
+                }
+                
+            }
+        }
+
+        .right-side__template {
+            display: flex;
+
+            .upload-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px 32px;
+                border-radius: 5px;
+                background: rgba(255, 255, 255, 0.10);
+                color: #FFF;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.667px;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.156);
+                }
+            }
+
+            .assign-role-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px 32px;
+                border-radius: 5px;
+                background: #FFF;
+                color: #000;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.667px;
+                cursor: pointer;
+                margin-left: 11px;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.912)
+                }
+            }
+        }
+    }
+}

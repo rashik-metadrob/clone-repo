@@ -1,0 +1,36 @@
+.tutorial-video-container{
+    position: relative;
+    .tutorial-video{
+        border-radius: 8px;
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+        video{
+            border-radius: 8px;
+        }
+    }
+    .video-name{
+        margin-top: 12px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--normal-text-color);
+        text-align: justify;
+        padding-left: 12px;
+
+        border-left: 5px solid #00F6FF;
+    }
+    .play-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        cursor: pointer;
+    }
+}
+.modal-preview-video{
+    .ant-modal-content{
+        background: transparent;
+    }
+}

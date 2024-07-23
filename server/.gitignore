@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+
+# yarn error logs
+yarn-error.log
+
+# Code coverage
+coverage
+
+public/uploads/*
+!public/uploads/default-assets
+#!public/uploads/default-assets/app-block-tutorials
+
+external_app
+
+yarn.lock
+
+.env
+
+logger

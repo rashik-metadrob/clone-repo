@@ -1,0 +1,133 @@
+.step-board{
+    height: 720px;
+    max-height: calc(100vh - 144px);
+    display: flex;
+    .board-tittle{
+        width: clamp(100px,50%,290px);
+        border-radius: 10px 0px 0px 10px;
+        background: rgba(0, 0, 0, 0.50);
+        height: 100%;
+        overflow-y: auto;
+        // padding: 58px 28px 14px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(5px,3vh,23px);
+        .step-container{
+            display: flex;
+            flex-direction: column;
+            gap: clamp(5px,3vh,23px);
+            flex: auto;
+            .step-item{
+                color: rgba(255, 255, 255, 0.70);
+                font-family: "Inter";
+                font-size: clamp(5px,2vh,16px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-align: left;
+                cursor: pointer;
+                &.active{
+                    color: #FFF;
+                    font-weight: 700;
+                }
+            }
+        }
+        .text-skip{
+            color: #00F6FF;
+            font-family: "Inter";
+            font-size: clamp(5px,2vh,16px);
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: left;
+            cursor: pointer;
+            user-select: none;
+            text-decoration: underline;
+        }
+    }
+    .board-content{
+        flex: auto;
+        width: 0;
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        .board-image{
+            height: 60%;
+        }
+        .board-text{
+            flex: auto;
+            padding: 30px 22px 14px 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .content{
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: clamp(5px,2vh,16px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 202.023%;
+                text-align: left;
+                kbd{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: clamp(5px,2vh,16px);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    border-radius: 6px;
+                    border: 1px solid #FFF;
+                    padding: clamp(3px,2vh,6px) clamp(5px,2vh,10px);
+                }
+            }
+            .text-next{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: clamp(5px,2vh,16px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-align: right;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .step-board{
+        flex-direction: column;
+        max-height: 100%;
+        .board-tittle{
+            width: 100%;
+            height: 100%;
+            overflow-y: hidden;
+            border-radius: 10px 10px 0px 0px;
+            padding-bottom: 24px;
+            .step-container{
+                height: 100%;
+            }
+        }
+        .board-content{
+            flex: auto;
+            width: 100%;
+            height: 100%;
+            border-radius: 0px 0px 10px 10px;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            .board-image{
+                height: 0%;
+            }
+            .board-text{
+                .text-next{
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}

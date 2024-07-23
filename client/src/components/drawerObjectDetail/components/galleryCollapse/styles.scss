@@ -1,0 +1,96 @@
+.gallery-collapse-container{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    .ant-collapse-header{
+        padding: 9px 7px !important;
+        align-items: center;
+        .ant-collapse-header-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            flex: auto !important;
+        }
+        .total-info{
+            .num{
+                color: #00DCFF;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .total{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+        }
+    }
+    .ant-collapse-content{
+        .ant-collapse-content-box{
+            padding: 17px 10px;
+            padding-top: 5px;
+            .gallery-collapse-content{
+                display: grid;
+                justify-content: space-between;
+                grid-template-columns: repeat(auto-fill, minmax(64px, 92px));
+                gap: 16px;
+                .gallery-item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    background: rgba($color: #000000, $alpha: 0.2);
+                    border-radius: 16px;
+                    .trash-container{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translateX(50%) translateY(-50%);
+                        cursor: pointer;
+                        img{ 
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    .checkbox-gallery-container{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+                    .gallery-image{
+                        object-fit: contain;
+                        transition: all 0.3s linear;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .add-button{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        width: 100%;
+                        height: 100%;
+                        min-height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 16px;
+                        border: dashed 1px #FFFFFF;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

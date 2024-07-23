@@ -1,0 +1,70 @@
+.preview-chat-input{
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    border-color: #FFF !important;
+    background: transparent;
+    height: 40px;
+    width: 0;
+    flex: auto;
+
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &::placeholder{
+        color: rgba(255, 255, 255, 0.67);
+    }
+    .ant-input{
+        background: transparent;
+        border: none;
+        outline: none;
+
+        color: #FFFFFF;
+        font-family: "Inter";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.67);
+        }
+    }
+}
+.menu-preview-chat-overlay{
+    .menu-preview-personal-content{
+        padding: 13px 14px;
+        background: rgba(11, 11, 11, 0.30);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 10px;
+        .chat-container{
+            display: flex;
+            align-items: start;
+            gap: 11px;
+            .chat-content{
+                flex: auto;
+                .name{
+                    color: #00F0FF;
+                    font-family: "Inter";
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .message{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

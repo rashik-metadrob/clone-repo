@@ -1,0 +1,118 @@
+.materials-collapse-container{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    .ant-collapse-header{
+        padding: 9px 7px !important;
+        align-items: center;
+        .ant-collapse-header-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    .ant-collapse-content{
+        .ant-collapse-content-box{
+            padding: 17px 10px;
+            padding-top: 5px;
+            .material-collapse-content{
+                .search-container{
+                    padding-bottom: 11px;
+                    border-bottom: solid 1px #FFFFFF;
+                    .input-search{
+                        background: rgba(0, 0, 0, 0.30);
+                        height: 40px;
+                        border-radius: 8px;
+                        border: none;
+                        padding: 4px 8px;
+                        .ant-input{
+                            padding-left: 9px;
+                            padding-right: 18px;
+                            background: transparent;
+
+                            color: #FFF;
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            &::placeholder{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: normal;
+                                color: #A5A5A5;
+                            }
+                        }
+                    }
+                }
+                .material-container{
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    padding-right: 17px;
+                    margin-top: 15px;
+                    max-height: 500px;
+                    overflow-y: auto;
+
+                    /* width */
+                    &::-webkit-scrollbar {
+                        width: 10px;
+                    }
+                    
+                    /* Track */
+                    &::-webkit-scrollbar-track {
+                        background: #000;
+                        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+                        border-radius: 30px;
+                    }
+                    
+                    /* Handle */
+                    &::-webkit-scrollbar-thumb {
+                        background: #FFF; 
+                        border-radius: 10px;
+                    }
+                    
+                    /* Handle on hover */
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: #FFF; 
+                    }
+
+                    .material-item{
+                        padding: 5px;
+                        display: flex;
+                        gap: 17px;
+                        align-items: center;
+                        border-radius: 5px;
+                        &.selected{
+                            border: 0.5px solid #FFF;
+                        }
+                        .image{
+                            padding: 7px;
+                            border-radius: 5px;
+                            background: rgba(0, 0, 0, 0.30);
+                            img{
+                                width: 56px;
+                                height: 56px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                            }
+                        }
+                        .name{
+                            color: #FFF;
+                            font-family: 'Inter';
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

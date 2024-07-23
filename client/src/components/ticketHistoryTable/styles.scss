@@ -1,0 +1,80 @@
+.ticket-history-table{
+    .ant-table{
+        border-radius: 0;
+        width: 100%;
+        overflow-x: auto;
+        background: transparent;
+        .ant-table-container{
+            .ant-table-content{
+                table{
+                    .ant-table-thead{
+                        .ant-table-cell{
+                            background: transparent;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #8E8E8E;
+                            border-bottom: none;
+                            padding-bottom: 4px;
+                            &::before{
+                                display: none;
+                            }
+                        }
+                    }
+                    .ant-table-tbody{
+                        .ant-table-cell{
+                            padding: 14px;
+                            border-bottom: none;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: var(--normal-text-color);
+                            &.ant-table-cell-row-hover{
+                                background: var(--card-normal-background) ;
+                                // cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ant-pagination{
+        padding-left: 14px;
+        padding-right: 14px;
+        .ant-pagination-item, .ant-pagination-prev, .ant-pagination-next{
+            a{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                // line-height: 15px;
+                color: var(--normal-text-color);
+            }
+            &.ant-pagination-item-active{
+                font-weight: 600;
+                background-color: var(--antd-pagination-background);
+                border-color: transparent;
+            }
+        }
+    }
+    .ant-table-empty{
+        .ant-table-placeholder{
+            background: var(--card-normal-background)  !important;
+            height: 300px;
+            .empty-container{
+                margin: 32px;
+                font-size: 14px;
+            }
+            &:hover{
+                .ant-table-cell{
+                    background: var(--card-normal-background)  !important;
+                }
+            }
+        }
+    }
+}

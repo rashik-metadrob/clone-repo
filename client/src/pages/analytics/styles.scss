@@ -1,0 +1,168 @@
+.analytics-container{
+    .over-view-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        .text-store-overview{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            color: var(--normal-text-color);
+        }
+        .over-view-group{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .select-filter{
+                background: transparent;
+                .ant-select-selector{
+                    background: transparent;
+                    border: none;
+                    border-radius: 0;
+                    .ant-select-selection-item{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: var(--normal-text-color);
+    
+                        display: flex;
+                        align-items: center;
+                    }
+                    .ant-select-selection-search{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: var(--normal-text-color);
+                    }
+                }
+            }
+            .text-date{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: var(--normal-text-color);
+            }
+        }
+    }
+    .chart-tittle-group{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        .text-chart-tittle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--card-title-color) ;
+            text-align: left;
+        }
+        .chart-tittle-right{
+            .text-total{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: var(--normal-text-color);
+                text-align: right;
+            }
+            .text-total-des{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: var(--card-title-color) ;
+                text-align: right;
+            }
+            .select-filter{
+                background: transparent;
+                border: none;
+                .ant-select-selector{
+                    background: transparent;
+                    border: none;
+                    border-radius: 0;
+                    .ant-select-selection-item{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: var(--normal-text-color);
+            
+                        display: flex;
+                        align-items: center;
+                    }
+                    .ant-select-selection-search{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: var(--normal-text-color);
+                    }
+                }
+                .ant-picker-input{
+                    input{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: var(--normal-text-color);
+                    }
+                    .ant-picker-suffix{
+                        svg{
+                            filter: invert(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .application-analytic-container{
+        padding: 16px;
+        background: var(--card-normal-background) ;
+        border-radius: 12px;
+        .text-tittle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            color: #6B9BDF;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        .application-item{
+            margin-top: 8px;
+            .text-name{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: var(--normal-text-color);
+            }
+            .text-value{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #98ACC4;
+            }
+        }
+    }
+}

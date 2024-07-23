@@ -1,0 +1,97 @@
+.preview-loading-screen-mask{
+    position: absolute;
+    inset: 0;
+    z-index: 1000;
+    pointer-events: none;
+    .preview-loading-screen-wrapper{
+        position: absolute;
+        inset: 0;
+        background: rgba($color: #090909, $alpha: 0.5);
+        z-index: 1000;
+        backdrop-filter: blur(4px);
+        .preview-loading-screen-container{
+            position: absolute;
+            inset: 117px;
+            left: 40px;
+            right: 40px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            box-sizing: border-box;
+            pointer-events: auto;
+            overflow-y: auto;
+            .btn-type{
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19.36px;
+                color: #FFFFFF;
+                border-radius: 5px;
+                border: solid 1px #FFF;
+                padding: 9px 19px;
+                background: transparent;
+                transition: all 0.3s linear;
+                &.active{
+                    background: #00F6FF;
+                    color: #000;
+                    border: none;
+                }
+            }
+            .preview-loading-screen-content{
+                flex: auto;
+                position: relative;
+                // background-color: #FFFFFF;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                padding: clamp(10px,4vh,32px);
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 24px;
+                justify-content: space-between;
+                .btn-enter-store{
+                    font-family: Inter;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19.36px;
+                    color: #000000;
+                    border-radius: 10px;
+
+                    background: #FFF;
+                    padding: 10.5px 20px;
+                }
+                .background-image{
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .btn-save{
+            position: absolute;
+            left: 50%;
+            bottom: 32px;
+            transform: translateX(-50%);
+
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.36px;
+            color: #000000;
+            border-radius: 10px;
+
+            background: #FFF;
+            padding: 10.5px 20px;
+            pointer-events: auto;
+        }
+    }
+    
+}

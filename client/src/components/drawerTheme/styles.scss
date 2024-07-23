@@ -1,0 +1,213 @@
+.drawer-theme-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // overflow: hidden;
+    .drawer-title-container{
+        padding: 17.5px 17px;
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(12.5px);
+        .title-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .close-container{
+            padding: 2px 7px;
+            border-radius: 3px;
+            background: rgba(0, 0, 0, 0.50);
+            height: fit-content;
+            cursor: pointer;
+            .text-close{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    .theme-list{
+        flex: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .theme-item{
+            cursor: pointer;
+            height: 125px;
+            background: rgba(0, 0, 0, 0.20);
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+            img{
+                height: 84.4px;
+                width: 160px;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+            .name-container{
+                flex: auto;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: start;
+                gap: 12px;
+                padding-left: 16px;
+                padding-right: 16px;
+                background: #1A1D21;
+                .name{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .ant-radio-wrapper{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .drawer-theme-content{
+        padding: 19px 14px;
+        .content-container{
+            padding: 8px 14px;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.30);
+            .title{
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-align: left;
+            }
+            .upload-content{
+                .model-upload{
+                    .ant-upload{
+                        width: 100% !important;
+                        height: 100% !important;
+                        border: none !important;
+                        margin: 0;
+                        padding: 0;
+                        .ant-upload{
+                            width: 100%;
+                        }
+                        .ant-upload.ant-upload-btn{
+                            padding-top: 19px;
+                            padding-bottom: 11px;
+                            padding-left: 9px;
+                            padding-right: 9px;
+                            border-radius: 5px !important;
+                            background: rgba(0, 0, 0, 0.30);
+                            .upload-info{
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: center;
+                                .text-drag-drop{
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                                .text-upload{
+                                    color: #FFF;
+                                    text-align: center;
+                                    font-family: "Inter";
+                                    font-size: 10px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                            .upload-info-image{
+                                img{
+                                    border-radius: 5px;
+                                }
+                            }
+                            .change-image-text{
+                                color: #00F6FF;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+
+                                padding: 0px 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .brand-color-container{
+                padding: 13px;
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.30);
+                display: flex;
+                flex-wrap: wrap;
+                gap: 19px;
+                .color-item{
+                    width: 84px;
+                    height: 84px;
+                    border-radius: 9px;
+                    padding: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    .text-name{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+                .btn-add{
+                    width: 84px;
+                    height: 84px;
+                    padding: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    border-radius: 9px;
+                    background: rgba(0, 0, 0, 0.30);
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

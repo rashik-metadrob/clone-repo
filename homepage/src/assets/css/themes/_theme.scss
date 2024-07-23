@@ -1,0 +1,134 @@
+// :root {
+//     --color-white-100: hsl(206, 5%, 98%);
+//     --color-white-200: hsl(206, 5%, 90%);
+//     --color-white-300: hsl(206, 5%, 80%);
+//     --color-white-400: hsl(206, 5%, 65%);
+//     --color-white-500: hsl(206, 5%, 50%);
+//     --color-white-600: hsl(206, 5%, 35%);
+
+//     --color-black-100: hsl(213, 20%, 9%);
+//     --color-black-200: hsl(213, 23%, 8%);
+//     --color-black-300: hsl(214, 21%, 6%);
+//     --color-black-400: hsl(210, 21%, 6%);
+//     --color-black-500: hsl(216, 22%, 4%);
+//     --color-black-600: hsl(220, 18%, 3%);
+//     --color-black-700: hsl(220, 27%, 2%);
+//     --color-black-800: hsl(180, 20%, 1%);
+
+//     --color-blue-100: hsla(270, 36%, 25%, 100%);
+//     --color-blue-200: hsla(270, 36%, 25%, 80%);
+//     --color-blue-300: hsla(270, 36%, 25%, 75%);
+
+//     --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+//       0 1px 2px 0 rgba(0, 0, 0, 0.06);
+//     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+//       0 2px 4px -1px rgba(0, 0, 0, 0.06);
+//     --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+//       0 4px 6px -2px rgba(0, 0, 0, 0.05);
+// }
+
+/*  Main Colors */
+
+$light-background: rgb(255, 255, 255);
+$dark-background: rgb(0, 0, 0);
+
+$primary-color: #13162a;
+// $secondary-color: #019BA5;
+
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+// ------------- KeyFrames
+
+@keyframes animationFramesOne {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-60%, -10%) rotate(36deg);
+  }
+  40% {
+    transform: translate(0%, 0%) rotate(72deg);
+  }
+  60% {
+    transform: translate(83px, 5%) rotate(108deg);
+  }
+  80% {
+    transform: translate(-40px, 0%) rotate(144deg);
+  }
+  to {
+    transform: translate(0) rotate(0deg);
+  }
+}
+
+@keyframes animationFramesOne2 {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  40% {
+    transform: translate(33%, -1px) rotate(120deg);
+  }
+  60% {
+    transform: translate(66%, -1px) rotate(200deg);
+  }
+  80% {
+    transform: translate(100%, 72px) rotate(260deg);
+  }
+  to {
+    transform: translate(0) rotate(0deg);
+  }
+}
+
+@keyframes animationFramesOne3 {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-60%, -10%) rotate(60deg);
+  }
+  40% {
+    transform: translate(0%, 0%) rotate(80deg);
+  }
+  60% {
+    transform: translate(50%, 10%) rotate(100deg);
+  }
+  80% {
+    transform: translate(100%, 20%) rotate(120deg);
+  }
+  to {
+    transform: translate(0) rotate(0deg);
+  }
+}
+
+@keyframes animationFramesOne4 {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  40% {
+    transform: translate(30%, 0) rotate(0deg);
+  }
+  80% {
+    transform: translate(60%, 0) rotate(10deg);
+  }
+  to {
+    transform: translate(0) rotate(0deg);
+  }
+}
+
+@keyframes animationFramesOne5 {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  40% {
+    transform: translate(33%, -1px) rotate(120deg);
+  }
+  60% {
+    transform: translate(66%, -1px) rotate(200deg);
+  }
+  80% {
+    transform: translate(100%, 72px) rotate(260deg);
+  }
+  to {
+    transform: translate(0) rotate(0deg);
+  }
+}

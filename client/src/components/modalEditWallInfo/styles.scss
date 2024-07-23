@@ -1,0 +1,92 @@
+.modal-edit-wall-info{
+    .ant-modal-content{
+        background: var(--retailer-modal-upload-background);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .modal-edit-wall-info-content{
+            .text-title{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                color: var(--normal-text-color);
+
+                text-align: center;
+                width: 0;
+                flex-grow: 1;
+            }
+            .form-input{
+                height: 50px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: var(--normal-text-color);
+                background: var(--control-background) ;
+                border: none;
+                outline: none;
+                &::placeholder{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: var(--normal-text-color);
+                }
+                .ant-input-number-input-wrap{
+                    height: 100%;
+                }
+                .ant-input-number-input{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: var(--normal-text-color);
+                    height: 100%;
+                }
+            }
+            
+            .btn-save{
+                font-family: "Inter";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: var(--normal-text-color);
+        
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                z-index: 1;
+                position: relative;
+        
+                border-radius: 5px;
+                border: 1px solid var(--light-border-color);
+                background: rgba(255, 255, 255, 0.10);
+        
+                padding: 4px 50px;
+        
+                img{
+                    filter: var(--svg-filter-invert);
+                    width: 27px;
+                    height: 31px;
+                }
+        
+                &:disabled{
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

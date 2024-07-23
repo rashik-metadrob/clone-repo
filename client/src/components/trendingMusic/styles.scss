@@ -1,0 +1,113 @@
+.trending-music-wrapper{
+    height: inherit;
+    overflow-y: auto;
+    .login-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .login-text{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .buttons-container{
+            display: flex;
+            :is(.btn-signup, .btn-login){
+                color: #000;
+                font-family: "Inter";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                border-radius: 3px;
+                background: #FFF;
+                width: 80px;
+                height: 25px;
+            }
+            :is(.btn-signup){
+                background: transparent;
+                color: rgba($color: #FFF, $alpha: 0.6);
+            }
+        }
+    }
+    .music-container{
+        .title{
+            color: #FFF;
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .music-list-wrapper{
+            width: 100%;
+            overflow-x: auto;
+            .react-horizontal-scrolling-menu--wrapper{
+                .react-horizontal-scrolling-menu--inner-wrapper{
+                    .react-horizontal-scrolling-menu--scroll-container{
+                        gap: 8px;
+                        scrollbar-width: none;
+                        &::-webkit-scrollbar{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .music-list{
+            display: flex;
+            gap: 16px;
+        }
+        .music-card{
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.40);
+            padding: 8px;
+            height: 222px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            .image-container{
+                width: 160px;
+                height: 103px;
+                overflow: hidden;
+                img{
+                    width: 160px;
+                    height: 103px;
+                    object-fit: contain;
+                    transition: all 0.3s;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            .title{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .description{
+                color: rgba($color: #FFF, $alpha: 0.6);
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                height: 0;
+                flex: auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

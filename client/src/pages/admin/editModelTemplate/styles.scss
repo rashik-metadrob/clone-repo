@@ -1,0 +1,59 @@
+.edit-model-template-container{
+    .btn-upload-hdri{
+        padding: 8px 24px;
+        background-color: #FFF;
+        border-radius: 6px;
+        transition: all 0.3s linear;
+        &:hover{
+            background-color: #F7F7F7;
+        }
+    }
+    .autosaving-text{
+        position: absolute;
+        z-index: 2;
+        bottom: 12px;
+        right: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        user-select: none;
+        .autosaving-animation{
+            animation: spin 0.5s linear;
+            animation-iteration-count: infinite;
+        }
+    }
+    .edit-model-button-container{
+        position: absolute;
+        left: 32px;
+        bottom: 32px;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        z-index: 2;
+        .btn-setting{
+            background: #00000080;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            border-radius: 10px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.36px;
+            text-align: left;
+            color: #FFFFFF;
+            padding: 11.5px 26.5px;
+            &.btn-white{
+                background: #FFFFFF;
+                color: #000000;
+            }
+            &.enable{
+                background: #55555580;
+            }
+        }
+    }
+}

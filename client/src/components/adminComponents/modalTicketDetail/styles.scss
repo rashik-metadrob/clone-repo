@@ -1,0 +1,116 @@
+.modal-ticket-detail{
+    .modal-ticket-detail-container {
+        .title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFF;
+            text-align: center;
+        }
+        .modal-ticket-detail-label{
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .modal-ticket-detail-content{
+            padding: 8px 16px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.2);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            color: #FFF;
+        }
+        .attachments-container{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .attachment-item{
+                padding: 8px 16px;
+                border-radius: 4px;
+                background: rgba(255, 255, 255, 0.2);
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                .attachment-info{
+                    .attachment-name{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #FFF;
+                    }
+                    .attachment-size{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+                .attachment-action{
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    .btn-action{
+                        max-height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+            .attachment-none{
+                padding: 8px 16px;
+                border-radius: 4px;
+                background: rgba(255, 255, 255, 0.2);
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #FFF;
+            }
+        }
+        .zoho-link{
+            width: 100%;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #FFF;
+            .zoho-link-content{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #FFF;
+                white-space: nowrap;
+            }
+        }
+        .zoho-link-description{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}

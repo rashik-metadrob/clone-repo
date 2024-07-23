@@ -1,0 +1,26 @@
+.admin-settings-page-container{
+    .checkbox-setting-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        padding: 12px 28px;
+        border-radius: 4px;
+        border: solid 1px #FFF;
+        .setting-content{
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            color: #FFF;
+            text-align: left;
+        }
+    }
+    .checkbox-setting-wrapper{
+        height: 100%;
+        .ant-spin-container{
+            height: 100%;
+        }
+    }
+}

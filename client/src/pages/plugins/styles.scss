@@ -1,0 +1,133 @@
+.plugins-container{
+    .plugins-container-header{
+        .plugins-container-tittle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            color: var(--normal-text-color);
+            text-align: left;
+        }
+    }
+    .plugins-filter-container{
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 36px;
+        row-gap: 24px;
+        flex-wrap: wrap;
+        .plugins-category-info{
+            font-family: 'Inter';
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            color: #8E8E8E;
+            cursor: pointer;
+            &.active{
+                color: var(--normal-text-color);
+            }
+        }
+        .shared-select{
+            width: 145px;
+            height: 30px;
+            .ant-select-selector{
+                height: 30px !important;
+                .ant-select-selection-search{
+                    .ant-select-selection-search-input{
+                        height: 30px;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                .ant-select-selection-item{
+                    height: 30px;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .shared-search-input{
+            .ant-input{
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                &::placeholder{
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    .card-list-container{
+        .card-container{
+            padding: 22px 13px;
+            border-radius: 8px;
+            background-color: var(--card-plugin-background);
+            display: flex;
+            gap: 16px;
+            width: auto;
+            flex: auto;
+            border-bottom: solid 13px var(--project-header-container-background);
+            .image-conatiner{
+                max-width: 190px;
+                img{
+                    min-width: 120px;
+                    height: auto;
+                }
+            }
+            .content-conatiner{
+                height: 100%;
+                .card-title{
+                    color: var(--normal-text-color);
+                    font-family: "Inter";
+                    font-size: 18px;
+                    font-style: italic;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-align: left;
+                }
+                .card-description{
+                    color: var(--card-plugin-text-description);
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: italic;
+                    font-weight: 300;
+                    line-height: normal;
+                    text-align: left;
+                }
+                .buttons-container{
+                    display: flex;
+                    gap: 19px;
+                    flex-wrap: wrap;
+                    button{
+                        padding: 8px 22px;
+                        color: var(--normal-text-color);
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: normal;
+                        border-radius: 8px;
+                        white-space: nowrap;
+                        &.btn-purchase{
+                            background: #00F6FF;
+                        }
+                        &.btn-trial{
+                            background: var(--btn-trial-background);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,218 @@
+.admin-pricing-plan-page-container{
+    .admin-container-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        .left-side__template {
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+
+            .title {
+                display: inline-flex;
+                padding: 5.333px 10.667px;
+                justify-content: center;
+                align-items: center;
+                gap: 5.333px;
+                flex-shrink: 0;
+                color: #FFFFFF;
+
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                margin-right: 80px;
+            }
+        }
+
+        .right-side__template {
+            display: flex;
+
+            .upload-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px 32px;
+                border-radius: 5px;
+                background: rgba(255, 255, 255, 0.10);
+                color: #FFF;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.667px;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.156);
+                }
+            }
+
+            .assign-role-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px 32px;
+                border-radius: 5px;
+                background: #FFF;
+                color: #000;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.667px;
+                cursor: pointer;
+                margin-left: 11px;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.912)
+                }
+            }
+        }
+    }
+    .admin-content-container{
+        display: grid;
+        padding: 0 16px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
+        gap: 32px;
+
+        .pricing-plan-card{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 400px;
+            // flex-grow: 0;
+            // flex-shrink: 1;
+            padding: 25px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.10);
+
+            .top-div {
+                flex-grow: 1;
+            }
+
+            .text-title{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+            }
+            .text-description{
+                color: #FFF;
+                text-align: center;
+                font-family: Inter;
+                font-size: 12.5px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                max-width: 308px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .group-month-price{
+                .text-price{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 83px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                .text-mo{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .text-year-price{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-decoration-line: underline;
+            }
+            .included-container{
+                .text-included{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-align: left;
+                }
+                .included-list{
+                    list-style-type: none;
+                    padding-inline-start:10px;
+                    li{
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        text-align: left;
+                    }
+                    li:not(:last-child){
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+            .btn-edit{
+                width: 204.561px;
+                height: 46.956px;
+                border-radius: 12px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border: solid 1px #FFF;
+                transition: all 0.3s;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgba($color: #FFF, $alpha: 0.2);
+                }
+            }
+        }
+    }
+}
+
+.menu-plan-overlay{
+    .menu-plan-overlay-content{
+        border-radius: 4px;
+        background: #FFF;
+        padding: 2px 11px;
+        .item{
+            color: #000;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 12px 0;
+            min-width: 220px;
+            cursor: pointer;
+            &:first-child{
+                border-bottom: solid 1px #D9D9D9;
+            }
+        }
+    }
+}

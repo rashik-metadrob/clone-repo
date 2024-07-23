@@ -1,0 +1,60 @@
+.edit-decorative-container{
+    .btn-upload-hdri{
+        padding: 8px 24px;
+        background-color: #FFF;
+        border-radius: 6px;
+        transition: all 0.3s linear;
+        &:hover{
+            background-color: #F7F7F7;
+        }
+    }
+    .autosaving-text{
+        position: absolute;
+        z-index: 2;
+        bottom: 12px;
+        right: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        user-select: none;
+        .autosaving-animation{
+            animation: spin 0.5s linear;
+            animation-iteration-count: infinite;
+        }
+    }
+    .input-name{
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        .ant-input{
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            outline: none;
+            border: none;
+            height: 40px;
+            box-shadow: none !important;
+            background-color: #FFFFFFCC;
+            padding-left: 12px;
+            padding-right: 12px;
+            &:focus{
+                background-color: #FFFFFFCC;
+            }
+        }
+        .ant-input-group-addon{
+            background-color: #FFFFFFCC;
+            border: none;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+}

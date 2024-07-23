@@ -1,0 +1,105 @@
+.retailer-shopify-config-modal{
+    .ant-modal-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        background: var(--theme-back-ground);
+        .ant-modal-header{
+            background: transparent;
+            .ant-modal-title{
+                color: var(--normal-text-color);
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .modal-shopify-manager-container{
+            .shopify-manager-card-container{
+                border: solid 2px #1B1E28;
+                padding: 19px 15px;
+                border-radius: 9px;
+                .form-input{
+                    height: 50px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: var(--normal-text-color);
+                    background: var(--card-normal-background) ;
+                    border: none;
+                    outline: none;
+                    padding-right: 50px;
+                    &::placeholder{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: var(--normal-text-color);
+                        opacity: 0.6;
+                    }
+                    .ant-input-number-input-wrap{
+                        height: 100%;
+                    }
+                    .ant-input-number-input{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: var(--normal-text-color);
+                        height: 100%;
+                    }
+                }
+            }
+            .btn-save{
+                font-family: "Inter";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: var(--normal-text-color);
+        
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                z-index: 1;
+                position: relative;
+        
+                border-radius: 5px;
+                border: 1px solid var(--light-border-color);
+                background: rgba(255, 255, 255, 0.10);
+        
+                padding: 4px 50px;
+        
+                img{
+                    filter: var(--svg-filter-invert);
+                    width: 27px;
+                    height: 31px;
+                }
+            }
+            .icon-view-token{
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                width: 25px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                filter: var(--svg-filter-invert);
+            }
+            .text-install-app{
+                color: var(--normal-text-color);
+                font-size: 16px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.dropdown-combobox-and-number{
+    &.selected-value{
+        min-width: 200px;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        border-bottom: solid 1px #FFF;
+        text-align: left;
+        padding: 0 11px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        span{
+            flex: auto;
+        }
+    }
+}
+
+.custom-input__select {
+    width: 100% !important;
+    div {
+        width: 100% !important;
+    }
+}
+
+.custom-combobox {
+    width: 200px;
+    height: 40px;
+
+    .ant-select-selector {
+        width: 200px;
+        height: 40px;
+        background: #101010 !important;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 0 !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        text-align: left;
+
+        .ant-select-selection-item {
+            color: #FFF;
+        }
+    }
+}
+
+.custom-combobox__popup-render {
+    background: #101010 !important;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 1px solid gray;
+    text-align: left;
+    .ant-select-item-option-content {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .ant-select-item-option-selected {
+        background: #5f5f5fb4 !important;
+    }
+
+    .ant-select-item-option-active {
+        background: #313131b4 !important;
+    }
+    .number-input__combobox {
+        font-size: 15px;
+        &:hover, &:focus{
+            background: #FFFFFF;
+        }
+    }
+    .number-input__combobox::-webkit-outer-spin-button,
+    .number-input__combobox::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    .number-input__combobox[type=number] {
+        -moz-appearance: textfield;
+    }
+}

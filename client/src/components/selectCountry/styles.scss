@@ -1,0 +1,41 @@
+.select-area{
+    text-align: left;
+    border-radius: 10px;
+    background: var(--profile-radio-content-background);
+    height: 60px;
+    width: 100%;
+    .ant-select-selector {
+        border-radius: 3px;
+        border: none !important;
+        background: var(--profile-radio-content-background) !important;
+        color: var(--normal-text-color) !important;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        background: none;
+        align-items: center;
+        display: flex;
+    }
+
+    .ant-select-selection-item {
+        color: var(--normal-text-color) !important;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        align-items: center;
+        display: flex;
+    }
+    .ant-select-selection-placeholder{
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba($color: #FFF, $alpha: 0.2) !important;
+    }
+}

@@ -1,0 +1,46 @@
+.moving-guide-wrapper{
+    position: absolute;
+    bottom: 88px;
+    left: 35px;
+    z-index: 0;
+    transition: z-index 0.5s;
+    transition-delay: 1s;
+    overflow: hidden;
+    &.show{
+        z-index: 2;
+        transition-delay: 0s;
+        .moving-guide-container{
+            transform: translateX(0);
+        }
+    }
+    .moving-guide-container{
+        transition: transform 0.5s linear;
+        transform: translateX(-100%);
+        background: var(--struction-board-background);
+        padding: 14px 12px;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        width: 300px;
+        .guide-item{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 120%;
+            color: var(--normal-text-color);
+            text-align: left;
+    
+            span{
+                width: 0;
+                flex: 100%;
+            }
+        }
+    }
+}

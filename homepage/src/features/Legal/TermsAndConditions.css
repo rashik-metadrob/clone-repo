@@ -1,0 +1,380 @@
+/* Container for the entire terms and conditions */
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white; /* Text color */
+  padding-top: 10%;
+}
+
+/* Style for section headings */
+.white-bold {
+  font-weight: bold;
+  color: white; /* Text color */
+}
+
+/* Style for left-aligned text content */
+.left-align {
+  text-align: left;
+}
+
+/* Style for unordered list items */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+}
+
+/* Style for list items */
+li {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+/* Common styles for both desktop and mobile */
+.section {
+  margin-top: -35%; /* This is a common margin for all sections except the first one */
+}
+.contactus-heading{
+  color: #FFF;
+font-family: Inter;
+font-size: 4vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: left;
+
+}
+.contactus-sub-heading{
+  color: #FFF;
+font-family: Inter;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: left;
+
+}
+.background-video-container-contact-us {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Aspect ratio: 16:9 (9 divided by 16 = 0.5625 or 56.25%) */
+}
+.overlay-content-contact-us {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #ffffff;
+}
+.contact-us-two-column-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.contact-us-column {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #fff; /* Vertical white line */
+}
+
+.contact-us-left-column {
+  /* Empty first column */
+}
+
+.contact-us-right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-section {
+  margin-bottom: 20px;
+  margin-left: 5%;
+
+}
+.contact-us-section-social {
+  margin-bottom: 20px;
+  margin-left: 5%;
+
+}
+
+
+/* In a CSS file or inline styles */
+.custom-iframe {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  margin-bottom: 20px; /* Adjust the bottom margin as needed */
+  width: 70vw; /* 90% of the viewport width */
+  height:80vh; /* 50% of the viewport height */
+  margin-left: 5%; /* Adjust the top margin as needed */
+  margin-right: 5%; /* Adjust the bottom margin as needed */
+}
+
+@media (max-width: 767px) {
+  .contact-us-section-social {
+    margin-top: 15%;
+    margin-left: 5%;
+
+  }
+  .contact-us-two-column-container {
+    display: block;
+    align-items: stretch;
+    padding-top: 10vh;
+  }
+  .contactus-heading{
+    color: #FFF;
+  font-family: Inter;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  padding-top: 10vh;
+
+
+  }
+}
+.contact-us-title {
+  text-align: left;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+@media (max-width: 767px) {
+  .contact-us-title {
+    text-align: left;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+  }
+}
+.contact-us-subtitle {
+  text-align: left;
+  margin-top: 5%;
+  color: #FFF;
+font-family: Inter;
+font-size: 1.25vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+@media (max-width: 767px) {
+  .contact-us-subtitle {
+    text-align: left;
+    margin-top: 10%;
+    color: #FFF;
+  font-family: Inter;
+  font-size: 2.25vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+}
+.contact-us-subtext {
+  text-align: left;
+  color: #FFF;
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.contact-us-four-column-container {
+  margin-top: 5%;
+  display: flex;
+    gap: 20px; /* Adjust the value to control the spacing between columns */
+}
+
+
+@media (max-width: 767px) {
+  .overlay-content {
+    font-size: 18px; /* Reduce the font size for smaller screens */
+    padding-top: 20px; /* Add top padding to the overlay content */
+    transform: translate(-50%, -45%); /* Adjust the vertical position of the overlay content */
+  }
+}
+@media (max-width: 767px) {
+  .background-video-container {
+    padding-bottom: 100%; /* Change the aspect ratio to 1:1 for mobile devices */
+  }
+}
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .section {
+    margin-top: -35%; /* Remove the negative margin for mobile view */
+  }
+.white-bold{
+  margin-top: 20%;
+}
+}
+
+/* Desktop-specific styles */
+@media (min-width: 769px) {
+  .FAQ {
+    margin-top: -10%; /* Apply a different margin for the first section on desktop */
+  }
+}
+
+.first{
+  margin-top:-10%;
+}
+
+
+
+
+
+.homeForm {
+  position: relative;
+  padding-block: 10px;
+}
+/*.homeForm::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -65px;
+  overflow: visible;
+  width: 35%;
+  height: 120px;
+  z-index: 0;
+  transform: skewY(351deg);
+  background-color: #0c0e1c;
+}
+.homeForm::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -65px;
+  overflow: visible;
+  width: 65%;
+  height: 120px;
+  z-index: 0;
+  transform: skewY(5deg);
+  background-color: #0c0e1c;
+}*/
+.homeForm .row {
+  align-items: center;
+}
+.homeForm .inner_content {
+  padding-inline: 6rem;
+  position: relative;
+  z-index: 1;
+}
+.homeForm .heading p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.homeForm .heading p span {
+  text-transform: uppercase;
+  font-style: italic;
+  color: #00cbff;
+  font-weight: 600;
+}
+.homeForm .heading .title {
+  line-height: 120%;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.homeForm .heading .title span {
+  color: #00cbff;
+  background: none;
+}
+.homeForm form .d-flex {
+  gap: 4rem;
+}
+.homeForm form .d-flex > * {
+  flex: 1;
+}
+.homeForm .input_grp {
+  margin-bottom: 2rem;
+}
+.homeForm .input_grp label {
+  display: block;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.homeForm .input_grp input,
+.homeForm .input_grp textarea {
+  height: 5.5rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  border-radius: 6px;color: #FFF;
+padding: 0 10px;
+}
+.homeForm .input_grp textarea {
+  height: auto;
+}
+.homeForm .button-wrapper {
+  position: relative;
+  /* width: -moz-fit-content;
+  width: fit-content; */
+}
+.homeForm .button-wrapper .subBtn {
+  background: #0c0e1c;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.homeForm .button-wrapper .button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(to left, #00cbff, #7e35fa);
+  border-radius: 6px;
+  z-index: 0;
+  transform: translate(-2px, -2px);
+  transition: filter 1s ease-in;
+}
+.homeForm .button-wrapper:hover .button-bg {
+  filter: blur(10px);
+  transition: filter 0.4s ease-in;
+}
+@media (min-width: 2000px) {
+  .homeForm::before {
+    transform: skewY(354deg);
+  }
+  .homeForm::after {
+    transform: skewY(3deg);
+  }
+}
+@media (max-width: 1440px) {
+  .homeForm .inner_content {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .homeForm {
+    padding-block: 3rem;
+  }
+  .homeForm .heading p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .homeForm .inner_content {
+    margin-top: 4rem;
+    padding-inline: 0rem;
+  }
+  .homeForm input,
+  .homeForm textarea {
+    height: 4.5rem;
+  }
+  .homeForm .d-flex {
+    gap: 2rem;
+  }
+  .homeForm .subBtn {
+    padding: 0.5rem 3rem !important;
+  }
+}

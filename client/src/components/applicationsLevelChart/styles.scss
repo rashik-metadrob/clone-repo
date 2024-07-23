@@ -1,0 +1,48 @@
+.application-level-container{
+    padding: 16px;
+    background: var(--card-normal-background) ;
+    border-radius: 12px;
+    .text-tittle{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--normal-text-color);
+        display: flex; 
+        align-items:flex-end;
+        gap: 4px;
+        .text-tittle-des{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 11px;
+            color: var(--normal-text-color);
+        }
+    }
+    .page-control{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 11px;
+        color: var(--normal-text-color);
+
+        display: flex;
+        gap: 4px;
+        img{
+            filter: var(--svg-filter-invert);
+        }
+    }
+    .level-info{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        .level-item{
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.modal-music-and-animation{
+    .ant-modal-content{
+        background-color: rgba(0, 0, 0, 0.60);
+        padding: 0;
+        border-radius: 0;
+        backdrop-filter: blur(4px);
+        .modal-music-and-animation-content{
+            .modal-title-container{
+                padding: 22px 23px 25px 23px;
+                background-color: rgba(0, 0, 0, 0.40);
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                .close-container{
+                    padding: 2px 7px;
+                    border-radius: 0px;
+                    background: rgba(0, 0, 0, 0.50);
+                    height: fit-content;
+                    cursor: pointer;
+                    .text-close{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            .modal-content{
+                .music-and-audio-source{
+                    padding: 24px;
+                    background: rgba(0, 0, 0, 0.40);
+                    .title{
+                        color: #FFF;
+                        font-family: "Inter";
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    .list-platform{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        flex-basis: 200px;
+                        gap: 24px;
+                        .image-container{
+                            width: 100%;
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 12px;
+                            &.active{
+                                border: solid 1px #FFFFFF;
+                            }
+                            span {
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 19.36px;
+                                text-align: left;
+                                color: #FFFFFF;
+                            }
+                            img{
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+                .music-content{
+                    overflow: hidden;
+                    height: inherit;
+                    cursor: pointer;
+                    user-select: none;
+                    display: flex;
+                    flex-direction: column;
+                    .music-tabs{
+                        .ant-tabs-nav{
+                            margin-right: 52px;
+                            &::before{
+                                border: solid 1px #FFF;
+                            }
+                            .ant-tabs-nav-wrap{
+                                .ant-tabs-nav-list{
+                                    .ant-tabs-tab{
+                                        justify-content: center;
+                                        &+.ant-tabs-tab{
+                                            margin-left: 48px;
+                                        }
+                                        .ant-tabs-tab-btn{
+                                            color: rgba(255, 255, 255, 0.50);;
+                                            font-family: "Inter";
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: normal;
+                                        }
+                                        &.ant-tabs-tab-active{
+                                            .ant-tabs-tab-btn{
+                                                color: #FFF;
+                                            }
+                                        }
+                                    }
+                                    .ant-tabs-ink-bar{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .ant-tabs-nav-operations{
+                                display: none;
+                            }
+                        }
+                        .ant-tabs-content-holder{
+                            color: #000000;
+                            min-height: 70px;
+                            .ant-tabs-content{
+                                height: 100%;
+                                .ant-tabs-tabpane{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .buttons-container{
+                            display: flex;
+                            :is(.btn-signup, .btn-login){
+                                color: #000;
+                                font-family: "Inter";
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+
+                                border-radius: 3px;
+                                background: #FFF;
+                                width: 80px;
+                                height: 25px;
+                            }
+                            :is(.btn-signup){
+                                background: transparent;
+                                color: rgba($color: #FFF, $alpha: 0.6);
+                            }
+                        }
+                        .profile-container{
+                            display: flex;
+                            gap: 12px;
+                            align-items: center;
+                            .name{
+                                color: #FFF;
+                                font-family: Inter;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                            .btn-logout{
+                                color: #000;
+                                font-family: "Inter";
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+
+                                border-radius: 3px;
+                                background: #FFF;
+                                width: 80px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                    .playing-bar-container{
+                        padding: 10px 19px;
+                        background: #188FA3;
+                        .playing-bar{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 10px;
+                            .current-play-album{
+                                display: flex;
+                                gap: 16px;
+                                align-items: center;
+                                .album-info{
+                                    .title{
+                                        color: rgba($color: #FFF, $alpha: 0.6);
+                                        font-family: "Inter";
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                    }
+                                    .action{
+                                        color: #FFF;
+                                        font-family: "Inter";
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

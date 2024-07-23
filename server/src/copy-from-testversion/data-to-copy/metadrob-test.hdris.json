@@ -1,0 +1,546 @@
+[{
+  "_id": {
+    "$oid": "654b6e576e337fb6aa729a20"
+  },
+  "isDeleted": true,
+  "name": "Machine",
+  "filePath": "1699442254528-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-08T11:17:43.531Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:09:30.691Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "654b6e5f6e337fb6aa729a2a"
+  },
+  "isDeleted": true,
+  "name": "Machine",
+  "filePath": "1699442250587-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-08T11:17:51.308Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:09:36.882Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "654b6e696e337fb6aa729a31"
+  },
+  "isDeleted": true,
+  "name": "Machine",
+  "filePath": "1699442260340-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-08T11:18:01.808Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:09:40.871Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "654b6e6c6e337fb6aa729a37"
+  },
+  "isDeleted": true,
+  "name": "Machine",
+  "filePath": "1699442260234-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-08T11:18:04.170Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:09:44.362Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "654b6e6c6e337fb6aa729a3d"
+  },
+  "isDeleted": false,
+  "name": "Machine",
+  "filePath": "1699442260204-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-08T11:18:04.937Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-08T11:18:04.937Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "654c78fd6e337fb6aa729b13"
+  },
+  "isDeleted": true,
+  "name": "Showroom Hdri",
+  "filePath": "1699510522097-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-09T06:15:25.657Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:09:52.283Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "654c78ff6e337fb6aa729b1a"
+  },
+  "isDeleted": false,
+  "name": "Showroom Hdri",
+  "filePath": "1699510524692-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-09T06:15:27.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-09T06:15:27.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65570caa6e2026d2a9b3b82e"
+  },
+  "isDeleted": false,
+  "name": "Electronic Showroom",
+  "filePath": "1700203689504-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-17T06:48:10.427Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-17T06:48:10.427Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "655b1479884f62764a537139"
+  },
+  "isDeleted": true,
+  "name": "New Showroom Hdri",
+  "filePath": "1700467831884-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-20T08:10:33.412Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T06:55:58.190Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "655b515399015a7e0d411da0"
+  },
+  "isDeleted": true,
+  "name": "New Showrooom",
+  "filePath": "1700483410316-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-20T12:30:11.857Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:10:01.962Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "656719b2b5d0268e67e6cc5f"
+  },
+  "isDeleted": true,
+  "name": "Sunglass Showroom",
+  "thumnail": "1701255600976-file.png",
+  "filePath": "1701255590198-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-29T11:00:02.316Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:10:16.839Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "656721c9b5d0268e67e6cca7"
+  },
+  "isDeleted": true,
+  "name": "Sunglass Showroom",
+  "thumnail": "1701257673123-file.png",
+  "filePath": "1701257671388-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-29T11:34:33.811Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-22T06:10:20.736Z"
+  },
+  "__v": 0,
+  "size": 0
+},
+{
+  "_id": {
+    "$oid": "656721cab5d0268e67e6ccab"
+  },
+  "isDeleted": false,
+  "name": "Sunglass Showroom",
+  "thumnail": "1701257673792-file.png",
+  "filePath": "1701257671866-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-11-29T11:34:34.160Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-29T11:34:34.160Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65717032d357ccebd81bcde8"
+  },
+  "isDeleted": false,
+  "size": 4720124,
+  "name": "Merge Showroom Hdri",
+  "thumnail": "1701933105752-file.png",
+  "filePath": "1703504168744-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-07T07:11:46.359Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-25T11:36:11.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65855993efdeebb682a6e6ed"
+  },
+  "isDeleted": true,
+  "size": 5737416,
+  "name": "Ovel Shape Showroom",
+  "thumnail": "1703238033906-file.png",
+  "filePath": "1703252238566-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-22T09:40:35.432Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-26T06:21:34.346Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "658a71083b22871ced595774"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Oval Showroom HDRI",
+  "thumnail": "1703571718728-file.png",
+  "filePath": "1703571718196-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-26T06:22:00.055Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-26T06:22:00.055Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "658bce39a7de6f87bc49060c"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Cloth showroom 2",
+  "thumnail": "1703661112825-file.jpg",
+  "filePath": "1703661111651-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-27T07:11:53.530Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-27T07:11:53.530Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "658bfe2ba7de6f87bc490ce4"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Green House Theme Showroom",
+  "thumnail": "1703673385573-file.jpg",
+  "filePath": "1703673384681-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-27T10:36:27.056Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-27T10:36:27.056Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "658e6d72a7de6f87bc4929ba"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Cosmetic_02_Showroom",
+  "thumnail": "1703832945147-file.jpg",
+  "filePath": "1703832944605-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2023-12-29T06:55:46.019Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T06:55:46.019Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6597e36705320abf8007943d"
+  },
+  "isDeleted": true,
+  "size": 5714346,
+  "name": "Cloth Showroom 02 Testing Jan-05",
+  "thumnail": "1704452967248-file.jpg",
+  "filePath": "1704706762159-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-05T11:09:27.974Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-08T09:48:26.723Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659bc51029667d1301301012"
+  },
+  "isDeleted": true,
+  "size": 1540112,
+  "name": "\"Cloth Showroom 02 Testing Jan-05\"",
+  "filePath": "1704712680015-file.hdr",
+  "thumnail": "1704707343914-file.jpg",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-08T09:49:04.848Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-08T11:27:25.737Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659bda4d29667d130130124b"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Cloth Showroom 02",
+  "thumnail": "1704712781009-file.jpg",
+  "filePath": "1704712773432-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-08T11:19:41.861Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-08T11:27:48.844Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659bda5029667d1301301250"
+  },
+  "isDeleted": true,
+  "size": 0,
+  "name": "022",
+  "thumnail": "1704712784104-file.jpg",
+  "filePath": "1704712773289-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-08T11:19:44.760Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-08T11:27:16.960Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659bda5229667d1301301254"
+  },
+  "isDeleted": true,
+  "size": 0,
+  "name": "022",
+  "thumnail": "1704712785460-file.jpg",
+  "filePath": "1704712776747-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-08T11:19:46.039Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-08T11:27:15.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a8c9372ee32b409a10ac46"
+  },
+  "isDeleted": false,
+  "size": 67691422,
+  "name": "Desert Showroom",
+  "filePath": "1705560366165-file.hdr",
+  "thumnail": "1705560374611-file.png",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-01-18T06:46:15.761Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T06:46:15.761Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c9e47642d764015f30503a"
+  },
+  "isDeleted": false,
+  "size": 4961352,
+  "name": "Cloth showroom HDRI",
+  "filePath": "1707730035981-file.hdr",
+  "thumnail": "1707730037735-file.jpg",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-02-12T09:27:18.335Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-12T09:27:18.335Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f443a85bf1f36590c1bdfe"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Fashion Accessories",
+  "thumnail": "1710506919235-file.png",
+  "filePath": "1710506917508-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-03-15T12:48:40.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-15T12:48:40.738Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fa9ba64b454afbf5d0fa76"
+  },
+  "isDeleted": false,
+  "size": 0,
+  "name": "Cosmetic and Jeweler Showroom",
+  "thumnail": "1710922661630-file.jpg",
+  "filePath": "1710922660554-file.hdr",
+  "createdBy": {
+    "$oid": "6488883b38f2e0095a1695c5"
+  },
+  "createdAt": {
+    "$date": "2024-03-20T08:17:42.355Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T08:17:42.355Z"
+  },
+  "__v": 0
+}]

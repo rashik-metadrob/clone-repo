@@ -1,0 +1,200 @@
+.project-sidebar-container{
+    position: sticky !important;
+    top: 0;
+    background: var(--project-sidebar-background) !important;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: var(--border-2);
+    padding-top: 21px;
+    padding-bottom: 21px;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .project-sidebar-menu-container{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .sidebar-menu-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img{
+                width: 32px;
+                height: 32px;
+                opacity: 0.4;
+                filter: var(--svg-filter-invert);
+            }
+            .sidebar-menu-text{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: var(--normal-text-color);
+            }
+            &:hover{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.project-layout{
+    overflow-x: hidden;
+    padding-top: 0px !important;
+    .ant-drawer{
+        position: absolute;
+        .drawer-shared{
+            background: rgba(0, 0, 0, 0.20);
+            backdrop-filter: blur(12.5px);
+            .ant-drawer-body{
+                padding: 0;
+                outline: none;
+            }
+        }
+    }
+    .control-instruct{
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.name-input-modal-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    z-index: 50;
+}
+
+.name-input-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 9999999999;
+    width: 537px;
+    background: none;
+    border-radius: 12px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    align-items: center;
+
+    &.mobile {
+        width: 100% !important;
+    }
+
+    .opacity-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        z-index: -1;
+    }
+
+    .modal-header {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 14px;
+    }
+
+    .sub-title {
+        color: #00F6FF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+
+    .content {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+    .name-input {
+        width: 80%;
+        height: 39.206px;
+        flex-shrink: 0;
+        background: none;
+        text-align: center;
+        border: 1px solid #00F6FF !important;
+        border-radius: 6px;
+        color: white;
+        margin-bottom: 12px;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.47);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    .start-btn {
+        padding: 8px 30px;
+        border-radius: 6px;
+        border: 1px solid white;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .exit {
+        position: absolute;
+        right: 15px;
+        top: 4px;
+        color: white;
+        font-size: larger;
+        cursor: pointer;
+        transform: scaleX(150%);
+    }
+
+    .gender-radio {
+        margin-bottom: 30px;
+        .ant-radio-wrapper span{
+            color: #FFF;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

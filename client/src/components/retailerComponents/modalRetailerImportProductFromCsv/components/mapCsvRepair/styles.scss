@@ -1,0 +1,69 @@
+
+.map-csv-repair-wrapper{
+    width: 100%;
+    overflow-x: auto;
+    .map-csv-repair-table{
+        table-layout: auto;
+        border-collapse: collapse;
+        thead th, tr td {
+            // border-collapse: collapse;
+            border: 1px inset var(--light-border-color);
+        }
+        thead{
+            th{
+                color: var(--normal-text-color);
+                padding: 8px;
+
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    position: relative;
+                    color: var(--normal-text-color);
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding: 8px;
+                    z-index: 1;
+                    border-spacing: 0;
+                    &.field-is-required{
+                        border: 2px solid red;
+                        z-index: 2;
+                        background-color: rgba($color: #FF0000, $alpha: 0.2);
+                    }
+                    &.field-is-not-valid:not(.field-is-required){
+                        border: 2px solid yellow;
+                        z-index: 2;
+                        background-color: rgba($color: yellow, $alpha: 0.2);
+                    }
+                }
+            }
+        }
+        .map-csv-repair-input-number{
+            background-color: transparent;
+            border: 1px inset var(--light-border-color) !important;
+            width: 100%;
+
+            .ant-input-number-input{
+                color: var(--normal-text-color);
+                font-family: Inter;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        .map-csv-repair-input-text{
+            background-color: transparent;
+            border: 1px inset var(--light-border-color) !important;
+            width: 100%;
+
+            color: var(--normal-text-color);
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}

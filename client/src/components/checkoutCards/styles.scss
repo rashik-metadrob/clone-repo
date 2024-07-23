@@ -1,0 +1,210 @@
+.checkout-cards-wrapper{
+    .content-container{
+        .title-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                color: #FFF;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .text-add{
+                color: #FF6500;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                cursor: pointer;
+            }
+        }
+        .content-list{
+            max-height: 250px;
+            overflow-y: auto;
+            text-align: left;
+            .ant-radio-group{
+                width: 100%;
+                .ant-space{
+                    gap: 16px !important;
+                    width: 100%;
+                    .ant-radio-wrapper{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 0;
+                        .ant-radio{
+                            .ant-radio-inner{
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+                        .ant-radio-checked{
+                            .ant-radio-inner{
+                                border-color: #FFFFFF;
+                                border-width: 2px;
+                                background-color: #FF6500;
+                                &::after{
+                                    display: none;
+                                }
+                            }   
+                        }
+                        span:last-child{
+                            flex: auto;
+                            padding-right: 0;
+
+                        }
+                    }
+                }
+            }
+            .items-container{
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center;
+                .item-text{
+                    color: #FFF;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.15px;
+                }
+                .item-icon{
+                    width: 64px;
+                    height: 38px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    background: #FFF;
+                    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.08);
+                }
+            }
+        }
+        .select-payment-gate{
+            padding: 21px 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            .payment-gate-item{
+                width: 100px;
+                height: 72px;
+                border-radius: 8px;
+                background: #FFF;
+                box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.08);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &.selected{
+                    border: 2px solid #FF6500;
+                }
+            }
+        }
+        .input-coupon-code{
+            height: 50px;
+            border-radius: 5px;
+            background: rgba(94, 94, 94, 0.30);
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .ant-input{
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #FFFFFF;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.50);
+                }
+            }
+            .ant-input-suffix{
+                border-left: solid 1px #FFF;
+                .text-aplly{
+                    padding-left: 26px;
+                    padding-right: 29px;
+                    color: #FF6500;
+                    text-align: right;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .content-border-bottom{
+        border-bottom: solid 1px #757575;
+    }
+    .order-info-container{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        border-bottom: solid 1px #757575;
+        .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                color: #9B9B9B;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+            }
+            .value{
+                color: #FFF;
+                text-align: right;
+                font-family: "Inter";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn-save{
+            // padding: 15px 44px 11px 40px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.20);
+            border: none;
+            outline: none;
+            color: #FFF;
+            text-align: center;
+            font-family: "Inter";
+            // font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:disabled{
+                opacity: 0.5;
+                pointer-events: none;
+            }
+        }
+        .text-amount{
+            color: #FF6500;
+            text-align: right;
+            font-family: "Inter";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.admin-most-used-legend{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .dot{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    .text-label{
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    .text-label-percent{
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+
+        width: 35px;
+        text-align: left;
+    }
+}

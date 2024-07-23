@@ -1,0 +1,28 @@
+.upload-brand-logo-container{
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgba($color: #000000, $alpha: 0.3);
+    padding: 12px !important;
+    border-radius: 5px !important;
+    cursor: pointer;
+    .upload-info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text-title{
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19.36px;
+            color: #FFF;
+        }
+        .text-sub-title{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: #FFF;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.storage-analysis-card{
+    .storage-analysis-progess{
+        width: 100%;
+        height: 15px;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: #505050;
+        display: flex;
+        flex-direction: row;
+        .progess-item{
+            height: 15px;
+        }
+    }
+}
+.storage-analysis-progess-card{
+    &.mobile{
+        &.landscape{
+            .text-storage{
+                font-size: 32px;
+                line-height: 100%;
+            }
+            .text-freespace{
+                font-size: 12px;
+                line-height: 100%;
+            }
+        }
+        &.portrait{
+            .text-storage{
+                font-size: 32px;
+                line-height: 100%;
+            }
+            .text-freespace{
+                font-size: 12px;
+                line-height: 100%;
+            }
+        }
+    }
+    .text-storage{
+        font-size: 40px;
+        line-height: 38px;
+    }
+    .text-freespace{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

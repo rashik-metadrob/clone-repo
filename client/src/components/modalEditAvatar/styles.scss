@@ -1,0 +1,82 @@
+.modal-edit-avatar{
+    .ant-modal-content{
+        background: var(--retailer-modal-upload-background);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 26px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .profile-top-content{
+            padding: 24px 24px 16px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .avatar-container{
+                position: relative;
+                &:hover{
+                    .text-change{
+                        display: flex;
+                    }
+                }
+                .text-change{
+                    display: none;
+    
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: var(--normal-text-color);
+    
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    cursor: pointer;
+    
+                    justify-content: center;
+                    align-items: center;
+    
+                    background-color: rgba($color: #FFF, $alpha: 0.2);
+                    backdrop-filter: blur(4px);
+                }
+            }
+        }
+        .content-input{
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--normal-text-color);
+    
+            outline: none;
+            background: transparent;
+            border-bottom: solid 1px #828282;
+            padding: 0 0 4px 0;
+        }
+        .btn-update{
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: var(--normal-text-dark-color);
+    
+            width: 150px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background: var(--light-background);
+        }
+    }
+}

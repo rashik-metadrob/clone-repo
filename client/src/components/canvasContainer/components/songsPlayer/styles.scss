@@ -1,0 +1,13 @@
+.btn-mute-background-music{
+    // position: absolute;
+    // bottom: 10px;
+    // right: 10px;
+    color: black;
+    z-index: 2;
+    // margin-top: 12px;
+    img{
+        width: 26px !important;
+        height: 26px !important;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,111 @@
+.canvas-container{
+    flex: auto;
+}
+.sidebar-editor-tooltip{
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pointing-down-arrow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+#nippleContainerId{
+    .front{
+        background: radial-gradient(rgb(214, 214, 214), rgb(140, 140, 140) 30%, rgb(0, 0, 0) 60%) white !important;
+        border: solid 3px #FFFFFF;
+    }
+    .back{
+        background: radial-gradient(closest-side, #5f3a3a, #3e3e3e, #e8e8e8) !important;
+        border: solid 2px #FFFFFF;
+    }
+}
+.project-mode-control-higher{
+    position: absolute;
+    bottom: 78px;
+    right: 38px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    z-index: 2;
+    .btn-preview{
+        padding: 10px 25px;
+        background: rgba($color: #000000, $alpha: 0.5);
+        display: flex;
+        gap: 11px;
+        border-radius: 12px;
+        color: #FFF;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        user-select: none;
+    }
+}
+.project-mode-control{
+    position: absolute;
+    bottom: 24px;
+    right: 38px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    z-index: 2;
+
+    .btn-preview{
+        padding: 10px 25px;
+        background: rgba($color: #000000, $alpha: 0.5);
+        display: flex;
+        gap: 11px;
+        border-radius: 12px;
+        color: #FFF;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        user-select: none;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .autosaving-text{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        user-select: none;
+        .autosaving-animation{
+            animation: spin 0.5s linear;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.moving-guide-button-container{
+    position: absolute;
+    bottom: 28px;
+    left: 35px;
+    z-index: 6;
+    user-select: none;
+}

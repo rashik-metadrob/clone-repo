@@ -1,0 +1,419 @@
+.modal-pricing-plan{
+    .ant-modal-content{
+        background: rgb(2, 2, 14);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 12px 12px;
+        border-radius: 10px;
+        border: 2px solid var(--light-border-color);
+        background: rgba(0, 0, 0, 0.60);
+        backdrop-filter: blur(4px);
+        .pricing-plan-content-container{
+            .content-title{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 12px;
+                .content-title-text{
+                    max-width: 430px;
+                    font-family: Inter;
+                    font-size: 40.94px;
+                    font-weight: 700;
+                    line-height: 49.55px;
+                    text-align: left;
+                    color: #FFFFFF;
+                    .text-gradient{
+                        background-image: linear-gradient(to right, #00F6FF 2%, #AB00FF 48.2%);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -moz-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        -moz-text-fill-color: transparent;
+                        background-position: 100%;
+                    }
+                }
+                .toggle-select-pay-per-container{
+                    display: flex;
+                    gap: 0;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 4px;
+                    border: solid 1px #FFFFFF;
+                    padding: 2px;
+                    overflow: hidden;
+                    height: fit-content;
+                    .btn-select-pay-per{
+                        font-family: Inter;
+                        font-size: 10px;
+                        font-weight: 500;
+                        line-height: 12.1px;
+                        text-align: left;
+                        color: #FFFFFF;
+                        border-radius: 4px;
+                        padding: 7.7px 15px;
+                        transition: all 0.3s;
+                        &.active{
+                            background: #16F6FE;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .select-plan-types-wrapper{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                z-index: 2;
+            }
+            .plans-container{
+                margin: 0 clamp(12px, 1.5vw, 32px);
+            }
+           
+        }
+        .ant-modal-close{
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+        .pricing-plan-content{
+            .title{
+                color: #FFF;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .pricing-description{
+                color: #FFF;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .select-time-container{
+                border-radius: 3px;
+                border: 0.8px solid #FFF;
+                background: rgba(0, 0, 0, 0.50);
+                display: flex;
+                justify-content: space-around;
+                width: 180px;
+                padding: 9px 0;
+                position: relative;
+                .item{
+                    color: #505050;
+                    text-align: center;
+                    font-family: "Inter";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    &:hover{
+                        color: #FFFFFF;
+                    }
+                    &.active{
+                        color: #FFFFFF;
+                    }
+                }
+                .discount-percent{
+                    color: #00F6FF;
+                    text-align: center;
+                    font-family: "Inter";
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+
+                    position: absolute;
+                    bottom: 0;
+                    right: -60px;
+                    transform: translateY(50%);
+                    .discount-vector{
+                        position: absolute;
+                        top: -10px;
+                        left: 0;
+                        transform: translateX(-70%);
+                        img{
+                            width: 35px;
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+            .pricing-wrapper{
+                .pricing-container{
+                    height: 100%;
+                    .pricing-item{
+                        height: 100%;
+                        border-radius: 6px;
+                        background: #FFFFFF;
+
+                        position: relative;
+                        $border: 1px;
+                        &.high-light{
+                            background: #000000;
+                            border: solid 2px #FFFFFF;
+                            .pricing-item-content{
+                                .title{
+                                    color: #FFFFFF;
+                                }
+                                .description{
+                                    color: #FFFFFF;
+                                }
+                                .included-container{
+                                    .text-included{
+                                        color: #FFFFFF;
+                                    }
+                                    .text-view-full-plan{
+                                        color: #FFFFFF;
+                                    }
+                                }
+                                .included-list{
+                                    li{
+                                        color: #FFFFFF !important;
+                                    }
+                                    .list-style{
+                                        color: #000000;
+                                    }
+                                }
+                                .price-container{
+                                    .trial-day{
+                                        color: #FFFFFF;
+                                    }
+                                    .btn-get-start{
+                                        background: #00F6FF;
+                                        color: #000000;
+                                        &:hover{
+                                            background: #5ffaff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .pricing-item-content{
+                            padding: clamp(12px, 2.2vh, 24px) clamp(12px, 2.4vw, 46px) clamp(12px, 2.2vh, 24px) clamp(12px, 2.4vw, 46px);
+                            border-radius: 0 0 6px 6px;
+                            .tag-popular{
+                                padding: 2px 12px;
+                                border-radius: 10.11px;
+                                background: #000000;
+                                font-family: Montserrat;
+                                font-size: 9.43px;
+                                font-weight: 600;
+                                line-height: 11.5px;
+                                text-align: center;
+                                color: #FFFFFF;
+                                border: solid 1px #FFFFFF;
+
+                                position: relative;
+                                z-index: 1;
+                                
+                                &::before {
+                                    content:"";
+                                    position: absolute;
+                                    inset: 0;
+                                    transform: translate3d(0,0,-1px);
+                                    background: linear-gradient(90.19deg, #16F6FE 0.2%, #AB00FF 99.87%);
+                                    filter: blur(5px);
+                                    z-index: -3;
+                                }
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 100%;
+                                    background: #000000;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: -2;
+                                    border-radius: 10.11px;
+                                }
+                            }
+                            .title{
+                                font-family: Montserrat;
+                                font-size: 23.34px;
+                                font-weight: 700;
+                                line-height: 28.45px;
+                                text-align: left;
+                                color: #0F1226;
+                            }
+                            .description{
+                                font-family: Inter;
+                                font-size: 12.5px;
+                                font-weight: 500;
+                                line-height: 15.13px;
+                                text-align: justify;
+                                color: #262626;
+                            }
+                            .price-container{
+                                .trial-day{
+                                    font-family: Inter;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    line-height: 12.1px;
+                                    text-align: right;
+                                }
+                                .btn-trial-day{
+                                    font-family: Inter;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    line-height: 12.1px;
+                                    text-align: left;
+                                    cursor: pointer;
+                                    color: #16F6FE;
+                                }
+                                .btn-buy-monthly, .btn-buy-yearly{
+                                    border-radius: 5.32px;
+                                    background: #ECECEC;
+                                    width: 100%;
+                                    padding: 12px;
+
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    gap: 10px;
+                                    transition: all 0.3s linear;
+                                    cursor: default;
+
+                                    .text-des{
+                                        font-family: Montserrat;
+                                        font-size: 9.65px;
+                                        font-weight: 500;
+                                        line-height: 11.77px;
+                                        text-align: left;
+                                        color: #000000;
+                                    }
+                                    .text-price{
+                                        font-family: Montserrat;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        line-height: 19.5px;
+                                        text-align: left;
+                                        color: #0F1226;
+                                    }
+                                }
+                                .btn-get-start{
+                                    background: #0D0D0D;
+                                    border-radius: 5.32px;
+                                    width: 100%;
+                                    padding: 12px;
+                                    font-family: Montserrat;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    line-height: 17.07px;
+                                    text-align: center;
+                                    color: #FFFFFF;
+                                    transition: all 0.3s;
+                                    &:hover{
+                                        background: #1d1d1d;
+                                    }
+                                }
+                            }
+                            .included-container{
+                                .text-included{
+                                    color: #0F1226;
+                                    font-family: Montserrat;
+                                    font-size: 10px;
+                                    font-weight: 400;
+                                    line-height: 12.19px;
+                                    text-align: left;
+                                    .text-bold{
+                                        font-weight: 700;
+                                    }
+                                }
+                                .text-view-full-plan{
+                                    font-family: Inter;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    line-height: 12.1px;
+                                    text-align: left;
+                                    text-decoration: underline;
+                                    color: #000000;
+                                    cursor: pointer;
+                                }
+                                .included-list{
+                                    list-style: none;
+                                    padding-inline-start: 0;
+                                    li{
+                                        color: #000000;
+                                        font-family: Inter;
+                                        font-size: 10px;
+                                        font-weight: 500;
+                                        line-height: 14.8px;
+                                        text-align: left;
+
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        .content{
+                                            white-space: wrap;
+                                            padding-left: 16px;
+                                        }
+
+                                        .list-style{
+                                            font-family: Inter;
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            line-height: 14.52px;
+                                            text-align: left;
+                                            background: #16F6FE;
+                                            width: 15px;
+                                            height: 15px;
+                                            border-radius: 50%;
+                                            text-align: center;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    }
+                                    li:not(:last-child){
+                                        margin-bottom: clamp(12px,1.7vh,18px);
+                                    }
+                                }
+                            }
+                            // .text-explore{
+                            //     color: #FFF;
+                            //     text-align: center;
+                            //     font-family: "Inter";
+                            //     font-size: 12px;
+                            //     font-style: normal;
+                            //     font-weight: 700;
+                            //     line-height: normal;
+                            //     text-decoration-line: underline;
+                            //     cursor: pointer;
+                            // }
+                        }
+                    }
+                }
+            }
+            .btn-purchase{
+                padding: 12px 48px;
+                border: solid 1px #FFFFFF;
+                background: #000000;
+                border-radius: 6px;
+
+                color: #FFF;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+    }
+}
+
+.hidden-cls {
+    visibility: hidden;
+}
